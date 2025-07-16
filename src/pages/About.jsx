@@ -83,6 +83,8 @@ const About = () => {
           loop
           muted
           playsInline
+          preload="none"
+          poster="https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/coverimg/Aboutcover.png"
         />
         {/* Static dark layer */}
         <div className="absolute inset-0 bg-black/60 z-0"></div>

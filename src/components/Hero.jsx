@@ -53,7 +53,7 @@ const Hero = () => {
         loop
         muted
         preload="none" // don't preload until user interacts
-        poster="/path-to-thumbnail.jpg" // Add a light placeholder or loading image
+        poster="https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/coverimg/homebanner.png" // Add a light placeholder or loading image
       >
         <source
           src="https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/leftface.mp4"

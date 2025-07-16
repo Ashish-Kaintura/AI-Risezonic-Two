@@ -24,7 +24,7 @@ const aiSolutions = [
     ],
     video:
       "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/custom%20chat%20gpt%20animation.mp4", // ✅ use the imported variable here
-    img: "/images/avatars.png",
+    img: "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/coverimg/transform1.png",
   },
   {
     icon: <FaCogs className="text-white text-2xl" />,
@@ -34,8 +34,9 @@ const aiSolutions = [
       "Streamline outreach, CRM updates, and follow-ups.",
       "Scale processes with less effort and more consistency.",
     ],
-    video: "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/Automate%20Business%20Workflows%20to%20Boost%20Productivity%20(1).mp4",
-    img: "/images/workflow.png",
+    video:
+      "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/Automate%20Business%20Workflows%20to%20Boost%20Productivity%20(1).mp4",
+    img: "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/coverimg/transform2.png",
   },
   {
     icon: <FaComments className="text-white text-2xl" />,
@@ -45,8 +46,9 @@ const aiSolutions = [
       "Ensure faster, 24/7 responses with consistent messaging.",
       "Reduce manual effort & improve resolution time.",
     ],
-    video: "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/Comp%201%20(1).mp4",
-    img: "/images/chatbot.png",
+    video:
+      "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/Comp%201%20(1).mp4",
+    img: "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/coverimg/transform3.png",
   },
   {
     icon: <FaFileAlt className="text-white text-2xl" />,
@@ -56,8 +58,9 @@ const aiSolutions = [
       "Use AI to spot trends & extract insights.",
       "Improve content accuracy and decisions.",
     ],
-    video: "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/Accelerate%20Business%20Research%20%26%20Document%20Creation.mp4",
-    img: "/images/documents.png",
+    video:
+      "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/Accelerate%20Business%20Research%20%26%20Document%20Creation.mp4",
+    img: "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/coverimg/transform4.png",
   },
   {
     icon: <FaMagic className="text-white text-2xl" />,
@@ -67,8 +70,9 @@ const aiSolutions = [
       "Test and iterate messaging faster across platforms.",
       "Drive better engagement while lowering creative bottlenecks.",
     ],
-    video: "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/Generate%20%26%20Automate%20Marketing%20Copy%20%26%20Campaign%20Assets%20with%20AI.mp4",
-    img: "/images/ai-copy.png",
+    video:
+      "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/Generate%20%26%20Automate%20Marketing%20Copy%20%26%20Campaign%20Assets%20with%20AI.mp4",
+    img: "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/coverimg/transform5.png",
   },
   {
     icon: <FaTools className="text-white text-2xl" />,
@@ -78,8 +82,9 @@ const aiSolutions = [
       "Prototype fast, iterate faster.",
       "Empower teams to ship independently.",
     ],
-    video: "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/Build%20No-Code%20Websites%2C%20Apps%2C%20Tools%20%26%20Games%20Using%20AI.mp4",
-    img: "/images/tools.png",
+    video:
+      "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/Build%20No-Code%20Websites%2C%20Apps%2C%20Tools%20%26%20Games%20Using%20AI.mp4",
+    img: "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/coverimg/transform6.png",
   },
 ];
 
@@ -184,7 +189,7 @@ const AISolutionsGrid = () => {
                 muted
                 playsInline
                 preload="none" // don't preload until user interacts
-                poster="/path-to-thumbnail.jpg" // Add a light placeholder or loading image
+                poster={item.img} // Add a light placeholder or loading image
               >
                 <source src={item.video} type="video/mp4" />
               </video>
