@@ -16,6 +16,7 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
+import { FaDatabase, FaUserGraduate, FaMicrochip } from "react-icons/fa";
 import { FiChevronRight } from "react-icons/fi";
 import { useFormPopup } from "../context/FormContext";
 const Navbar = () => {
@@ -25,6 +26,7 @@ const Navbar = () => {
   const [subDropdownOpen, setSubDropdownOpen] = useState({
     programs: false,
     faculty: false,
+    bootcamps: false,
   });
   const location = useLocation();
 
@@ -161,10 +163,10 @@ const Navbar = () => {
                 <div
                   className="relative group px-4 py-3 hover:bg-blue-50 cursor-pointer flex justify-between items-center text-gray-700 hover:text-blue-700 transition"
                   onMouseEnter={() =>
-                    setSubDropdownOpen({ ...subDropdownOpen, programs: true })
+                    setSubDropdownOpen((prev) => ({ ...prev, programs: true }))
                   }
                   onMouseLeave={() =>
-                    setSubDropdownOpen({ ...subDropdownOpen, programs: false })
+                    setSubDropdownOpen((prev) => ({ ...prev, programs: false }))
                   }
                 >
                   <Link to="/programs" className="flex items-center">
@@ -174,8 +176,64 @@ const Navbar = () => {
                   <FiChevronRight />
                   {/* Sub Submenu */}
                   <div
-                    className={`absolute left-full top-0 ml-1 w-64 bg-white border border-gray-200 shadow-lg rounded-xl z-50 ${
+                    className={`absolute left-full top-2 ml-1 w-96 bg-white border border-gray-200 shadow-lg rounded-xl z-50 ${
                       subDropdownOpen.programs ? "block" : "hidden"
+                    }`}
+                  >
+                    <Link
+                      to="/programs/generative-ai"
+                      className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
+                    >
+                      <FaRobot className="mr-3 text-indigo-600" />
+                      Advanced Generative AI & LLM Development
+                    </Link>
+
+                    <Link
+                      to="/programs/data-analytics"
+                      className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
+                    >
+                      <FaDatabase className="mr-3 text-blue-500" />
+                      Data Analytics & Visualization Mastery
+                    </Link>
+
+                    <Link
+                      to="/programs/fdp-ai-ml"
+                      className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
+                    >
+                      <FaUserGraduate className="mr-3 text-green-600" />
+                      Faculty Development Program (FDP)
+                    </Link>
+
+                    <Link
+                      to="/programs/iot-robotics"
+                      className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
+                    >
+                      <FaMicrochip className="mr-3 text-rose-500" />
+                      IoT Systems & Robotics Engineering Program
+                    </Link>
+                  </div>
+                </div>
+                <div
+                  className="relative group px-4 py-3 hover:bg-blue-50 cursor-pointer flex justify-between items-center text-gray-700 hover:text-blue-700 transition"
+                  onMouseEnter={() =>
+                    setSubDropdownOpen((prev) => ({ ...prev, bootcamps: true }))
+                  }
+                  onMouseLeave={() =>
+                    setSubDropdownOpen((prev) => ({
+                      ...prev,
+                      bootcamps: false,
+                    }))
+                  }
+                >
+                  <Link to="/bootcamps" className="flex items-center">
+                    <FaChalkboardTeacher className="mr-3 text-purple-500" />
+                    Bootcamps
+                  </Link>
+                  <FiChevronRight />
+                  {/* Sub Submenu */}
+                  <div
+                    className={`absolute left-full top-0 ml-1 w-64 bg-white border border-gray-200 shadow-lg rounded-xl z-50 ${
+                      subDropdownOpen.bootcamps ? "block" : "hidden"
                     }`}
                   >
                     <Link
@@ -183,33 +241,24 @@ const Navbar = () => {
                       className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
                     >
                       <FaLightbulb className="mr-3 text-yellow-500" />
-                      AI Tools for Educators
+                      IoT & Robotics Camp
                     </Link>
                     <Link
                       to="/fdp/workshop"
                       className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
                     >
                       <FaUsers className="mr-3 text-green-500" />
-                      Conduct a Workshop
+                      Power BI Mastery Workshop
                     </Link>
                   </div>
                 </div>
-                <Link
-                  to="/bootcamps"
-                  className="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
-                >
-                  <FaChalkboardTeacher className="mr-3 text-purple-500" />
-                  Bootcamps
-                </Link>
-
-                {/* Submenu Trigger */}
                 <div
                   className="relative group px-4 py-3 hover:bg-blue-50 cursor-pointer flex justify-between items-center text-gray-700 hover:text-blue-700 transition"
                   onMouseEnter={() =>
-                    setSubDropdownOpen({ ...subDropdownOpen, faculty: true })
+                    setSubDropdownOpen((prev) => ({ ...prev, faculty: true }))
                   }
                   onMouseLeave={() =>
-                    setSubDropdownOpen({ ...subDropdownOpen, faculty: false })
+                    setSubDropdownOpen((prev) => ({ ...prev, faculty: false }))
                   }
                 >
                   <div className="flex items-center">

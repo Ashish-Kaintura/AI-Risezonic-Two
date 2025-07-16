@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import programs from "../data/programs.json";
 import { FaArrowLeft, FaAward, FaBriefcase } from "react-icons/fa";
@@ -13,6 +13,10 @@ const ProgramDetail = () => {
     );
   }
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <section className="py-24 px-4 bg-gradient-to-b from-blue-50 to-white text-gray-800 min-h-screen mt-32">
       <div className="max-w-7xl mx-auto">
@@ -108,6 +112,7 @@ const ProgramDetail = () => {
               loop
               muted
               playsInline
+              controls
               className="w-full h-full object-cover rounded-xl"
             >
               <source
