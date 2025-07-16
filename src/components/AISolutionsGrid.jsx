@@ -7,12 +7,12 @@ import {
   FaFileAlt,
   FaTools,
 } from "react-icons/fa";
-import video1 from "../video/custom chat gpt animation.mp4";
-import video2 from "../video/Automate Business Workflows to Boost Productivity (1).mp4";
-import video3 from "../video/Comp 1 (1).mp4";
-import video4 from "../video/Accelerate Business Research & Document Creation.mp4";
-import video5 from "../video/Generate & Automate Marketing Copy & Campaign Assets with AI.mp4";
-import video6 from "../video/Build No-Code Websites, Apps, Tools & Games Using AI.mp4";
+// import video1 from "../video/custom chat gpt animation.mp4";
+// import video2 from "../video/Automate Business Workflows to Boost Productivity (1).mp4";
+// import video3 from "../video/Comp 1 (1).mp4";
+// import video4 from "../video/Accelerate Business Research & Document Creation.mp4";
+// import video5 from "../video/Generate & Automate Marketing Copy & Campaign Assets with AI.mp4";
+// import video6 from "../video/Build No-Code Websites, Apps, Tools & Games Using AI.mp4";
 const aiSolutions = [
   {
     icon: <FaRobot className="text-white text-2xl" />,
@@ -22,7 +22,8 @@ const aiSolutions = [
       "Achieve instant, consistent responses 24/7.",
       "Reduce manual effort in handling FAQs.",
     ],
-    video: video1, // ✅ use the imported variable here
+    video:
+      "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/custom%20chat%20gpt%20animation.mp4", // ✅ use the imported variable here
     img: "/images/avatars.png",
   },
   {
@@ -33,7 +34,7 @@ const aiSolutions = [
       "Streamline outreach, CRM updates, and follow-ups.",
       "Scale processes with less effort and more consistency.",
     ],
-    video: video2,
+    video: "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/Automate%20Business%20Workflows%20to%20Boost%20Productivity%20(1).mp4",
     img: "/images/workflow.png",
   },
   {
@@ -44,7 +45,7 @@ const aiSolutions = [
       "Ensure faster, 24/7 responses with consistent messaging.",
       "Reduce manual effort & improve resolution time.",
     ],
-    video: video3,
+    video: "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/Comp%201%20(1).mp4",
     img: "/images/chatbot.png",
   },
   {
@@ -55,7 +56,7 @@ const aiSolutions = [
       "Use AI to spot trends & extract insights.",
       "Improve content accuracy and decisions.",
     ],
-    video: video4,
+    video: "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/Accelerate%20Business%20Research%20%26%20Document%20Creation.mp4",
     img: "/images/documents.png",
   },
   {
@@ -66,7 +67,7 @@ const aiSolutions = [
       "Test and iterate messaging faster across platforms.",
       "Drive better engagement while lowering creative bottlenecks.",
     ],
-    video: video5,
+    video: "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/Generate%20%26%20Automate%20Marketing%20Copy%20%26%20Campaign%20Assets%20with%20AI.mp4",
     img: "/images/ai-copy.png",
   },
   {
@@ -77,7 +78,7 @@ const aiSolutions = [
       "Prototype fast, iterate faster.",
       "Empower teams to ship independently.",
     ],
-    video: video6,
+    video: "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/Build%20No-Code%20Websites%2C%20Apps%2C%20Tools%20%26%20Games%20Using%20AI.mp4",
     img: "/images/tools.png",
   },
 ];
@@ -175,14 +176,18 @@ const AISolutionsGrid = () => {
               </ul>
 
               {/* Video */}
+              {/* <video src={item.video} autoPlay loop muted playsInline /> */}
               <video
-                src={item.video}
+                className="w-full h-40 object-cover"
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="w-full h-40 object-cover"
-              />
+                preload="none" // don't preload until user interacts
+                poster="/path-to-thumbnail.jpg" // Add a light placeholder or loading image
+              >
+                <source src={item.video} type="video/mp4" />
+              </video>
             </div>
           ))}
         </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaCheckCircle } from "react-icons/fa";
-import leftface from "../video/leftface.mp4";
+// import leftface from "../video/leftface.mp4";
 // import rightface from "../video/rightface.mp4";
 const Hero = () => {
   // Typing animation logic
@@ -48,13 +48,20 @@ const Hero = () => {
       </div> */}
       <video
         className="absolute inset-0 w-full h-full object-cover z-0"
-        // src="https://s7d1.scene7.com/is/content/kyndryl/kyn-ai-landing-hero"
-        src={leftface}
+        playsInline
         autoPlay
         loop
         muted
-        playsInline
-      />
+        preload="none" // don't preload until user interacts
+        poster="/path-to-thumbnail.jpg" // Add a light placeholder or loading image
+      >
+        <source
+          src="https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/leftface.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+
       <div className="relative z-10 flex flex-col items-center justify-center  h-full text-center space-y-8">
         <h1 className="text-5xl md:text-7xl font-extrabold text-pink-500 drop-shadow-lg tracking-tight min-h-[70px]">
           <span className="text-white">{displayedText}</span>

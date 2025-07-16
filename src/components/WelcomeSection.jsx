@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import video1 from "../video/WhatsApp Video 2025-07-07 at 4.55.37 PM.mp4"
+// import video1 from "../video/WhatsApp Video 2025-07-07 at 4.55.37 PM.mp4"
 const WelcomeSection = () => {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
@@ -65,7 +65,7 @@ const WelcomeSection = () => {
               data-aos="zoom-in"
               data-aos-delay="400"
             >
-            Book Your Seat Now
+              Book Your Seat Now
             </a>
           </div>
           <div className="absolute inset-0 bg-zinc-900 rotate-12  bottom-[8.20rem] w-[900px] right-1 left-2  " />
@@ -73,13 +73,19 @@ const WelcomeSection = () => {
           {/* Video Section */}
           <div className=" h-48 md:h-56 w-full overflow-hidden">
             <video
-             src={video1}
               className="w-full h-full object-cover"
               autoPlay
               loop
               muted
               playsInline
-            />
+              preload="none" // don't preload until user interacts
+              poster="/path-to-thumbnail.jpg" // Add a light placeholder or loading image
+            >
+              <source
+                src="https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/WhatsApp%20Video%202025-07-07%20at%204.55.37%20PM.mp4"
+                type="video/mp4"
+              />
+            </video>
           </div>
         </div>
       </div>
