@@ -1,0 +1,170 @@
+https://postimg.cc/delete/G6Lf3H0Y/1dcc150d star alince remove link for banner 
+https://postimg.cc/delete/MhprVDSt/c33a5a9b
+https://postimg.cc/qtZGYgZr.
+https://postimg.cc/delete/MhprVDSt/c33a5a9b
+
+[contact-form-7 id="42" title="Appointment-Form"]
+
+
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package WordPress
+ * @subpackage Cardioly
+ * @since 1.0
+ * @version 1.0
+ */
+?><!DOCTYPE html>
+<html <?php language_attributes(); ?> class="no-js no-svg">
+	
+<?php
+if (isset($_POST['submit_form'])) {
+  $to = 'info@starallianceaviation.com'; // ✅ Your email
+  $subject = 'New Popup Form Submission';
+
+  // ✅ Sanitize inputs properly
+  $name = sanitize_text_field($_POST['name']);
+  $email = sanitize_email($_POST['email']);
+  $number = sanitize_text_field($_POST['number']);
+  $message = sanitize_textarea_field($_POST['message']);
+
+  // ✅ Proper email body
+  $body = "Name: $name\nEmail: $email\nPhone: $number\nMessage:\n$message";
+  $headers = ['Content-Type: text/plain; charset=UTF-8'];
+
+  wp_mail($to, $subject, $body, $headers);
+  echo "<script>alert('Thanks! Your message has been sent.');</script>";
+}
+?>
+
+
+<head>
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="<?php echo esc_url('https://gmpg.org/xfn/11') ?>">
+<?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+<?php dsvy_preloader(); ?>
+<?php 
+if ( function_exists( 'wp_body_open' ) ) {
+    wp_body_open();
+} else {
+    do_action( 'wp_body_open' );
+}
+?>
+	<?php if ( is_front_page() ) : ?>
+<div id="popupForm" class="popup-overlay">
+  <div class="popup-content">
+    <span onclick="document.getElementById('popupForm').style.display='none'" class="close">&times;</span>
+    <form method="post">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+	  <input type="tel" name="number" placeholder="Your Number" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" name="submit_form">Send</button>
+    </form>
+  </div>
+</div>
+							<script>
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.getElementById('popupForm').style.display = 'flex';
+    }, 10000); // Show after 10 seconds
+  });
+</script>
+	<?php endif; ?>
+
+<div id="page" class="site dsvy-parent-header-style-<?php echo esc_attr(dsvy_get_base_option('header-style')); ?>">
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cardioly' ); ?></a>
+	<header id="masthead" class="site-header dsvy-header-style-<?php echo esc_attr(dsvy_get_base_option('header-style')); ?>">
+		<?php get_template_part( 'theme-parts/header/header-style',	dsvy_get_base_option('header-style') ); ?>
+		<?php dsvy_header_slider(); ?>
+		<?php get_template_part( 'theme-parts/header/title-bar',	dsvy_get_base_option('header-style') ); ?>
+	<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WS7Z3BH17B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WS7Z3BH17B');
+</script>
+		<style>
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.popup-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.popup-content input,
+.popup-content textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.popup-content button {
+  background: #0073aa;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+</style>
+
+</header><!-- #masthead -->
+
+		<div class="site-content-wrap">
+			<div id="content" class="site-content container">
+				<?php if( dsvy_check_sidebar() == true ){ ?>
+					<div class="row multi-columns-row">
+				<?php } ?>
+
+				<?php
+				$unique_id		= esc_attr( uniqid( 'search-form-' ) ); 
+				$placeholder	= dsvy_get_base_option('header-search-placeholder');
+				$btn_text		= dsvy_get_base_option('header-search-btn-text');
+				?>
+				<div class="dsvy-header-search-form-wrapper">
+					<div class="dsvy-search-close"><i class="dsvy-base-icon-cancel"></i></div>
+					<?php $unique_id = esc_attr( uniqid( 'search-form-' ) ); ?>
+					<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+						<label for="<?php echo esc_attr($unique_id); ?>">
+							<span class="screen-reader-text"><?php echo _x( 'Search for:', 'label', 'cardioly' ); ?></span>
+						</label>
+						<input type="search" id="<?php echo esc_attr($unique_id); ?>" class="search-field" placeholder="<?php echo esc_attr($placeholder); ?>" value="<?php echo get_search_query(); ?>" name="s" />
+						<button type="submit" class="search-submit"><?php echo esc_html($btn_text); ?></button>
+					</form>
+				</div>
+

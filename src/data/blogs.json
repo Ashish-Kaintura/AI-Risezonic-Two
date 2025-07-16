@@ -1,0 +1,233 @@
+[
+    {
+        "id": "beyond-automation",
+        "title": "Beyond Automation: How AI Is Becoming the New Teacher, Counselor, and Assistant in Education",
+        "slug": "beyond-automation",
+        "date": "2025-07-01",
+        "author": "Ashish Kaintura",
+        "coverImage": "https://varthana.com/school/wp-content/uploads/2024/07/how-ai-in-education-can-boost-student-success-beyond-the-classroom.jpg",
+        "tags": [
+            "AI in Education",
+            "EdTech",
+            "Automation"
+        ],
+        "intro": "AI in education isn't about replacement — it's about enhancement. Explore how AI co-pilots are transforming the learning experience, from tutoring to essay evaluation.",
+        "readTime": "6 min read",
+        "sections": [
+            {
+                "heading": "The Problem",
+                "points": [
+                    "Teachers are overburdened",
+                    "Students get generic content",
+                    "Admins spend hours answering routine questions",
+                    "One-size-fits-all learning still dominates"
+                ]
+            },
+            {
+                "heading": "Where AI Comes In",
+                "points": [
+                    "AI tutors that understand your syllabus, language, and speed",
+                    "Voice-enabled bots for lab assistance and campus helpdesks",
+                    "GPTs that draft reports, questions, and explainers in seconds",
+                    "Auto-evaluation of essays, projects, and portfolios"
+                ]
+            },
+            {
+                "heading": "AI.Risezonic’s Framework",
+                "points": [
+                    "We deploy education-focused GenAI tools trained on institution-specific content.",
+                    "Our AI doesn’t just answer — it speaks in your tone, your curriculum, and your language."
+                ]
+            },
+            {
+                "heading": "Impact",
+                "points": [
+                    "90% reduction in repetitive admin",
+                    "3x boost in student engagement",
+                    "Better teacher-student interaction through AI co-pilots"
+                ]
+            }
+        ],
+        "conclusion": "AI in education isn’t a future vision — it’s already here. The question is: Will your institution adapt and lead — or lag and follow?",
+        "cta": "Discover how your institution can deploy responsible AI tools. Contact AI.Risezonic today."
+    },
+    {
+        "id": "responsible-ai-framework",
+        "title": "Building Responsible AI in Education: A Framework for Trust, Transparency & Impact",
+        "slug": "responsible-ai-framework",
+        "date": "2025-07-03",
+        "author": "Rajshre Singh",
+        "coverImage": "https://media.licdn.com/dms/image/v2/D4E12AQG-5aKQSPE7pw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1709587215696?e=2147483647&v=beta&t=Ogx4Va6LF8uIwrMSoIOD6c2h0YQQ5xTMrDzdEGWPyOs",
+        "tags": [
+            "Responsible AI",
+            "Trust",
+            "Data Ethics"
+        ],
+        "intro": "AI in education is powerful — but it’s also personal. The systems we build now must be explainable, inclusive, and safe for students, teachers, and institutions.",
+        "readTime": "5 min read",
+        "sections": [
+            {
+                "heading": "Risks Without Guardrails",
+                "points": [
+                    "Bias in learning content",
+                    "Over-reliance on AI for grading",
+                    "Privacy and data leakage",
+                    "Generic, unpersonalized experience"
+                ]
+            },
+            {
+                "heading": "AI.Risezonic’s Responsible AI Framework",
+                "points": [
+                    "Data Sensitivity: No student data leaves your system",
+                    "Custom GPTs: Speak your institution’s tone, policies, language",
+                    "Langfuse Observability: Track what AI is saying — and why",
+                    "Human-in-the-Loop: AI assists, humans approve"
+                ]
+            },
+            {
+                "heading": "Personas We Consider",
+                "points": [
+                    "Students: Get guidance, not answers",
+                    "Faculty: Get suggestions, not surveillance",
+                    "Admins: Get insights, not replacement"
+                ]
+            }
+        ],
+        "conclusion": "We need more than just powerful AI. We need AI that’s purpose-built, people-centered, and institutionally guided. That’s what we build at AI.Risezonic.",
+        "cta": "Ask us how we build responsible AI for your campus."
+    },
+    {
+        "id": "custom-gpts-for-education",
+        "title": "Custom GPTs Are the New Software: Why Every College, Founder, and Learner Needs One",
+        "slug": "custom-gpts-for-education",
+        "date": "2025-07-04",
+        "author": "Ashish Kaintura",
+        "coverImage": "https://media.licdn.com/dms/image/v2/D5612AQEMIvCDbg4I-g/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1699782500818?e=2147483647&v=beta&t=QMyDEjUyXplcy8sM5LgZN4C-EvAZ0vnWn6dmu6HKxao",
+        "tags": [
+            "Custom GPTs",
+            "EdTech Tools",
+            "Conversational UI"
+        ],
+        "intro": "Forget dashboards. Forget login screens. The future is conversational. Your GPT isn’t just a chatbot — it’s your personalized interface to action.",
+        "readTime": "4 min read",
+        "sections": [
+            {
+                "heading": "Why Custom GPTs Are Powerful",
+                "points": [
+                    "Trained on your syllabus, policies, tone",
+                    "Automate tasks like drafting circulars, generating questions",
+                    "Support faculty with instant research, lesson plans",
+                    "Help founders brainstorm ideas in their startup voice"
+                ]
+            },
+            {
+                "heading": "Use Cases in Education",
+                "points": [
+                    "PrincipalGPT for admin communication",
+                    "DepartmentGPT for student Q&A",
+                    "TutorGPT for every course",
+                    "LMS-integrated AI study buddy"
+                ]
+            },
+            {
+                "heading": "How AI.Risezonic Does It",
+                "points": [
+                    "LangChain + Vector Embeddings + Llama3 or GPT-4",
+                    "Hosted on private cloud with memory + feedback loop",
+                    "Easy-to-train, monitor, and deploy"
+                ]
+            }
+        ],
+        "conclusion": "In 2025, you won’t ask, “Do we need software?” You’ll ask, “Where’s our GPT?”",
+        "cta": "Start building your custom GPT with AI.Risezonic today."
+    },
+    {
+        "id": "ai-literacy-curriculum",
+        "title": "The New Curriculum: AI Literacy from Class 8 to Campus Placements",
+        "slug": "ai-literacy-curriculum",
+        "date": "2025-07-05",
+        "author": "Ashish Kaintura",
+        "coverImage": "https://www.powerschool.com/wp-content/uploads/2024/06/Strengths-Based-Accountability-blog-thumbnail-060424.jpg",
+        "tags": [
+            "AI Literacy",
+            "School Curriculum",
+            "Skill Development"
+        ],
+        "intro": "In a world where GenAI can write, solve, speak, and think — knowing how to use it is as essential as math or English.",
+        "readTime": "4 min read",
+        "sections": [
+            {
+                "heading": "What Is AI Literacy?",
+                "points": [
+                    "Not just how to prompt ChatGPT",
+                    "But how to think with AI, debug answers, and evaluate reliability",
+                    "Includes prompt engineering, data ethics, bias, and tool fluency"
+                ]
+            },
+            {
+                "heading": "How We Introduce AI in Schools & Colleges",
+                "points": [
+                    "Workshops for Class 8-12: AI for storytelling, projects, robotics",
+                    "College Bootcamps: LangChain, Prompting, RAG",
+                    "Industry Mentorship: Build deployable AI apps in 4 weeks"
+                ]
+            },
+            {
+                "heading": "Why It Matters",
+                "points": [
+                    "Boosts confidence in innovation",
+                    "Equips students for AI-integrated workplaces",
+                    "Unlocks India’s tier-2/3 talent potential"
+                ]
+            }
+        ],
+        "conclusion": "AI isn’t optional anymore. It’s the new literacy.",
+        "cta": "Let AI.Risezonic bring AI literacy to your classrooms."
+    },
+    {
+        "id": "genai-student-projects",
+        "title": "From Code to Conversation: How Students Are Building the Future with GenAI Projects",
+        "slug": "genai-student-projects",
+        "date": "2025-07-06",
+        "author": "Ashish Kaintura",
+        "coverImage": "data:image/jpeg;base64,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",
+        "tags": [
+            "GenAI Projects",
+            "Student Innovation",
+            "Hands-on AI"
+        ],
+        "intro": "Forget rote learning. Today’s students are building AI tools that solve real problems in their classrooms, homes, and campuses.",
+        "readTime": "5 min read",
+        "sections": [
+            {
+                "heading": "Projects Built by Students via AI.Risezonic",
+                "points": [
+                    "VoiceBot robot that moves + answers questions",
+                    "Document Q&A bot trained on college syllabus",
+                    "WhatsApp chatbot that acts as a smart tutor",
+                    "GPT-powered resume builder with real-time feedback",
+                    "RAG app that explains exam policies instantly"
+                ]
+            },
+            {
+                "heading": "How We Help",
+                "points": [
+                    "Scaffolded training → from zero to deployment",
+                    "Mentors from industry",
+                    "Real use cases, not dummy projects",
+                    "GitHub + Hugging Face integration"
+                ]
+            },
+            {
+                "heading": "Why It Works",
+                "points": [
+                    "Students see results",
+                    "Colleges showcase innovation",
+                    "Recruiters love AI-ready portfolios"
+                ]
+            }
+        ],
+        "conclusion": "With the right support, students don’t just learn AI — they launch AI.",
+        "cta": "Empower your students with GenAI project programs."
+    }
+]
