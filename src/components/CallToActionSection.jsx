@@ -45,7 +45,7 @@ const CallToActionSection = () => {
           data-aos-delay="200"
         >
           <Link
-            to="/book-demo"
+            to=""
             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-pink-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform"
           >
             <FaMagic className="text-lg" /> Book a Free Consultation

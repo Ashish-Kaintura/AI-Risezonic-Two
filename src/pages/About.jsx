@@ -17,8 +17,8 @@ import {
   FaPhone,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import Video1 from "../video/WhatsApp Video 2025-07-09 at 4.14.40 PM.mp4";
-import video2 from "../video/5436899_Coll_wavebreak_People_1920x1080.mp4";
+// import Video1 from "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/blob/main/src/video/WhatsApp%20Video%202025-07-09%20at%204.14.40%20PM.mp4";
+// import video2 from "../video/5436899_Coll_wavebreak_People_1920x1080.mp4";
 import {
   HiMiniWrenchScrewdriver,
   HiMiniUserGroup,
@@ -78,14 +78,19 @@ const About = () => {
         {/* Video Background */}
         <video
           className="absolute inset-0 w-full h-full object-cover z-0"
-          src={Video1}
           autoPlay
           loop
           muted
           playsInline
           preload="none"
           poster="https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/coverimg/Aboutcover.png"
-        />
+        >
+          <source
+            src="https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/WhatsApp%20Video%202025-07-09%20at%204.14.40%20PM.mp4"
+            type="video/mp4"
+          />
+        </video>
+
         {/* Static dark layer */}
         <div className="absolute inset-0 bg-black/60 z-0"></div>
 
@@ -134,7 +139,12 @@ const About = () => {
             className="w-full rounded-xl shadow-lg"
           /> */}
           <div className="bg-black p-4 flex justify-center">
-            <video src={video2} loop autoPlay></video>
+            <video autoPlay loop muted playsInline>
+              <source
+                src="https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/5436899_Coll_wavebreak_People_1920x1080.mp4"
+                type="video/mp4"
+              />
+            </video>
           </div>
         </div>
       </section>

@@ -7,6 +7,7 @@ import {
   FaLightbulb,
   FaWhatsapp,
 } from "react-icons/fa";
+import { FaCalendarAlt, FaUsers } from "react-icons/fa";
 import { FiMail, FiPhone } from "react-icons/fi";
 import {
   FaFacebookF,
@@ -15,11 +16,16 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
+import { FiChevronRight } from "react-icons/fi";
 import { useFormPopup } from "../context/FormContext";
 const Navbar = () => {
   const { openForm } = useFormPopup();
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [subDropdownOpen, setSubDropdownOpen] = useState({
+    programs: false,
+    faculty: false,
+  });
   const location = useLocation();
 
   const linkClass = (path) =>
@@ -136,53 +142,119 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="relative group">
-              <Link
-                to="/learn-with-ai-risezonic"
-                className={linkClass("/learn-with-ai-risezonic")}
+              <button
+                className="flex items-center gap-1 uppercase text-gray-700 hover:text-blue-600 focus:outline-none transition duration-200"
+                onClick={() => setDropdownOpen((prev) => !prev)}
+                onBlur={() => setDropdownOpen(false)}
               >
-                {" "}
-                <button
-                  className="flex items-center gap-1  hover:text-blue-600 focus:outline-none uppercase"
-                  onClick={() => setDropdownOpen((open) => !open)}
-                  onBlur={() => setDropdownOpen(false)}
-                >
-                  Learn with AI Risezonic
-                  <FiChevronDown className="mr-1" />
-                </button>
-              </Link>
+                Learn with AI Risezonic
+                <FiChevronDown className="text-sm mt-1" />
+              </button>
+
+              {/* Main Dropdown */}
               <div
-                className={`absolute left-0 mt-0 w-56 bg-white shadow-lg rounded-md py-2 z-50 ${
+                className={`absolute left-0  w-64 bg-white border border-t-0 border-gray-200 shadow-lg rounded-xl z-50 transition-all duration-300 ${
                   dropdownOpen ? "block" : "hidden"
                 } group-hover:block`}
                 onMouseLeave={() => setDropdownOpen(false)}
               >
-                <Link
-                  to="/ai-apps"
-                  className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100"
+                <div
+                  className="relative group px-4 py-3 hover:bg-blue-50 cursor-pointer flex justify-between items-center text-gray-700 hover:text-blue-700 transition"
+                  onMouseEnter={() =>
+                    setSubDropdownOpen({ ...subDropdownOpen, programs: true })
+                  }
+                  onMouseLeave={() =>
+                    setSubDropdownOpen({ ...subDropdownOpen, programs: false })
+                  }
                 >
-                  <FaLightbulb className="mr-2 text-blue-500" />
-                  AI Apps We Build
+                  <Link to="/programs" className="flex items-center">
+                    <FaLightbulb className="mr-3 text-blue-500" />
+                    Programs & Courses
+                  </Link>
+                  <FiChevronRight />
+                  {/* Sub Submenu */}
+                  <div
+                    className={`absolute left-full top-0 ml-1 w-64 bg-white border border-gray-200 shadow-lg rounded-xl z-50 ${
+                      subDropdownOpen.programs ? "block" : "hidden"
+                    }`}
+                  >
+                    <Link
+                      to="/fdp/ai-tools"
+                      className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
+                    >
+                      <FaLightbulb className="mr-3 text-yellow-500" />
+                      AI Tools for Educators
+                    </Link>
+                    <Link
+                      to="/fdp/workshop"
+                      className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
+                    >
+                      <FaUsers className="mr-3 text-green-500" />
+                      Conduct a Workshop
+                    </Link>
+                  </div>
+                </div>
+                <Link
+                  to="/bootcamps"
+                  className="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
+                >
+                  <FaChalkboardTeacher className="mr-3 text-purple-500" />
+                  Bootcamps
                 </Link>
-                <Link
-                  to="/ai-education"
-                  className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100"
+
+                {/* Submenu Trigger */}
+                <div
+                  className="relative group px-4 py-3 hover:bg-blue-50 cursor-pointer flex justify-between items-center text-gray-700 hover:text-blue-700 transition"
+                  onMouseEnter={() =>
+                    setSubDropdownOpen({ ...subDropdownOpen, faculty: true })
+                  }
+                  onMouseLeave={() =>
+                    setSubDropdownOpen({ ...subDropdownOpen, faculty: false })
+                  }
                 >
-                  <FaChalkboardTeacher className="mr-2 text-blue-500" />
-                  AI in Education
+                  <div className="flex items-center">
+                    <FaRobot className="mr-3 text-pink-500" />
+                    Faculty Development
+                  </div>
+                  <FiChevronRight />
+
+                  {/* Sub Submenu */}
+                  <div
+                    className={`absolute left-full top-0 ml-1 w-64 bg-white border border-gray-200 shadow-lg rounded-xl z-50 ${
+                      subDropdownOpen.faculty ? "block" : "hidden"
+                    }`}
+                  >
+                    <Link
+                      to="/fdp/ai-tools"
+                      className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
+                    >
+                      <FaLightbulb className="mr-3 text-yellow-500" />
+                      AI Tools for Educators
+                    </Link>
+                    <Link
+                      to="/fdp/workshop"
+                      className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
+                    >
+                      <FaUsers className="mr-3 text-green-500" />
+                      Conduct a Workshop
+                    </Link>
+                  </div>
+                </div>
+
+                <Link
+                  to="/host-workshop"
+                  className="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
+                >
+                  <FaLightbulb className="mr-3 text-yellow-500" />
+                  Host a Workshop
                 </Link>
+
                 <Link
-                  to="/robotics-ai"
-                  className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  to="/upcoming-batches"
+                  className="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
                 >
-                  <FaRobot className="mr-2 text-blue-500" />
-                  Robotics + AI
-                </Link>
-                <Link
-                  to="/consulting"
-                  className="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100"
-                >
-                  <FaLightbulb className="mr-2 text-blue-500" />
-                  Consulting for Institutions
+                  <FaCalendarAlt className="mr-3 text-teal-500" />
+                  Upcoming Batches
                 </Link>
               </div>
             </li>

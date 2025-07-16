@@ -1,0 +1,106 @@
+[
+  {
+    "id": "generative-ai",
+    "title": "Advanced Generative AI & LLM Development",
+    "image": "/images/programs/fdp.jpg",
+    "overview": "Master Transformers, build LLM apps, train mini models, and deploy with FastAPI, LangChain, and Docker.",
+    "details": [
+      "Master Transformer Architectures (BERT, GPT, LLaMA)",
+      "Build Custom LLM Applications (Chatbots, RAG systems, Agents)",
+      "Deploy AI models into production using Docker, FastAPI & LangChain",
+      "Train a mini LLM on domain-specific data",
+      "Integrate with cloud platforms (AWS, Azure, GCP)"
+    ],
+    "modules": [
+      "Foundations of GenAI & NLP",
+      "Prompt Engineering Mastery",
+      "Customizing Open-Source LLMs (LLaMA2, Falcon)",
+      "Building AI Tools (Text Summarizers, Q&A Systems)",
+      "Productionizing AI Applications"
+    ],
+    "tags": [
+      "AI",
+      "LLM",
+      "Development"
+    ],
+    "certificate": "Advanced Generative AI Developer",
+    "career": [
+      "AI Engineer",
+      "LLM Developer",
+      "AI Product Architect"
+    ]
+  },
+  {
+    "id": "data-analytics",
+    "title": "Data Analytics & Visualization Mastery with Power BI & Python",
+    "image": "/images/programs/fdp.jpg",
+    "overview": "Build advanced dashboards, clean and model data, and integrate predictive analytics with Power BI and Python.",
+    "details": [
+      "Power BI Advanced Dashboards & Data Modelling",
+      "Python for Data Analysis (Pandas, NumPy, Matplotlib)",
+      "Data Cleaning, Wrangling & Feature Engineering",
+      "Predictive Analytics & ML Integration",
+      "Storytelling with Data for business impact"
+    ],
+    "capstone": "Build a live sales dashboard for a retail company with predictive sales forecasting.",
+    "tags": [
+      "Data",
+      "BI",
+      "Python"
+    ],
+    "certificate": "Certified Data Analyst (RiseZonic AI)",
+    "career": [
+      "Data Analyst",
+      "BI Developer",
+      "Business Consultant"
+    ]
+  },
+  {
+    "id": "iot-robotics",
+    "title": "IoT Systems & Robotics Engineering Program",
+    "image": "/images/programs/fdp.jpg",
+    "overview": "Learn IoT hardware, cloud platforms, and robotics with a starter kit and real-world automation projects.",
+    "details": [
+      "Hardware Programming (Arduino, Raspberry Pi)",
+      "IoT Networking & Protocols (MQTT, CoAP)",
+      "Cloud IoT Platforms (AWS IoT, Azure IoT Hub)",
+      "Robotics: Autonomous Movement, Voice Commands, Sensors",
+      "Mobile Apps for IoT Device Control (React Native basics)"
+    ],
+    "capstone": "Design and deploy a Smart Home Automation System or Voice-Activated Robot.",
+    "tags": [
+      "IoT",
+      "Robotics",
+      "Engineering"
+    ],
+    "certificate": "IoT & Robotics Systems Engineer",
+    "extras": "🎁 Includes full IoT Starter Kit worth ₹5,000",
+    "career": [
+      "IoT Engineer",
+      "Robotics Developer",
+      "Embedded Systems Designer"
+    ]
+  },
+  {
+    "id": "fdp-ai-ml",
+    "title": "Faculty Development Program (FDP): AI-ML for Next-Gen Classrooms",
+    "image": "/images/programs/fdp.jpg",
+    "overview": "Train educators to integrate AI in teaching, research, and institutional growth strategies.",
+    "details": [
+      "Design AI-integrated lesson plans",
+      "Learn Smart Assessment Tools powered by AI",
+      "Research Paper Writing with AI Assistants",
+      "Implement College-wide AI Strategies (NAAC/NIRF aligned)"
+    ],
+    "tags": [
+      "FDP",
+      "AI",
+      "Education"
+    ],
+    "certificate": "Certified AI Educator",
+    "career": [
+      "AI-enabled Teacher",
+      "Academic Innovator"
+    ]
+  }
+]

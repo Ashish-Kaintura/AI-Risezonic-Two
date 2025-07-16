@@ -27,11 +27,11 @@ const teamMembers = [
     image: "https://i.postimg.cc/1tJtvFx7/preti.jpg",
     role: "Marketing Head",
   },
-  {
-    name: "Gaurav",
-    image: "https://i.postimg.cc/zD2vWTFV/gorav.jpg",
-    role: "Product Manager",
-  },
+  // {
+  //   name: "Gaurav",
+  //   image: "https://i.postimg.cc/zD2vWTFV/gorav.jpg",
+  //   role: "Product Manager",
+  // },
 ];
 
 const TeamSection = () => {
@@ -56,7 +56,7 @@ const TeamSection = () => {
         </div>
 
         {/* Team Grid */}
-        <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+        <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {teamMembers.map((member, index) => (
             <div
               key={index}

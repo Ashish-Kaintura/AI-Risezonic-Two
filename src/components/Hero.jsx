@@ -67,10 +67,10 @@ const Hero = () => {
           <span className="text-white">{displayedText}</span>
           <span className="animate-pulse">|</span>
         </h1>
-        <p className="text-2xl md:text-3xl text-white font-medium max-w-2xl mx-auto">
-          Empowering the Future with{" "}
+        <p className="text-2xl md:text-3xl text-white font-medium max-w-3xl mx-auto">
+          Empowering Intelligence. Enabling{" "}
           <span className="bg-gradient-to-r from-white/70 via-white/80 to-white/90 bg-clip-text text-transparent font-bold">
-            Generative AI
+            Transformation
           </span>
         </p>
         <p className="text-lg text-white">Learn. Build. Innovate.</p>

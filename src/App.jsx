@@ -19,6 +19,9 @@ import BlogDetail from "./pages/BlogDetail";
 import PainpointForm from "./pages/PainpointForm";
 import NotFoundPage from "./pages/404Page";
 import ComingSoonPage from "./pages/ComingSoonPage";
+import LearnWIthAiRisezonic from "./pages/LearnWIthAiRisezonic";
+import Programs from "./pages/Programs";
+import ProgramDetail from "./pages/ProgramDetail";
 const App = () => {
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
@@ -42,6 +45,12 @@ const App = () => {
           <Route path="/painpoint" element={<PainpointForm />} />
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/book-demo" element={<ComingSoonPage />} />
+          <Route
+            path="/learn-with-ai-risezonic"
+            element={<LearnWIthAiRisezonic />}
+          />
+          <Route path="/programs" element={<Programs />} />
+          <Route path="/programs/:id" element={<ProgramDetail />} />
         </Routes>
       </main>
       <WhatsAppSticky />

@@ -22,6 +22,8 @@ import TeamSection from "../components/TeamSection";
 import GallerySection from "../components/GallerySection";
 import VideoSection from "../components/VideoSection";
 import AISolutionsGrid from "../components/AISolutionsGrid";
+import WhyJoinSection from "../components/WhyJoinSection";
+import WhyJoinSectionLight from "../components/WhyJoinSectionLight";
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -39,6 +41,8 @@ const Home = () => {
 
       <WelcomeSection />
       <WhatWeDo />
+      <WhyJoinSectionLight />
+       <WhyJoinSection/>
       {/* Whats Make US diffrent  */}
       <WhatMakesUsDifferent />
 
