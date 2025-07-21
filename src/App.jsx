@@ -12,7 +12,7 @@ import AiSolutions from "./pages/AiSolutions";
 // import OurProjects from "./pages/OurProjects";
 import ContactUs from "./pages/ContactUs";
 import Blog from "./pages/Blog";
-import Resources from "./pages/Resources";
+// import Resources from "./pages/Resources";
 import WhatsAppSticky from "./components/WhatsAppSticky";
 import PopupForm from "./components/PopupForm";
 import BlogDetail from "./pages/BlogDetail";
@@ -22,6 +22,8 @@ import ComingSoonPage from "./pages/ComingSoonPage";
 import LearnWIthAiRisezonic from "./pages/LearnWIthAiRisezonic";
 import Programs from "./pages/Programs";
 import ProgramDetail from "./pages/ProgramDetail";
+import Bootcamp from "./pages/Bootcamp";
+import BootcampDetail from "./pages/BootcampDetails";
 const App = () => {
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
@@ -39,7 +41,7 @@ const App = () => {
           <Route path="/ai-solution-and-product" element={<AiSolutions />} />
           {/* <Route path="/our-porjects" element={<OurProjects />} /> */}
           <Route path="/contact" element={<ContactUs />} />
-          <Route path="/resources" element={<Resources />} />
+          {/* <Route path="/resources" element={<Resources />} /> */}
           <Route path="/blogs" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path="/painpoint" element={<PainpointForm />} />
@@ -51,6 +53,8 @@ const App = () => {
           />
           <Route path="/programs" element={<Programs />} />
           <Route path="/programs/:id" element={<ProgramDetail />} />
+          <Route path="/bootcamps" element={<Bootcamp />} />
+          <Route path="/bootcamps/:id" element={<BootcampDetail />} />
         </Routes>
       </main>
       <WhatsAppSticky />

@@ -1,0 +1,98 @@
+[
+    {
+        "id": "generative-ai-bootcamp",
+        "title": "Generative AI Bootcamp",
+        "image": "https://i.postimg.cc/59Zk2pPt/generative-ai-bootcamp.jpg",
+        "overview": "Dive deep into the world of Generative AI through real-world projects and hands-on training. This bootcamp covers everything from prompt engineering to building AI applications using the latest LLM technologies.",
+        "details": [
+            "Understand the core concepts of Generative AI and large language models (LLMs)",
+            "Learn prompt engineering techniques to maximize AI outputs",
+            "Build real-time AI chatbots and assistants using OpenAI and HuggingFace",
+            "Fine-tune open-source models for specific business or academic use-cases",
+            "Deploy AI tools using LangChain, FastAPI, and Gradio"
+        ],
+        "modules": [
+            "Introduction to Generative AI & NLP",
+            "Prompt Engineering in Action",
+            "LLM Integration and Deployment",
+            "Customizing AI with Fine-Tuning",
+            "End-to-End AI Product Development"
+        ],
+        "tags": [
+            "AI",
+            "Generative AI",
+            "LLM",
+            "Bootcamp"
+        ],
+        "certificate": "Certified Generative AI Practitioner",
+        "career": [
+            "Generative AI Engineer",
+            "AI Consultant",
+            "LLM Product Developer"
+        ]
+    },
+    {
+        "id": "iot-robotics-camp",
+        "title": "IoT & Robotics Camp",
+        "image": "https://i.postimg.cc/KvwT1SGy/iot-robotics-camp.jpg",
+        "overview": "Explore the future of connected devices and intelligent machines. This camp introduces students to IoT systems, robotics programming, sensor integration, and automation using real hardware.",
+        "details": [
+            "Learn how IoT devices communicate using sensors and microcontrollers",
+            "Build and control robots using Arduino and Raspberry Pi",
+            "Integrate AI and machine learning into robotics applications",
+            "Monitor data in real-time through dashboards and cloud services",
+            "Work on practical projects involving automation and robotics"
+        ],
+        "modules": [
+            "Foundations of IoT and Microcontrollers",
+            "Hands-on with Sensors and Actuators",
+            "Programming Robots with Arduino",
+            "Smart Systems with Raspberry Pi",
+            "AI and Automation Integration"
+        ],
+        "tags": [
+            "IoT",
+            "Robotics",
+            "STEM",
+            "Hardware"
+        ],
+        "certificate": "IoT & Robotics Explorer Certificate",
+        "career": [
+            "IoT Systems Engineer",
+            "Robotics Developer",
+            "Automation Technician"
+        ]
+    },
+    {
+        "id": "power-bi-workshop",
+        "title": "Power BI Mastery Workshop",
+        "image": "https://i.postimg.cc/BZd9k5Qc/power-bi-workshop.jpg",
+        "overview": "Gain practical skills in business analytics and data visualization with Microsoft Power BI. This workshop is designed for professionals looking to transform raw data into powerful insights and reports.",
+        "details": [
+            "Connect, clean, and transform data using Power Query",
+            "Create professional dashboards and visuals with ease",
+            "Master DAX for advanced data modeling and KPIs",
+            "Deploy and share interactive reports through Power BI Service",
+            "Apply Power BI to real-world business scenarios"
+        ],
+        "modules": [
+            "Getting Started with Power BI",
+            "Data Transformation with Power Query",
+            "Data Modeling and DAX Functions",
+            "Designing Interactive Dashboards",
+            "Publishing and Collaboration Tools"
+        ],
+        "tags": [
+            "Power BI",
+            "Data Analytics",
+            "Business Intelligence",
+            "Visualization"
+        ],
+        "certificate": "Power BI Mastery Certificate",
+        "career": [
+            "Business Intelligence Analyst",
+            "Power BI Developer",
+            "Data Visualization Consultant"
+        ]
+    }
+]

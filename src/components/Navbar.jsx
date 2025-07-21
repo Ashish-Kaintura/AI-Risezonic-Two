@@ -27,6 +27,7 @@ const Navbar = () => {
     programs: false,
     faculty: false,
     bootcamps: false,
+    Host: false,
   });
   const location = useLocation();
 
@@ -237,12 +238,21 @@ const Navbar = () => {
                     }`}
                   >
                     <Link
+                      to="/programs/generative-ai"
+                      className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
+                    >
+                      <FaRobot className="mr-3 text-indigo-600" />
+                      Generative AI Bootcamp
+                    </Link>
+
+                    <Link
                       to="/fdp/ai-tools"
                       className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
                     >
                       <FaLightbulb className="mr-3 text-yellow-500" />
                       IoT & Robotics Camp
                     </Link>
+
                     <Link
                       to="/fdp/workshop"
                       className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
@@ -261,10 +271,13 @@ const Navbar = () => {
                     setSubDropdownOpen((prev) => ({ ...prev, faculty: false }))
                   }
                 >
-                  <div className="flex items-center">
+                  <Link
+                    to="/faculty-development "
+                    className="flex items-center"
+                  >
                     <FaRobot className="mr-3 text-pink-500" />
                     Faculty Development
-                  </div>
+                  </Link>
                   <FiChevronRight />
 
                   {/* Sub Submenu */}
@@ -289,22 +302,44 @@ const Navbar = () => {
                     </Link>
                   </div>
                 </div>
-
-                <Link
-                  to="/host-workshop"
-                  className="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
+                <div
+                  className="relative group px-4 py-3 hover:bg-blue-50 cursor-pointer flex justify-between items-center text-gray-700 hover:text-blue-700 transition"
+                  onMouseEnter={() =>
+                    setSubDropdownOpen((prev) => ({ ...prev, Host: true }))
+                  }
+                  onMouseLeave={() =>
+                    setSubDropdownOpen((prev) => ({ ...prev, Host: false }))
+                  }
                 >
-                  <FaLightbulb className="mr-3 text-yellow-500" />
-                  Host a Workshop
-                </Link>
+                  <Link to="/host-workshop" className="flex items-center">
+                    <FaLightbulb className="mr-3 text-yellow-500" />
+                    Host a Workshop
+                  </Link>
+                  <FiChevronRight />
 
-                <Link
+                  {/* Sub Submenu */}
+                  <div
+                    className={`absolute left-full top-0 ml-1 w-64 bg-white border border-gray-200 shadow-lg rounded-xl z-50 ${
+                      subDropdownOpen.Host ? "block" : "hidden"
+                    }`}
+                  >
+                    <Link
+                      to="/fdp/ai-tools"
+                      className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
+                    >
+                      <FaLightbulb className="mr-3 text-yellow-500" />
+                      For Colleges, Schools & Corporates
+                    </Link>
+                  </div>
+                </div>
+
+                {/* <Link
                   to="/upcoming-batches"
                   className="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
                 >
                   <FaCalendarAlt className="mr-3 text-teal-500" />
                   Upcoming Batches
-                </Link>
+                </Link> */}
               </div>
             </li>
           </ul>

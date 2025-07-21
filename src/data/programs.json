@@ -2,7 +2,7 @@
   {
     "id": "generative-ai",
     "title": "Advanced Generative AI & LLM Development",
-    "image": "/images/programs/fdp.jpg",
+    "image": "https://i.postimg.cc/8z35wQNS/science-artificial-intelligence-technology-innovation-futuristic-ai-machine-learning.jpg",
     "overview": "Master Transformers, build LLM apps, train mini models, and deploy with FastAPI, LangChain, and Docker.",
     "details": [
       "Master Transformer Architectures (BERT, GPT, LLaMA)",
