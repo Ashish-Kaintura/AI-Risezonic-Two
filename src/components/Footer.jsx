@@ -110,8 +110,11 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/20 mt-10 pt-6 text-center text-sm text-gray-300">
+        <div className="border-t border-white/20 mt-10 pt-6 text-center text-lg text-gray-300">
           © {new Date().getFullYear()} Risezonic Group. All rights reserved.
+        </div>
+        <div className=" text-center text-sm text-gray-300">
+          Powered by Risezonic & Reviving India
         </div>
       </div>
     </footer>

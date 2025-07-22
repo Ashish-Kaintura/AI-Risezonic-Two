@@ -11,7 +11,7 @@ const teamMembers = [
   {
     name: "Rajshree Singh",
     image: "https://i.postimg.cc/m2cDShmV/Rajshree.jpg",
-    role: "Head of Business Development & Marketing",
+    role: "Director of Business Development & Marketing",
     bio: `Rajshree Singh is an MBA in Sales & Marketing with a powerhouse of credentials in Six Sigma, ISO, CPRE, and PMP. She has earned certifications from Google, Meta, HubSpot, and Microsoft in digital marketing, analytics, content, SEO, and advertising. Having served leadership roles at HCL, American Express, and Google, she now leads AI Risezonic, bringing deep marketing expertise to AI-powered growth strategies and business scaling with real ROI.`,
   },
   {
