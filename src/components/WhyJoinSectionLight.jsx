@@ -61,7 +61,7 @@ const WhyJoinSectionLight = () => {
             data-aos-delay="100"
             className="mt-4 text-lg text-gray-700 max-w-3xl mx-auto"
           >
-            At <span className="text-pink-600 font-bold">RiseZonic AI</span>, we
+            At <span className="text-pink-600 font-bold">Risezonic AI</span>, we
             don’t believe in boring lectures. We believe in hands-on learning,
             real-world projects, and future-ready skills.
           </p>

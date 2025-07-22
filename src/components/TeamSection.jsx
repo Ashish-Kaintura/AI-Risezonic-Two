@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaUsers } from "react-icons/fa";
 
 // Add AOS import
@@ -6,35 +6,36 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
 // https://postimg.cc/gallery/qvfNJGW
+
 const teamMembers = [
   {
-    name: "Rajshree",
+    name: "Rajshree Singh",
     image: "https://i.postimg.cc/m2cDShmV/Rajshree.jpg",
-    role: "Founder & CEO",
+    role: "Head of Business Development & Marketing",
+    bio: `Rajshree Singh is an MBA in Sales & Marketing with a powerhouse of credentials in Six Sigma, ISO, CPRE, and PMP. She has earned certifications from Google, Meta, HubSpot, and Microsoft in digital marketing, analytics, content, SEO, and advertising. Having served leadership roles at HCL, American Express, and Google, she now leads AI Risezonic, bringing deep marketing expertise to AI-powered growth strategies and business scaling with real ROI.`,
   },
   {
-    name: "Bhavesh",
+    name: "Bhavesh Chaturvedi",
     image: "https://i.postimg.cc/sX1Qd1D6/Bhavesh.jpg",
-    role: "Lead Developer",
+    role: "Director of AI Strategy & Consulting",
+    bio: `Bhavesh Chaturvedi is a Tourism Graduate and MBA professional with over 20 years of leadership across global business, diplomatic relations, and government collaborations. A strategic consultant and AI leader, he helms Risezonic AI and Risezonic Travel, offering innovative AI software solutions and high-level travel services. His work bridges corporate and government sectors with a focus on impactful, tech-driven outcomes.`,
   },
   {
-    name: "Praveen",
-    image: "https://i.postimg.cc/W1PkF2Xz/praveen.jpg",
-    role: "UI/UX Designer",
+    name: "Praveen Kumar",
+    image: "https://i.postimg.cc/gJyw7m2t/Whats-App-Image2025-07-19at17-31-28-Photoroom.png",
+    role: "Director of Technology & Operational Excellence",
+    bio: `Praveen Kumar is a seasoned tech expert with over a decade of experience in AI, IoT, Machine Learning, and Data Science. He has worked at top MNCs like TCS, Fidelity, and Nagarro. Known for delivering global workshops and FDPs, his strength lies in bridging theory with real-world application. Passionate about innovation and education, he leads technical operations and empowers learners globally through hands-on learning.`,
   },
   {
-    name: "Preeti",
+    name: "Preeti Kaushik",
     image: "https://i.postimg.cc/1tJtvFx7/preti.jpg",
-    role: "Marketing Head",
+    role: "Director of Creative & UX",
+    bio: `Preeti Kaushik is a Senior IT Professional with a B.Tech in Computer Science and 10+ years of experience in the tech industry. She specializes in Java, AI, UI/UX Design, and Technical Documentation. As an AI trainer and mentor at Reviving India, she’s guided students and professionals in real-world projects across education, e-commerce, and healthcare sectors—bridging academia and industry with excellence in design and training.`,
   },
-  // {
-  //   name: "Gaurav",
-  //   image: "https://i.postimg.cc/zD2vWTFV/gorav.jpg",
-  //   role: "Product Manager",
-  // },
 ];
 
 const TeamSection = () => {
+  const [selectedMember, setSelectedMember] = useState(null);
   useEffect(() => {
     AOS.init({ duration: 900, once: true });
   }, []);
@@ -63,6 +64,7 @@ const TeamSection = () => {
               className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all p-8 flex flex-col items-center border border-indigo-50 hover:-translate-y-2"
               data-aos="zoom-in"
               data-aos-delay={index * 100}
+              onClick={() => setSelectedMember(member)}
             >
               <div className="relative mb-5">
                 <img
@@ -73,20 +75,69 @@ const TeamSection = () => {
                 {/* <span className="absolute bottom-2 right-2 w-4 h-4 bg-green-400 border-2 border-white rounded-full"></span> */}
               </div>
               <h3 className="text-xl font-bold text-gray-800">{member.name}</h3>
-              {/* <p className="text-indigo-600 text-sm mt-1 font-medium">
+              <p className="text-indigo-600 text-sm mt-1 font-medium">
                 {member.role}
-              </p> */}
-              <div className="mt-4 flex gap-2">
-                {/* Example social icons */}
-                {/* <a href="#" className="text-gray-400 hover:text-indigo-600 transition">
-                                    <svg width="20" height="20" fill="currentColor" className="inline"><circle cx="10" cy="10" r="10"/></svg>
-                                </a>
-                                <a href="#" className="text-gray-400 hover:text-indigo-600 transition">
-                                    <svg width="20" height="20" fill="currentColor" className="inline"><rect width="20" height="20" rx="5"/></svg>
-                                </a> */}
-              </div>
+              </p>
+              {/* <div className="mt-4 flex gap-2">
+              
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-indigo-600 transition"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    className="inline"
+                  >
+                    <circle cx="10" cy="10" r="10" />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-indigo-600 transition"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    className="inline"
+                  >
+                    <rect width="20" height="20" rx="5" />
+                  </svg>
+                </a>
+              </div> */}
             </div>
           ))}
+          {/* Modal */}
+          {/* {selectedMember && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+              <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md p-6 relative">
+                <button
+                  className="absolute top-3 right-4 text-gray-600 text-xl hover:text-red-500"
+                  onClick={() => setSelectedMember(null)}
+                >
+                  ×
+                </button>
+                <div className="flex flex-col items-center">
+                  <img
+                    src={selectedMember.image}
+                    alt={selectedMember.name}
+                    className="w-28 h-28 object-cover rounded-full border-4 border-indigo-300 shadow-lg mb-4"
+                  />
+                  <h2 className="text-2xl font-bold text-gray-800">
+                    {selectedMember.name}
+                  </h2>
+                  <p className="text-indigo-600 font-medium mb-2">
+                    {selectedMember.role}
+                  </p>
+                  <p className="text-sm text-gray-600 text-center mt-2">
+                    {selectedMember.bio}
+                  </p>
+                </div>
+              </div>
+            </div>
+          )} */}
         </div>
       </div>
     </section>

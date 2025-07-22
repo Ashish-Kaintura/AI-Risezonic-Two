@@ -110,7 +110,7 @@ const WhyJoinSection = () => {
           <p className="mt-4">
             Whether you dream of working in top tech companies, launching your
             own startup, or inspiring the next generation as a certified AI
-            educator, <span className="text-white font-bold">AI RiseZonic</span> gives you the knowledge, confidence,
+            educator, <span className="text-white font-bold">AI Risezonic</span> gives you the knowledge, confidence,
             and connections to make it happen.
           </p>
         </div>
