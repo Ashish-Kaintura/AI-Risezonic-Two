@@ -1,66 +1,66 @@
 [
     {
-        "id": "ai-tools-educators",
-        "title": "AI Tools for Educators",
-        "image": "https://i.postimg.cc/zXM6gcfZ/ai-tools-for-educators.jpg",
-        "overview": "Discover how educators can leverage AI to enhance teaching, personalize learning, and save time. This program introduces practical AI tools designed specifically for classrooms, assignments, assessments, and content creation.",
+        "id": "ai-ml-educators",
+        "title": "AI-ML for Educators",
+        "image": "https://i.postimg.cc/c1yKcgY3/ai-ml-for-educators.jpg",
+        "overview": "Empower teachers and academic leaders to understand, apply, and teach artificial intelligence and machine learning concepts with confidence. This course blends theory with practical tools tailored for education.",
         "details": [
-            "Use AI tools to automate administrative tasks and grading",
-            "Enhance lesson plans with AI-generated content and activities",
-            "Explore chatbots and virtual teaching assistants",
-            "Design interactive assessments and feedback tools using AI",
-            "Learn responsible and ethical AI use in education"
+            "Learn AI & ML fundamentals with a focus on pedagogy",
+            "Explore ethical and responsible AI in education",
+            "Use AI tools for grading, feedback, and content generation",
+            "Design interactive ML demonstrations for classroom use",
+            "Create AI-infused lesson plans and learning activities"
         ],
         "modules": [
-            "Introduction to AI in Education",
-            "AI Tools for Lesson Planning and Content Creation",
-            "Automating Assessment and Feedback",
-            "AI in Classroom Management",
-            "Ethical Use of AI in Schools"
+            "AI & ML Concepts Simplified for Educators",
+            "AI Ethics & Bias in the Classroom",
+            "Using AI Tools to Enhance Teaching",
+            "Designing AI Projects for Students",
+            "Building an AI-Ready Curriculum"
         ],
         "tags": [
             "AI",
+            "Machine Learning",
             "Education",
-            "Teaching",
-            "EdTech"
+            "Teacher Training"
         ],
-        "certificate": "AI-Enhanced Educator Certification",
+        "certificate": "AI-ML for Educators Certificate",
         "career": [
-            "Digital Learning Specialist",
-            "EdTech Trainer",
-            "Instructional Designer"
+            "AI Curriculum Developer",
+            "AI-Ready Educator",
+            "EdTech Facilitator"
         ]
     },
     {
-        "id": "conduct-a-workshop",
-        "title": "Conduct a Workshop",
-        "image": "https://i.postimg.cc/5tk9LHLv/conduct-workshop.jpg",
-        "overview": "Learn the complete framework to plan, organize, and conduct engaging technical or educational workshops. Perfect for educators, trainers, and professionals who want to share knowledge effectively.",
+        "id": "genai-classrooms",
+        "title": "GenAI in Classrooms",
+        "image": "https://i.postimg.cc/pLsTrQfJ/genai-classroom.jpg",
+        "overview": "Discover how generative AI tools like ChatGPT, Claude, and others can be safely and effectively integrated into classrooms. This program is designed for educators seeking to modernize learning experiences using GenAI.",
         "details": [
-            "Master the art of planning educational workshops from scratch",
-            "Learn how to design workshop content for impact and clarity",
-            "Use presentation tools and interactive techniques to engage learners",
-            "Handle live Q&A sessions, feedback, and session wrap-ups like a pro",
-            "Get templates, checklists, and best practices for any workshop"
+            "Understand how generative AI works and its implications in education",
+            "Use AI to personalize learning paths and generate teaching materials",
+            "Explore classroom-safe GenAI tools and policies",
+            "Design activities leveraging AI for creativity and collaboration",
+            "Assess AI-generated content and promote digital literacy"
         ],
         "modules": [
-            "Planning and Pre-Workshop Essentials",
-            "Creating Workshop Content and Slides",
-            "Interactive Tools and Engagement Strategies",
-            "Live Session Delivery and Communication",
-            "Post-Workshop Feedback & Reporting"
+            "Introduction to Generative AI for Educators",
+            "Prompt Crafting for Lesson Planning",
+            "AI Tools for Assessment and Feedback",
+            "Ethical Use of GenAI in Schools",
+            "Project-Based Learning with GenAI"
         ],
         "tags": [
-            "Training",
-            "Workshop",
+            "Generative AI",
+            "Classroom Tools",
             "Education",
-            "Public Speaking"
+            "Digital Literacy"
         ],
-        "certificate": "Certified Workshop Facilitator",
+        "certificate": "Certified GenAI Educator",
         "career": [
-            "Workshop Trainer",
-            "Corporate Educator",
-            "Freelance Instructor"
+            "Digital Education Innovator",
+            "AI-Integrated Learning Designer",
+            "Generative AI Facilitator"
         ]
     }
 ]

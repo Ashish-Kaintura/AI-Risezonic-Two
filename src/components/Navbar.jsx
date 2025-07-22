@@ -144,8 +144,179 @@ const Navbar = () => {
                 PainPointForm
               </Link>
             </li>
-       
+            <li className="relative group">
+              <button
+                className="flex items-center gap-1 uppercase text-gray-700 hover:text-blue-600 focus:outline-none transition duration-200"
+                onClick={() => setDropdownOpen((prev) => !prev)}
+                onBlur={() => setDropdownOpen(false)}
+              >
+                Learn with AI Risezonic
+                <FiChevronDown className="text-sm mt-1" />
+              </button>
+
+              {/* Main Dropdown */}
+              <div
+                className={`absolute left-0  w-64 bg-white border border-t-0 border-gray-200 shadow-lg rounded-xl z-50 transition-all duration-300 ${
+                  dropdownOpen ? "block" : "hidden"
+                } group-hover:block`}
+                onMouseLeave={() => setDropdownOpen(false)}
+              >
+                <div
+                  className="relative group px-4 py-3 hover:bg-blue-50 cursor-pointer flex justify-between items-center text-gray-700 hover:text-blue-700 transition"
+                  onMouseEnter={() =>
+                    setSubDropdownOpen((prev) => ({ ...prev, programs: true }))
+                  }
+                  onMouseLeave={() =>
+                    setSubDropdownOpen((prev) => ({ ...prev, programs: false }))
+                  }
+                >
+                  <Link to="/programs" className="flex items-center">
+                    <FaLightbulb className="mr-3 text-blue-500" />
+                    Programs & Courses
+                  </Link>
+                  <FiChevronRight />
+                  {/* Sub Submenu */}
+                  <div
+                    className={`absolute left-full top-2 ml-1 w-96 bg-white border border-gray-200 shadow-lg rounded-xl z-50 ${
+                      subDropdownOpen.programs ? "block" : "hidden"
+                    }`}
+                  >
+                    <Link
+                      to="/programs/generative-ai"
+                      className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
+                    >
+                      <FaRobot className="mr-3 text-indigo-600" />
+                      Advanced Generative AI & LLM Development
+                    </Link>
+
+                    <Link
+                      to="/programs/data-analytics"
+                      className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
+                    >
+                      <FaDatabase className="mr-3 text-blue-500" />
+                      Data Analytics & Visualization Mastery
+                    </Link>
+
+                    <Link
+                      to="/programs/fdp-ai-ml"
+                      className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
+                    >
+                      <FaUserGraduate className="mr-3 text-green-600" />
+                      Faculty Development Program (FDP)
+                    </Link>
+
+                    <Link
+                      to="/programs/iot-robotics"
+                      className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
+                    >
+                      <FaMicrochip className="mr-3 text-rose-500" />
+                      IoT Systems & Robotics Engineering Program
+                    </Link>
+                  </div>
+                </div>
+                <div
+                  className="relative group px-4 py-3 hover:bg-blue-50 cursor-pointer flex justify-between items-center text-gray-700 hover:text-blue-700 transition"
+                  onMouseEnter={() =>
+                    setSubDropdownOpen((prev) => ({ ...prev, bootcamps: true }))
+                  }
+                  onMouseLeave={() =>
+                    setSubDropdownOpen((prev) => ({
+                      ...prev,
+                      bootcamps: false,
+                    }))
+                  }
+                >
+                  <Link to="/bootcamps" className="flex items-center">
+                    <FaChalkboardTeacher className="mr-3 text-purple-500" />
+                    Bootcamps
+                  </Link>
+                  <FiChevronRight />
+                  {/* Sub Submenu */}
+                  <div
+                    className={`absolute left-full top-0 ml-1 w-64 bg-white border border-gray-200 shadow-lg rounded-xl z-50 ${
+                      subDropdownOpen.bootcamps ? "block" : "hidden"
+                    }`}
+                  >
+                    <Link
+                      to="/bootcamps/generative-ai-bootcamp"
+                      className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
+                    >
+                      <FaRobot className="mr-3 text-indigo-600" />
+                      Generative AI Bootcamp
+                    </Link>
+
+                    <Link
+                      to="/bootcamps/iot-robotics-camp"
+                      className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
+                    >
+                      <FaLightbulb className="mr-3 text-yellow-500" />
+                      IoT & Robotics Camp
+                    </Link>
+
+                    <Link
+                      to="/bootcamps/power-bi-workshop"
+                      className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
+                    >
+                      <FaUsers className="mr-3 text-green-500" />
+                      Power BI Mastery Workshop
+                    </Link>
+                  </div>
+                </div>
+                <div
+                  className="relative group px-4 py-3 hover:bg-blue-50 cursor-pointer flex justify-between items-center text-gray-700 hover:text-blue-700 transition"
+                  onMouseEnter={() =>
+                    setSubDropdownOpen((prev) => ({ ...prev, faculty: true }))
+                  }
+                  onMouseLeave={() =>
+                    setSubDropdownOpen((prev) => ({ ...prev, faculty: false }))
+                  }
+                >
+                  <Link to="/faculty-development" className="flex items-center">
+                    <FaRobot className="mr-3 text-pink-500" />
+                    Faculty Development
+                  </Link>
+                  <FiChevronRight />
+
+                  {/* Sub Submenu */}
+                  <div
+                    className={`absolute left-full top-0 ml-1 w-64 bg-white border border-gray-200 shadow-lg rounded-xl z-50 ${
+                      subDropdownOpen.faculty ? "block" : "hidden"
+                    }`}
+                  >
+                    <Link
+                      to="/ai-ml-educators"
+                      className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
+                    >
+                      <FaLightbulb className="mr-3 text-yellow-500" />
+                      AI-ML for Educators
+                    </Link>
+                    <Link
+                      to="/genai-classrooms"
+                      className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
+                    >
+                      <FaUsers className="mr-3 text-green-500" />
+                      GenAI in Classrooms
+                    </Link>
+                  </div>
+                </div>
+                <div className="relative group px-4 py-3 hover:bg-blue-50 cursor-pointer flex justify-between items-center text-gray-700 hover:text-blue-700 transition">
+                  <Link to="/workshop" className="flex items-center">
+                    <FaLightbulb className="mr-3 text-yellow-500" />
+                    Host a Workshop
+                  </Link>
+                </div>
+
+                {/* <Link
+                  to="/upcoming-batches"
+                  className="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition"
+                >
+                  <FaCalendarAlt className="mr-3 text-teal-500" />
+                  Upcoming Batches
+                </Link> */}
+              </div>
+            </li>
           </ul>
+
           <button
             onClick={openForm}
             className="hidden md:flex px-8 py-3 bg-gradient-to-r from-blue-600 to-pink-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-200"

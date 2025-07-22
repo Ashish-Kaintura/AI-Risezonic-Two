@@ -22,7 +22,8 @@ const teamMembers = [
   },
   {
     name: "Praveen Kumar",
-    image: "https://i.postimg.cc/gJyw7m2t/Whats-App-Image2025-07-19at17-31-28-Photoroom.png",
+    image:
+      "https://i.postimg.cc/gJyw7m2t/Whats-App-Image2025-07-19at17-31-28-Photoroom.png",
     role: "Director of Technology & Operational Excellence",
     bio: `Praveen Kumar is a seasoned tech expert with over a decade of experience in AI, IoT, Machine Learning, and Data Science. He has worked at top MNCs like TCS, Fidelity, and Nagarro. Known for delivering global workshops and FDPs, his strength lies in bridging theory with real-world application. Passionate about innovation and education, he leads technical operations and empowers learners globally through hands-on learning.`,
   },
@@ -110,7 +111,7 @@ const TeamSection = () => {
             </div>
           ))}
           {/* Modal */}
-          {/* {selectedMember && (
+          {selectedMember && (
             <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
               <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md p-6 relative">
                 <button
@@ -119,11 +120,11 @@ const TeamSection = () => {
                 >
                   ×
                 </button>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center rounded-lg">
                   <img
                     src={selectedMember.image}
                     alt={selectedMember.name}
-                    className="w-28 h-28 object-cover rounded-full border-4 border-indigo-300 shadow-lg mb-4"
+                    className="w-96 h-64 object-contain rounded-lg  mb-4"
                   />
                   <h2 className="text-2xl font-bold text-gray-800">
                     {selectedMember.name}
@@ -137,7 +138,7 @@ const TeamSection = () => {
                 </div>
               </div>
             </div>
-          )} */}
+          )}
         </div>
       </div>
     </section>

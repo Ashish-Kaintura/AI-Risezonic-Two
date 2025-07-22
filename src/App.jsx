@@ -24,6 +24,9 @@ import Programs from "./pages/Programs";
 import ProgramDetail from "./pages/ProgramDetail";
 import Bootcamp from "./pages/Bootcamp";
 import BootcampDetail from "./pages/BootcampDetails";
+import Faculty from "./pages/Faculty";
+import FacultyDetail from "./pages/FacultyDetail";
+import Workshops from "./pages/Workshops";
 const App = () => {
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
@@ -55,6 +58,9 @@ const App = () => {
           <Route path="/programs/:id" element={<ProgramDetail />} />
           <Route path="/bootcamps" element={<Bootcamp />} />
           <Route path="/bootcamps/:id" element={<BootcampDetail />} />
+          <Route path="/faculty-development" element={<Faculty />} />
+          <Route path="/faculty-development/:id" element={<FacultyDetail />} />
+          <Route path="/workshop" element={<Workshops />} />
         </Routes>
       </main>
       <WhatsAppSticky />
