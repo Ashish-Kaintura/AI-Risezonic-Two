@@ -2,7 +2,7 @@
     {
         "id": "generative-ai-bootcamp",
         "title": "Generative AI Bootcamp",
-        "image": "https://i.postimg.cc/59Zk2pPt/generative-ai-bootcamp.jpg",
+        "image": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/learnwithrisezonic/Generative%20AI%20Bootcamp.webp",
         "overview": "Dive deep into the world of Generative AI through real-world projects and hands-on training. This bootcamp covers everything from prompt engineering to building AI applications using the latest LLM technologies.",
         "details": [
             "Understand the core concepts of Generative AI and large language models (LLMs)",
@@ -34,7 +34,7 @@
     {
         "id": "iot-robotics-camp",
         "title": "IoT & Robotics Camp",
-        "image": "https://i.postimg.cc/KvwT1SGy/iot-robotics-camp.jpg",
+        "image": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/learnwithrisezonic/IoT%20%26%20Robotics%20Camp.webp",
         "overview": "Explore the future of connected devices and intelligent machines. This camp introduces students to IoT systems, robotics programming, sensor integration, and automation using real hardware.",
         "details": [
             "Learn how IoT devices communicate using sensors and microcontrollers",
@@ -66,7 +66,7 @@
     {
         "id": "power-bi-workshop",
         "title": "Power BI Mastery Workshop",
-        "image": "https://i.postimg.cc/BZd9k5Qc/power-bi-workshop.jpg",
+        "image": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/learnwithrisezonic/project-manager-communicate-collaborate-with-team-using-project-management-software-display-monitor-tracking-progress-project-task-making-schedule-plan-meeting-table-prudent.webp",
         "overview": "Gain practical skills in business analytics and data visualization with Microsoft Power BI. This workshop is designed for professionals looking to transform raw data into powerful insights and reports.",
         "details": [
             "Connect, clean, and transform data using Power Query",

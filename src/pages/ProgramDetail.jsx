@@ -107,7 +107,8 @@ const ProgramDetail = () => {
             className="overflow-hidden rounded-2xl shadow-xl border border-gray-300 bg-black max-h-[400px]"
             data-aos="fade-left"
           >
-            <video
+            <img src={program.image} alt="cover img" />
+            {/* <video
               autoPlay
               loop
               muted
@@ -119,13 +120,16 @@ const ProgramDetail = () => {
                 src="https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/5436899_Coll_wavebreak_People_1920x1080.mp4"
                 type="video/mp4"
               />
-            </video>
+            </video> */}
           </div>
         </div>
         <div className="flex justify-center mt-6 py-4">
-          <button className="px-8 py-3 bg-gradient-to-r from-blue-600 to-pink-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-200">
-            Book Your Slot
-          </button>
+          <Link to="/contact">
+            {" "}
+            <button className="px-8 py-3 bg-gradient-to-r from-blue-600 to-pink-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-200">
+              Book Your Slot
+            </button>
+          </Link>
         </div>
       </div>
     </section>
