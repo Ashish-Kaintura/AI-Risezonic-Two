@@ -45,7 +45,7 @@ const Programs = () => {
         {/* Header */}
         <div className="text-center mb-20">
           <h1 className="text-5xl font-extrabold text-transparent py-4 bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
-            🚀 RiseZonic AI Programs
+         AI  Programs
           </h1>
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto text-lg">
             Learn. Build. Lead the AI Revolution — Explore All Programs,

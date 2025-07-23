@@ -442,7 +442,7 @@ const About = () => {
         </div>
       </section>
       {/* Meet the Minds Behind Risezonic */}
-      <section className="bg-blue-800 py-20 px-6 md:px-12" data-aos="fade-up">
+      {/* <section className="bg-blue-800 py-20 px-6 md:px-12" data-aos="fade-up">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 flex items-center justify-center gap-3">
             <FaUniversity className="text-white" /> Meet the Minds Behind
@@ -452,7 +452,7 @@ const About = () => {
             B RJ · P G · P (Add detailed profiles here)
           </p>
         </div>
-      </section>
+      </section> */}
       {/* Our Impact */}
       <section className="py-20 px-6 md:px-12 bg-white" data-aos="fade-up">
         <div className="max-w-7xl mx-auto">

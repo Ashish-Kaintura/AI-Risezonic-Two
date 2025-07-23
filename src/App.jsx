@@ -27,6 +27,7 @@ import BootcampDetail from "./pages/BootcampDetails";
 import Faculty from "./pages/Faculty";
 import FacultyDetail from "./pages/FacultyDetail";
 import Workshops from "./pages/Workshops";
+import MultiStepForm from "./components/MultiStepForm";
 const App = () => {
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
@@ -65,6 +66,7 @@ const App = () => {
       </main>
       <WhatsAppSticky />
       <PopupForm />
+      <MultiStepForm />
       <Footer />
     </div>
   );

@@ -19,9 +19,11 @@ import {
 import { FaDatabase, FaUserGraduate, FaMicrochip } from "react-icons/fa";
 import { FiChevronRight } from "react-icons/fi";
 import { useFormPopup } from "../context/FormContext";
+import { useFormModal } from "../context/FormModalContext";
 const Navbar = () => {
   const { openForm } = useFormPopup();
   const [isOpen, setIsOpen] = useState(false);
+   const { openModal } = useFormModal();
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [subDropdownOpen, setSubDropdownOpen] = useState({
     programs: false,
@@ -136,14 +138,14 @@ const Navbar = () => {
                 Blog
               </Link>
             </li> */}
-            <li>
-              <Link
-                to="/painpoint"
-                className={`block ${linkClass("/painpoint")}`}
+            {/* <li>
+              <button
+                onClick={openModal}
+                className="flex items-center gap-1 uppercase text-gray-700 hover:text-blue-600"
               >
                 Rise with AI
-              </Link>
-            </li>
+              </button>
+            </li> */}
             <li className="relative group">
               <button
                 className="flex items-center gap-1 uppercase text-gray-700 hover:text-blue-600 focus:outline-none transition duration-200"
