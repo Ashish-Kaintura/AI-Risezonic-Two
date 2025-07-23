@@ -48,8 +48,8 @@ const Programs = () => {
             🚀 RiseZonic AI Programs
           </h1>
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto text-lg">
-            Learn. Build. Lead the AI Revolution — Explore bootcamps, courses,
-            and workshops designed for the future.
+            Learn. Build. Lead the AI Revolution — Explore All Programs,
+            and courses, designed for the future.
           </p>
         </div>
 

@@ -122,6 +122,11 @@ const ProgramDetail = () => {
             </video>
           </div>
         </div>
+        <div className="flex justify-center mt-6 py-4">
+          <button className="px-8 py-3 bg-gradient-to-r from-blue-600 to-pink-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-200">
+            Book Your Slot
+          </button>
+        </div>
       </div>
     </section>
   );

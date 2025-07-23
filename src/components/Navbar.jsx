@@ -141,7 +141,7 @@ const Navbar = () => {
                 to="/painpoint"
                 className={`block ${linkClass("/painpoint")}`}
               >
-                PainPointForm
+                Rise with AI
               </Link>
             </li>
             <li className="relative group">
@@ -284,14 +284,14 @@ const Navbar = () => {
                     }`}
                   >
                     <Link
-                      to="/ai-ml-educators"
+                      to="/faculty-development/ai-ml-educators"
                       className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
                     >
                       <FaLightbulb className="mr-3 text-yellow-500" />
                       AI-ML for Educators
                     </Link>
                     <Link
-                      to="/genai-classrooms"
+                      to="/faculty-development/genai-classrooms"
                       className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
                     >
                       <FaUsers className="mr-3 text-green-500" />
