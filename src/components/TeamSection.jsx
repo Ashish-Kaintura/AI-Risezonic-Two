@@ -18,7 +18,7 @@ const teamMembers = [
     name: "Bhavesh Chaturvedi",
     image: "https://i.postimg.cc/sX1Qd1D6/Bhavesh.jpg",
     role: "Director of AI Strategy & Consulting",
-    bio: `Bhavesh Chaturvedi is a Tourism Graduate and MBA professional with over 20 years of leadership across global business, diplomatic relations, and government collaborations. A strategic consultant and AI leader, he helms Risezonic AI and Risezonic Travel, offering innovative AI software solutions and high-level travel services. His work bridges corporate and government sectors with a focus on impactful, tech-driven outcomes.`,
+    bio: `Bhavesh Chaturvedi is a Tourism Graduate and MBA professional with over 20 years of leadership across global business, diplomatic relations, and government collaborations. A strategic consultant and AI leader, he helms AI Risezonic and Risezonic Travel, offering innovative AI software solutions and high-level travel services. His work bridges corporate and government sectors with a focus on impactful, tech-driven outcomes.`,
   },
   {
     name: "Praveen Kumar",

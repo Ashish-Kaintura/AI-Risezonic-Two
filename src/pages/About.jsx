@@ -457,7 +457,7 @@ const About = () => {
       <section className="py-20 px-6 md:px-12 bg-white" data-aos="fade-up">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-800 text-center mb-10">
-            Our Impact (So Far)
+            Our Impact 
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             <div

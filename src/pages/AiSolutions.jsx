@@ -65,8 +65,8 @@ const AiSolutions = () => {
             data-aos="fade-up"
             data-aos-delay="400"
           >
-            Explore the AI tools we build to revolutionize learning, automation,
-            and innovation.
+            Explore the AI tools we build to revolutionize LEARNING, AUTOMATION,
+            AND INOVATION.
           </p>
         </div>
       </section>

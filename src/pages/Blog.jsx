@@ -100,7 +100,7 @@ const Blog = () => {
         {/* Header */}
         <div className="text-center mb-10">
           <h1 className="text-5xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text py-4 text-transparent mb-3">
-            Risezonic Blog
+           AI Risezonic Blog
           </h1>
           <p className="text-lg text-gray-600">
             Stay updated with AI innovations, student success, and latest builds.

@@ -6,6 +6,7 @@ import {
   FaChalkboardTeacher,
   FaLightbulb,
   FaWhatsapp,
+  FaPinterest,
 } from "react-icons/fa";
 import { FaCalendarAlt, FaUsers } from "react-icons/fa";
 import { FiMail, FiPhone } from "react-icons/fi";
@@ -72,12 +73,12 @@ const Navbar = () => {
             <FaInstagram size={14} />
           </a>
           <a
-            href="https://twitter.com"
+            href="https://in.pinterest.com/risezonicllp/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-400 transition-colors bg-blue-500/80 rounded-full w-8 h-8 flex items-center justify-center p-1"
+            className="hover:text-blue-400 transition-colors bg-pink-700/80 rounded-full w-8 h-8 flex items-center justify-center p-1"
           >
-            <FaTwitter size={14} />
+            <FaPinterest size={14} />
           </a>
           <a
             href="https://youtube.com"
@@ -138,14 +139,14 @@ const Navbar = () => {
                 Blog
               </Link>
             </li> */}
-            <li>
+            {/* <li>
               <button
                 onClick={openModal}
                 className="flex items-center gap-1 uppercase text-gray-700 hover:text-blue-600"
               >
                 Rise with AI
               </button>
-            </li>
+            </li> */}
             <li className="relative group">
               <button
                 className="flex items-center gap-1 uppercase text-gray-700 hover:text-blue-600 focus:outline-none transition duration-200"
