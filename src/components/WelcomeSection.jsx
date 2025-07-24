@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
+import { Link } from "react-router-dom";
 import "aos/dist/aos.css";
 // import video1 from "../video/WhatsApp Video 2025-07-07 at 4.55.37 PM.mp4"
 const WelcomeSection = () => {
@@ -59,14 +60,14 @@ const WelcomeSection = () => {
               </span>{" "}
               — using the power of Generative AI.
             </p>
-            <a
-              href="#"
+            <Link
+              to="/contact"
               className="inline-block self-center md:self-start bg-gradient-to-r from-blue-500 to-pink-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:scale-105 transition-transform"
               data-aos="zoom-in"
               data-aos-delay="400"
             >
               Book Your Seat Now
-            </a>
+            </Link>
           </div>
           <div className="absolute inset-0 bg-zinc-900 rotate-12  bottom-[8.20rem] w-[900px] right-1 left-2  " />
 

@@ -6,7 +6,7 @@ import {
   FaUsers,
   FaRocket,
 } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 const WhyJoinSectionLight = () => {
   return (
     <section className="bg-white text-gray-900 py-20 px-6 relative z-10">
@@ -143,15 +143,21 @@ const WhyJoinSectionLight = () => {
           data-aos-delay="400"
           className="flex flex-wrap justify-center gap-4 mt-12"
         >
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-full text-sm font-semibold shadow hover:scale-105 transition-all">
-            🎯 View All Programs
-          </button>
-          <button className="bg-pink-500 text-white px-6 py-3 rounded-full text-sm font-semibold shadow hover:scale-105 transition-all">
-            🎯 Get Early Bird Offer
-          </button>
-          <button className="bg-yellow-400 text-white px-6 py-3 rounded-full text-sm font-semibold shadow hover:scale-105 transition-all">
-            🎯 Host a Workshop at Your Campus
-          </button>
+          <Link to="/programs">
+            <button className="bg-blue-600 text-white px-6 py-3 rounded-full text-sm font-semibold shadow hover:scale-105 transition-all">
+              🎯 View All Programs
+            </button>
+          </Link>
+          <Link to="/contact">
+            <button className="bg-pink-500 text-white px-6 py-3 rounded-full text-sm font-semibold shadow hover:scale-105 transition-all">
+              🎯 Get Early Bird Offer
+            </button>
+          </Link>
+          <Link to="/workshop">
+            <button className="bg-yellow-400 text-white px-6 py-3 rounded-full text-sm font-semibold shadow hover:scale-105 transition-all">
+              🎯 Host a Workshop at Your Campus
+            </button>
+          </Link>
         </div>
 
         {/* Final Quote */}

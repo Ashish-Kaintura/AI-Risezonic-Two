@@ -93,7 +93,7 @@ const Hero = () => {
 
         <div className="flex flex-wrap justify-center gap-6 mt-8">
           <Link
-            to="/painpoint"
+            to="/contact"
             className="px-8 py-3 bg-gradient-to-r from-blue-600 to-pink-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-200"
           >
             Get Started

@@ -19,9 +19,11 @@ import {
 import { FaDatabase, FaUserGraduate, FaMicrochip } from "react-icons/fa";
 import { FiChevronRight } from "react-icons/fi";
 import { useFormPopup } from "../context/FormContext";
+import { useFormModal } from "../context/FormModalContext";
 const Navbar = () => {
   const { openForm } = useFormPopup();
   const [isOpen, setIsOpen] = useState(false);
+   const { openModal } = useFormModal();
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [subDropdownOpen, setSubDropdownOpen] = useState({
     programs: false,
@@ -137,12 +139,12 @@ const Navbar = () => {
               </Link>
             </li> */}
             <li>
-              <Link
-                to="/painpoint"
-                className={`block ${linkClass("/painpoint")}`}
+              <button
+                onClick={openModal}
+                className="flex items-center gap-1 uppercase text-gray-700 hover:text-blue-600"
               >
                 Rise with AI
-              </Link>
+              </button>
             </li>
             <li className="relative group">
               <button
@@ -284,14 +286,14 @@ const Navbar = () => {
                     }`}
                   >
                     <Link
-                      to="/ai-ml-educators"
+                      to="/faculty-development/ai-ml-educators"
                       className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
                     >
                       <FaLightbulb className="mr-3 text-yellow-500" />
                       AI-ML for Educators
                     </Link>
                     <Link
-                      to="/genai-classrooms"
+                      to="/faculty-development/genai-classrooms"
                       className="flex items-center px-4 py-3 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition"
                     >
                       <FaUsers className="mr-3 text-green-500" />

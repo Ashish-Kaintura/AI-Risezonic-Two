@@ -1,20 +1,36 @@
 import React from "react";
-import { FaChalkboardTeacher, FaRobot, FaBuilding, FaUsers, FaLaptopCode, FaCertificate } from "react-icons/fa";
-
+import {
+  FaChalkboardTeacher,
+  FaRobot,
+  FaBuilding,
+  FaUsers,
+  FaLaptopCode,
+  FaCertificate,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
 export default function Workshops() {
   return (
     <div className="bg-white text-gray-900 px-6 md:px-16 py-12 space-y-14 sm:mt-48">
       <header className="text-center space-y-3">
-        <h1 className="text-4xl md:text-5xl font-bold text-blue-800">Host a Workshop</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-blue-800">
+          Host a Workshop
+        </h1>
         <p className="text-lg md:text-xl max-w-3xl mx-auto">
-          Bring future-ready learning to your campus or workplace with expert-led, hands-on workshops in AI, Robotics, Data Science, IoT, Power BI, and more.
+          Bring future-ready learning to your campus or workplace with
+          expert-led, hands-on workshops in AI, Robotics, Data Science, IoT,
+          Power BI, and more.
         </p>
       </header>
 
       <section className="grid md:grid-cols-2 gap-12 items-start">
         <div>
-          <h2 className="text-2xl font-semibold text-blue-700 mb-2">For Colleges & Universities</h2>
-          <p className="mb-4">Empower your students with skill-based, industry-aligned workshops that complement academic learning.</p>
+          <h2 className="text-2xl font-semibold text-blue-700 mb-2">
+            For Colleges & Universities
+          </h2>
+          <p className="mb-4">
+            Empower your students with skill-based, industry-aligned workshops
+            that complement academic learning.
+          </p>
           <ul className="list-disc ml-6 space-y-1">
             <li>Generative AI in Education</li>
             <li>Robotics & IoT Bootcamps</li>
@@ -22,40 +38,66 @@ export default function Workshops() {
             <li>Python for Data Science</li>
             <li>Power BI Mastery</li>
           </ul>
-          <p className="mt-3 italic text-sm text-gray-600">Ideal for: B.Tech, BCA, MCA, BSc (CS/IT), MBA, and interdisciplinary streams</p>
-          <p className="text-sm text-gray-600">Includes: Certificates, project kits (if applicable), career orientation</p>
+          <p className="mt-3 italic text-sm text-gray-600">
+            Ideal for: B.Tech, BCA, MCA, BSc (CS/IT), MBA, and interdisciplinary
+            streams
+          </p>
+          <p className="text-sm text-gray-600">
+            Includes: Certificates, project kits (if applicable), career
+            orientation
+          </p>
         </div>
 
         <div>
-          <h2 className="text-2xl font-semibold text-blue-700 mb-2">For Schools (Grades 9–12)</h2>
-          <p className="mb-4">Make STEM exciting with age-appropriate, hands-on tech workshops designed to spark curiosity and creativity.</p>
+          <h2 className="text-2xl font-semibold text-blue-700 mb-2">
+            For Schools (Grades 9–12)
+          </h2>
+          <p className="mb-4">
+            Make STEM exciting with age-appropriate, hands-on tech workshops
+            designed to spark curiosity and creativity.
+          </p>
           <ul className="list-disc ml-6 space-y-1">
             <li>Introduction to AI & ChatGPT</li>
             <li>Build Your First Robot</li>
             <li>Coding with Python</li>
             <li>IoT for Young Innovators</li>
           </ul>
-          <p className="mt-3 italic text-sm text-gray-600">Aligned with NEP & CBSE Skill Education Goals</p>
-          <p className="text-sm text-gray-600">Includes: Worksheets, demo kits, participation certificates</p>
+          <p className="mt-3 italic text-sm text-gray-600">
+            Aligned with NEP & CBSE Skill Education Goals
+          </p>
+          <p className="text-sm text-gray-600">
+            Includes: Worksheets, demo kits, participation certificates
+          </p>
         </div>
       </section>
 
       <section className="grid md:grid-cols-2 gap-12 items-start">
         <div>
-          <h2 className="text-2xl font-semibold text-blue-700 mb-2">For Corporate Teams & Professionals</h2>
-          <p className="mb-4">Upskill your workforce with customized, ROI-focused training in emerging technologies and tools.</p>
+          <h2 className="text-2xl font-semibold text-blue-700 mb-2">
+            For Corporate Teams & Professionals
+          </h2>
+          <p className="mb-4">
+            Upskill your workforce with customized, ROI-focused training in
+            emerging technologies and tools.
+          </p>
           <ul className="list-disc ml-6 space-y-1">
             <li>Generative AI for Business</li>
             <li>Power BI for Decision Makers</li>
             <li>Automating Workflows with Python & AI</li>
             <li>Data-Driven Leadership</li>
           </ul>
-          <p className="mt-3 italic text-sm text-gray-600">Customizable for tech, non-tech, HR, marketing, and leadership teams</p>
-          <p className="text-sm text-gray-600">Includes: Live demos, Q&A, use-case labs, and takeaway toolkits</p>
+          <p className="mt-3 italic text-sm text-gray-600">
+            Customizable for tech, non-tech, HR, marketing, and leadership teams
+          </p>
+          <p className="text-sm text-gray-600">
+            Includes: Live demos, Q&A, use-case labs, and takeaway toolkits
+          </p>
         </div>
 
         <div className="bg-blue-50 p-6 rounded-xl shadow-sm">
-          <h3 className="text-xl font-semibold text-blue-800 mb-3 flex items-center gap-2"><FaCertificate /> What We Provide</h3>
+          <h3 className="text-xl font-semibold text-blue-800 mb-3 flex items-center gap-2">
+            <FaCertificate /> What We Provide
+          </h3>
           <ul className="list-disc ml-6 space-y-2 text-gray-800">
             <li>Expert Instructors with Industry + Academic Experience</li>
             <li>Tailored Content for Audience Level (Beginner to Advanced)</li>
@@ -67,14 +109,16 @@ export default function Workshops() {
       </section>
 
       <div className="text-center mt-12">
-        <button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-medium transition-all shadow-md">
-          Request a Workshop
-        </button>
+        <Link to="/contact">
+  
+          <button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-medium transition-all shadow-md">
+            Request a Workshop
+          </button>
+        </Link>
       </div>
     </div>
   );
 }
-
 
 // import React from "react";
 

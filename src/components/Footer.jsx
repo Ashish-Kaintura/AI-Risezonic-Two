@@ -60,6 +60,7 @@ const Footer = () => {
               <div className="flex items-start gap-2">
                 <FaPhone className="mt-1 text-white/80" />
                 <span>+91 8178857250</span>
+                <span> 8178857250</span>
               </div>
               <div className="flex items-start gap-2">
                 <FaMapMarkerAlt className="mt-1 text-white/80" />

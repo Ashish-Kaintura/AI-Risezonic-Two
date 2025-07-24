@@ -2,7 +2,7 @@
   {
     "id": "generative-ai",
     "title": "Advanced Generative AI & LLM Development",
-    "image": "https://i.postimg.cc/8z35wQNS/science-artificial-intelligence-technology-innovation-futuristic-ai-machine-learning.jpg",
+    "image": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/learnwithrisezonic/Advanced%20Generative%20AI.webp",
     "overview": "Master Transformers, build LLM apps, train mini models, and deploy with FastAPI, LangChain, and Docker.",
     "details": [
       "Master Transformer Architectures (BERT, GPT, LLaMA)",
@@ -33,7 +33,7 @@
   {
     "id": "data-analytics",
     "title": "Data Analytics & Visualization Mastery with Power BI & Python",
-    "image": "/images/programs/fdp.jpg",
+    "image": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/learnwithrisezonic/data-analytics.webp",
     "overview": "Build advanced dashboards, clean and model data, and integrate predictive analytics with Power BI and Python.",
     "details": [
       "Power BI Advanced Dashboards & Data Modelling",
@@ -58,7 +58,7 @@
   {
     "id": "iot-robotics",
     "title": "IoT Systems & Robotics Engineering Program",
-    "image": "/images/programs/fdp.jpg",
+    "image": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/learnwithrisezonic/Robotics-Engineer.webp",
     "overview": "Learn IoT hardware, cloud platforms, and robotics with a starter kit and real-world automation projects.",
     "details": [
       "Hardware Programming (Arduino, Raspberry Pi)",
@@ -84,7 +84,7 @@
   {
     "id": "fdp-ai-ml",
     "title": "Faculty Development Program (FDP): AI-ML for Next-Gen Classrooms",
-    "image": "/images/programs/fdp.jpg",
+    "image": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/learnwithrisezonic/AI-ML%20for%20Next-Gen%20Classrooms.webp",
     "overview": "Train educators to integrate AI in teaching, research, and institutional growth strategies.",
     "details": [
       "Design AI-integrated lesson plans",
