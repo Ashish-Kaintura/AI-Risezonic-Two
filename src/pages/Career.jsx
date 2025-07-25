@@ -4,8 +4,13 @@ export default function Career() {
   return (
     <div>
       <Helmet>
-        <title>My Career</title>
-        <link rel="canonical" href="https://example.com/career" />
+        <meta name="keywords" content="" />
+        <title>Careers at AI Risezonic | AI Jobs & Career Growth.</title>
+        <meta
+          name="description"
+          content=" Come grow with AI Risezonic and be a part of the roaring decade in AI learning products and intelligent AI-enabled education platforms."
+        />
+        <link rel="canonical" href="https://ai.risezonic.com/career" />
       </Helmet>
     </div>
   );

@@ -91,6 +91,12 @@ export default function ContactUs() {
       }}
     >
       <Helmet>
+        <meta name="keywords" content="" />
+        <title>Contact us |AI Risezonic Learning Solutions.</title>
+        <meta
+          name="description"
+          content="Get in touch with AI Risezonic, your trusted partner in AI learning Solutions and development .We're here to help you grow with AI."
+        />
         <link rel="canonical" href="https://ai.risezonic.com/contact" />
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-8">

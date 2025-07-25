@@ -75,6 +75,15 @@ const About = () => {
       }}
     >
       <Helmet>
+        <meta
+          name="keywords"
+          content="development of artificial intelligence"
+        />
+        <title>Development of Artificial Intelligence |AI.Risezonic</title>
+        <meta
+          name="description"
+          content="AI Risezonic offers a powerful platform for automation and learning resources—build your skills in Development of Artificial Intelligence with expert-led training."
+        />
         <link rel="canonical" href="https://ai.risezonic.com/about" />
       </Helmet>
       /* Hero Banner */

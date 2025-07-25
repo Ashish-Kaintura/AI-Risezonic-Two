@@ -21,6 +21,12 @@ const AiSolutions = () => {
       }}
     >
       <Helmet>
+        <meta name="keywords" content="AI software development" />
+        <title>AI software development and Learning.</title>
+        <meta
+          name="description"
+          content="Explore powerful AI software development  at AI Risezonic. boost productivity, automate tasks, and enhance learning with our expert-developed AI tools and products."
+        />
         <link
           rel="canonical"
           href="https://ai.risezonic.com/ai-solution-and-product"
