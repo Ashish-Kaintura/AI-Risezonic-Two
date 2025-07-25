@@ -12,6 +12,11 @@ const validatePhone = (phone) =>
 const PopupForm = () => {
   const { isOpen, openForm, closeForm } = useFormPopup();
 
+  useEffect(() => {
+    if (!isOpen) {
+      setFields({ name: "", email: "", phone: "", message: "" });
+    }
+  }, [isOpen]);
   const [fields, setFields] = useState({
     name: "",
     email: "",

@@ -28,6 +28,9 @@ import Faculty from "./pages/Faculty";
 import FacultyDetail from "./pages/FacultyDetail";
 import Workshops from "./pages/Workshops";
 import MultiStepForm from "./components/MultiStepForm";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Legalpolicy from "./pages/Legalpolicy";
+import Career from "./pages/Career";
 const App = () => {
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
@@ -62,6 +65,9 @@ const App = () => {
           <Route path="/faculty-development" element={<Faculty />} />
           <Route path="/faculty-development/:id" element={<FacultyDetail />} />
           <Route path="/workshop" element={<Workshops />} />
+          <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
+          <Route path="/career" element={<Career/>} />
+          <Route path="/legal-policy" element={<Legalpolicy />} />
         </Routes>
       </main>
       <WhatsAppSticky />

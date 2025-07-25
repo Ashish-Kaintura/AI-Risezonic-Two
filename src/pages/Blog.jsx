@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import BlogCard from "../components/BlogCard";
 import blogs from "../data/blogs.json";
+import { Helmet } from "react-helmet";
 
 const POSTS_PER_PAGE = 6;
 
@@ -12,7 +13,9 @@ const Blog = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [filteredBlogs, setFilteredBlogs] = useState([]);
 
-  const allTags = Array.from(new Set(blogs.flatMap((blog) => blog.tags))).sort();
+  const allTags = Array.from(
+    new Set(blogs.flatMap((blog) => blog.tags))
+  ).sort();
   const allAuthors = Array.from(new Set(blogs.map((blog) => blog.author)));
 
   useEffect(() => {
@@ -62,9 +65,7 @@ const Blog = () => {
 
   const handleTagToggle = (tag) => {
     setSelectedTags((prev) =>
-      prev.includes(tag)
-        ? prev.filter((t) => t !== tag)
-        : [...prev, tag]
+      prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]
     );
     setCurrentPage(1);
   };
@@ -96,14 +97,18 @@ const Blog = () => {
 
   return (
     <div className="pt-24 pb-16 bg-[#f9fafc] min-h-screen mt-[86px]">
+      <Helmet>
+        <link rel="canonical" href="https://ai.risezonic.com/blogs" />
+      </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-sans text-gray-800">
         {/* Header */}
         <div className="text-center mb-10">
           <h1 className="text-5xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text py-4 text-transparent mb-3">
-           AI Risezonic Blog
+            AI Risezonic Blog
           </h1>
           <p className="text-lg text-gray-600">
-            Stay updated with AI innovations, student success, and latest builds.
+            Stay updated with AI innovations, student success, and latest
+            builds.
           </p>
         </div>
 
@@ -176,19 +181,21 @@ const Blog = () => {
             {/* Pagination */}
             {totalPages > 1 && (
               <div className="flex justify-center mt-10 space-x-2">
-                {Array.from({ length: totalPages }, (_, i) => i + 1).map((num) => (
-                  <button
-                    key={num}
-                    onClick={() => setCurrentPage(num)}
-                    className={`px-3 py-1 rounded-md border ${
-                      num === currentPage
-                        ? "bg-indigo-600 text-white"
-                        : "bg-white hover:bg-gray-100"
-                    }`}
-                  >
-                    {num}
-                  </button>
-                ))}
+                {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+                  (num) => (
+                    <button
+                      key={num}
+                      onClick={() => setCurrentPage(num)}
+                      className={`px-3 py-1 rounded-md border ${
+                        num === currentPage
+                          ? "bg-indigo-600 text-white"
+                          : "bg-white hover:bg-gray-100"
+                      }`}
+                    >
+                      {num}
+                    </button>
+                  )
+                )}
               </div>
             )}
           </>

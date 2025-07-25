@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import blogs from "../data/blogs.json";
 import { FaRobot } from "react-icons/fa";
 import BlogCard from "../components/BlogCard";
+import { Helmet } from "react-helmet";
 
 const BlogDetail = () => {
   const { id } = useParams();
@@ -34,6 +35,13 @@ const BlogDetail = () => {
 
   return (
     <div className="max-w-5xl mx-auto p-6 text-gray-800 pt-48">
+      <Helmet>
+        <title>{blog.title}</title>
+        <link
+          rel="canonical"
+          href={`https://ai.risezonic.com/blog/${blog.id}`}
+        />
+      </Helmet>
       {/* Back Link */}
       <Link
         to="/blogs"

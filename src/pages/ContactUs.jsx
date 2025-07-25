@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 const bgimag =
   "https://www.okoone.com/wp-content/uploads/2024/11/Marketing-Growth-207.jpg";
@@ -89,6 +90,9 @@ export default function ContactUs() {
         minHeight: "100vh",
       }}
     >
+      <Helmet>
+        <link rel="canonical" href="https://ai.risezonic.com/contact" />
+      </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         <div className="mb-10">
           <h1 className="text-5xl font-extrabold text-gray-900 mb-4 font-heading tracking-tight">
@@ -115,21 +119,21 @@ export default function ContactUs() {
                 Our Offices
               </h2>
               <div className="mb-6">
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="inline-block w-2 h-2 bg-primary rounded-full"></span>
-                  <span className="font-semibold text-gray-800">Delhi</span>
-                </div>
                 <p className="text-gray-800 text-sm">
+                  <span className="font-semibold text-gray-800 text-lg">
+                    Delhi
+                  </span>
+                  <br />
                   RZ11/D, Upper Ground Floor Opposite Palam Metro Station Gate
                   No 3, Palam Dwarka Road, Delhi, 110045
                 </p>
               </div>
               <div className="mb-6">
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="inline-block w-2 h-2 bg-secondary rounded-full"></span>
-                  <span className="font-semibold text-gray-800">Gurugram</span>
-                </div>
                 <p className="text-gray-800 text-sm">
+                  <span className="font-semibold text-gray-800 text-lg">
+                    Gurugram
+                  </span>
+                  <br />
                   Awfis, 07th Floor, Gate No 3 & 4, Ambience Island DLF Phase 3,
                   NH-8, Gurugram, Haryana 122002
                 </p>
@@ -202,13 +206,13 @@ export default function ContactUs() {
                       : "border-gray-300 focus:ring-primary/30"
                   }`}
                 />
-                 <div className="flex justify-between text-xs mt-1">
-              {errors.name ? (
-                <p className="text-red-500">{errors.name}</p>
-              ) : (
-                <span className="text-gray-400">{form.name.length}/35</span>
-              )}
-            </div>
+                <div className="flex justify-between text-xs mt-1">
+                  {errors.name ? (
+                    <p className="text-red-500">{errors.name}</p>
+                  ) : (
+                    <span className="text-gray-400">{form.name.length}/35</span>
+                  )}
+                </div>
                 {/* {errors.name && touched.name && (
                   <span className="text-xs text-red-500">{errors.name}</span>
                 )} */}

@@ -37,6 +37,9 @@ const Footer = () => {
                 { name: "AI Solutions", path: "/ai-solution-and-product" },
                 { name: "Contact", path: "/contact" },
                 { name: "Blog", path: "/blogs" },
+                { name: "Career", path: "/career" },
+                { name: "Privacy Policy", path: "/privacyPolicy" },
+                { name: "Legal Policy", path: "/legal-policy" },
               ].map((link) => (
                 <li key={link.name}>
                   <Link
@@ -60,8 +63,8 @@ const Footer = () => {
               </div>
               <div className="flex items-start gap-2">
                 <FaPhone className="mt-1 text-white/80" />
-                <span>+91 8178857250</span>
-                <span> 97111 10975</span>
+                <span>+91 8178857250 ,</span>
+                <span>97111 10975</span>
               </div>
               <div className="flex items-start gap-2">
                 <FaMapMarkerAlt className="mt-1 text-white/80" />

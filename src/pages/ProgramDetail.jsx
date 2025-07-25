@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import programs from "../data/programs.json";
 import { FaArrowLeft, FaAward, FaBriefcase } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 const ProgramDetail = () => {
   const { id } = useParams();
@@ -19,6 +20,14 @@ const ProgramDetail = () => {
   });
   return (
     <section className="py-24 px-4 bg-gradient-to-b from-blue-50 to-white text-gray-800 min-h-screen mt-32">
+      <Helmet>
+        <title>{program.title}</title>
+        <link
+          rel="canonical"
+          href={`https://ai.risezonic.com/programs/${program.id}`}
+        />
+      </Helmet>
+
       <div className="max-w-7xl mx-auto">
         {/* Back Button */}
         <Link

@@ -139,14 +139,14 @@ const Navbar = () => {
                 Blog
               </Link>
             </li> */}
-            {/* <li>
+            <li>
               <button
                 onClick={openModal}
                 className="flex items-center gap-1 uppercase text-gray-700 hover:text-blue-600"
               >
                 Rise with AI
               </button>
-            </li> */}
+            </li>
             <li className="relative group">
               <button
                 className="flex items-center gap-1 uppercase text-gray-700 hover:text-blue-600 focus:outline-none transition duration-200"
