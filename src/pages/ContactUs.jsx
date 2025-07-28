@@ -85,7 +85,7 @@ export default function ContactUs() {
 
   return (
     <div
-      className="bg-gradient-to-br from-white via-blue-50 to-white py-10"
+      className="bg-gradient-to-br from-white via-blue-50 to-white py-10 mt-32"
       style={{
         minHeight: "100vh",
       }}
@@ -212,13 +212,13 @@ export default function ContactUs() {
                       : "border-gray-300 focus:ring-primary/30"
                   }`}
                 />
-                <div className="flex justify-between text-xs mt-1">
+                {/* <div className="flex justify-between text-xs mt-1">
                   {errors.name ? (
                     <p className="text-red-500">{errors.name}</p>
                   ) : (
                     <span className="text-gray-400">{form.name.length}/35</span>
                   )}
-                </div>
+                </div> */}
                 {/* {errors.name && touched.name && (
                   <span className="text-xs text-red-500">{errors.name}</span>
                 )} */}

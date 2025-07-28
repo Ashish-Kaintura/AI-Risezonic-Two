@@ -144,7 +144,15 @@ const WorkshopPage = () => {
         <link rel="canonical" href="https://ai.risezonic.com/workshop" />
       </Helmet>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white py-16 px-6 text-center">
+      <section
+        className="bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white py-16 px-6 text-center h-[550px] flex items-center"
+        style={{
+          backgroundImage: `url('https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/workshop/Banner.webp`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Host a Workshop
@@ -153,7 +161,7 @@ const WorkshopPage = () => {
             For Colleges, Schools & Corporate Teams – Bring future-ready
             learning to your campus or workplace
           </p>
-          <div className="mt-8">
+          {/* <div className="mt-8">
             <iframe
               className="rounded-xl mx-auto w-full md:w-[560px] h-[315px] shadow-lg"
               src="https://www.youtube.com/embed/LlWBSGgWZ2g"
@@ -162,7 +170,7 @@ const WorkshopPage = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -194,7 +202,7 @@ const WorkshopPage = () => {
             </p>
           </div>
           <img
-            src="https://i.postimg.cc/3w3kT9fK/university-workshop.jpg"
+            src="https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/workshop/workshop%20for%20For%20Colleges.webp"
             alt="College Workshop"
             className="rounded-xl shadow-lg w-full hover:scale-105 transition-transform"
           />
@@ -203,7 +211,7 @@ const WorkshopPage = () => {
         {/* Schools */}
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <img
-            src="https://i.postimg.cc/P5cwPg8d/school-tech-workshop.jpg"
+            src="https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/workshop/workshope%20For%20Schools.webp"
             alt="School Workshop"
             className="rounded-xl shadow-lg w-full hover:scale-105 transition-transform"
           />
@@ -255,7 +263,7 @@ const WorkshopPage = () => {
             </p>
           </div>
           <img
-            src="https://i.postimg.cc/8zYqgmxV/corporate-training.jpg"
+            src="https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/workshop/chatbot-software-application-modish-online-business.webp"
             alt="Corporate Workshop"
             className="rounded-xl shadow-lg w-full hover:scale-105 transition-transform"
           />

@@ -19,9 +19,9 @@ const WelcomeSection = () => {
           className="bg-black/85 backdrop-blur-md rounded-3xl shadow-xl p-8 md:p-12 border border-white/10 flex flex-col justify-center"
           data-aos="fade-right"
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
             Welcome to <span className="text-pink-500">AI.Risezonic</span>
-          </h2>
+          </h1>
           <p className="text-xl md:text-2xl font-medium text-white mb-6">
             India’s First End-to-End Generative AI Ecosystem for{" "}
             <span className="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 bg-clip-text text-transparent font-semibold">

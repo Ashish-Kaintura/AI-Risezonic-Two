@@ -51,13 +51,13 @@ const App = () => {
           {/* <Route path="/resources" element={<Resources />} /> */}
           <Route path="/blogs" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
-          <Route path="/painpoint" element={<PainpointForm />} />
+          {/* <Route path="/painpoint" element={<PainpointForm />} /> */}
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/book-demo" element={<ComingSoonPage />} />
-          <Route
+          {/* <Route
             path="/learn-with-ai-risezonic"
             element={<LearnWIthAiRisezonic />}
-          />
+          /> */}
           <Route path="/programs" element={<Programs />} />
           <Route path="/programs/:id" element={<ProgramDetail />} />
           <Route path="/bootcamps" element={<Bootcamp />} />

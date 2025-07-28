@@ -113,13 +113,13 @@ const PopupForm = () => {
               value={fields.name}
               onChange={handleChange}
             />
-            <div className="flex justify-between text-xs mt-1">
+            {/* <div className="flex justify-between text-xs mt-1">
               {errors.name ? (
                 <p className="text-red-500">{errors.name}</p>
               ) : (
                 <span className="text-gray-400">{fields.name.length}/35</span>
               )}
-            </div>
+            </div> */}
           </div>
 
           <div>
