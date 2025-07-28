@@ -18,7 +18,16 @@ const teamMembers = [
     name: "Bhavesh Chaturvedi",
     image: "https://i.postimg.cc/sX1Qd1D6/Bhavesh.jpg",
     role: "Director of AI Strategy & Consulting",
-    bio: `Bhavesh Chaturvedi is a Tourism Graduate and MBA professional with over 20 years of leadership across global business, diplomatic relations, and government collaborations. A strategic consultant and AI leader, he helms AI Risezonic and Risezonic Travel, offering innovative AI software solutions and high-level travel services. His work bridges corporate and government sectors with a focus on impactful, tech-driven outcomes.`,
+    bio: `Bhavesh Chaturvedi
+Founder & Chairman – Risezonic Group
+
+Welcome to Risezonic Group, where innovation meets purpose.
+
+With a background in Tourism and an MBA in Strategy, I bring over two decades of leadership experience across global business landscapes, government collaborations, and diplomatic engagements. My journey has been shaped by meaningful interactions with stakeholders from both public and private sectors—each one reinforcing the need for solutions that are not only intelligent but also impactful and trustworthy.
+
+Risezonic was founded with a clear vision:
+To create a platform where technology, strategy, and service come together to solve real-world challenges.`,
+    bio2: `Bhavesh Chaturvedi is a Tourism Graduate and MBA professional with over 20 years of leadership across global business, diplomatic relations, and government collaborations. A strategic consultant and AI leader, he helms AI Risezonic and Risezonic Travel, offering innovative AI software solutions and high-level travel services. His work bridges corporate and government sectors with a focus on impactful, tech-driven outcomes.`,
   },
   {
     name: "Praveen Kumar",
@@ -112,7 +121,7 @@ const TeamSection = () => {
           ))}
           {/* Modal */}
           {selectedMember && (
-            <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 p-4">
               <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md p-6 relative">
                 <button
                   className="absolute top-3 right-4 text-gray-600 text-xl hover:text-red-500"
