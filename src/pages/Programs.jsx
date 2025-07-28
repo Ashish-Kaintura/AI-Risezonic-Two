@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import programsData from "../data/programs.json";
 import { FaArrowRight } from "react-icons/fa";
-
+import { Helmet } from "react-helmet";
 const allTags = [...new Set(programsData.flatMap((p) => p.tags))];
 
 const Programs = () => {
@@ -41,15 +41,26 @@ const Programs = () => {
 
   return (
     <section className="min-h-screen bg-white pt-20 pb-32 px-4 text-gray-800 mt-32">
+      <Helmet>
+        <meta name="keywords" content="" />
+        <title>
+          AI Risezonic Legal Policy | Terms of Use & Data Protection .
+        </title>
+        <meta
+          name="description"
+          content="Get to know AI Risezonic's legal policy on platform terms, privacy and the user’s personal data protection.  Stay informed about your rights."
+        />
+        <link rel="canonical" href="https://ai.risezonic.com/programs" />
+      </Helmet>
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-20">
           <h1 className="text-5xl font-extrabold text-transparent py-4 bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
-         AI  Programs
+            AI Programs
           </h1>
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto text-lg">
-            Learn. Build. Lead the AI Revolution — Explore All Programs,
-            and courses, designed for the future.
+            Learn. Build. Lead the AI Revolution — Explore All Programs, and
+            courses, designed for the future.
           </p>
         </div>
 

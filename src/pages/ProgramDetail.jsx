@@ -21,7 +21,12 @@ const ProgramDetail = () => {
   return (
     <section className="py-24 px-4 bg-gradient-to-b from-blue-50 to-white text-gray-800 min-h-screen mt-32">
       <Helmet>
-        <title>{program.title}</title>
+        <meta name="keywords" content={program.metaKeyword} />
+        <title>{program.metatitle}</title>
+        <meta
+          name="description"
+          content={program.metadec}
+        />
         <link
           rel="canonical"
           href={`https://ai.risezonic.com/programs/${program.id}`}

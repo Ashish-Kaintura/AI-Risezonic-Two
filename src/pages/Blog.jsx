@@ -98,6 +98,12 @@ const Blog = () => {
   return (
     <div className="pt-24 pb-16 bg-[#f9fafc] min-h-screen mt-[86px]">
       <Helmet>
+        <meta name="keywords" content="AI Consulting Services" />
+        <title>AI Consulting Services | Blogs.</title>
+        <meta
+          name="description"
+          content="AI Risezonic is an AI consulting service specializing in the development of artificial intelligence, automation, and machine learning solutions by experts"
+        />
         <link rel="canonical" href="https://ai.risezonic.com/blogs" />
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-sans text-gray-800">

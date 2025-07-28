@@ -36,10 +36,12 @@ const BlogDetail = () => {
   return (
     <div className="max-w-5xl mx-auto p-6 text-gray-800 pt-48">
       <Helmet>
-        <title>{blog.title}</title>
+        <meta name="keywords" content={blog.metaKeyword} />
+        <title>{blog.metatitle}</title>
+        <meta name="description" content={blog.metadec} />
         <link
           rel="canonical"
-          href={`https://ai.risezonic.com/blog/${blog.id}`}
+          href={`https://ai.risezonic.com/blog/${blog.slug}`}
         />
       </Helmet>
       {/* Back Link */}

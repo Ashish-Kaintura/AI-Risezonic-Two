@@ -6,11 +6,14 @@ export default function Legalpolicy() {
     <div>
       <Helmet>
         <meta name="keywords" content="" />
-        <title>Careers at AI Risezonic | AI Jobs & Career Growth.</title>
+        <title>
+          AI Risezonic Legal Policy | Terms of Use & Data Protection .
+        </title>
         <meta
           name="description"
-          content=" Come grow with AI Risezonic and be a part of the roaring decade in AI learning products and intelligent AI-enabled education platforms."
+          content="Get to know AI Risezonic's legal policy on platform terms, privacy and the user’s personal data protection.  Stay informed about your rights."
         />
+        <link rel="canonical" href="https://ai.risezonic.com/legal-policy" />
       </Helmet>
     </div>
   );

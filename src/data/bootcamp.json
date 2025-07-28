@@ -2,6 +2,9 @@
     {
         "id": "generative-ai-bootcamp",
         "title": "Generative AI Bootcamp",
+        "metaKeyword": "Generative AI Bootcamp ",
+        "metatitle": "Generative AI Bootcamp | AI. Risezonic.",
+        "metadec": "AI  Risezonic Generative AI Bootcamp is an in-depth program that provides hands-on training, deep learning frameworks, and the creation of generative models.",
         "image": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/learnwithrisezonic/Generative%20AI%20Bootcamp.webp",
         "overview": "Dive deep into the world of Generative AI through real-world projects and hands-on training. This bootcamp covers everything from prompt engineering to building AI applications using the latest LLM technologies.",
         "details": [
@@ -35,6 +38,9 @@
         "id": "iot-robotics-camp",
         "title": "IoT & Robotics Camp",
         "image": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/learnwithrisezonic/IoT%20%26%20Robotics%20Camp.webp",
+        "metaKeyword": " Robotics summer camp ",
+        "metatitle": " Robotics summer camp | AI. Risezonic.",
+        "metadec": "AI Risezonic Provide an educational robotics summer camp with IoT projects, coding, robot-building, and innovation for young learners. Enroll now!",
         "overview": "Explore the future of connected devices and intelligent machines. This camp introduces students to IoT systems, robotics programming, sensor integration, and automation using real hardware.",
         "details": [
             "Learn how IoT devices communicate using sensors and microcontrollers",
@@ -66,6 +72,9 @@
     {
         "id": "power-bi-workshop",
         "title": "Power BI Mastery Workshop",
+        "metaKeyword": "Power BI Course",
+        "metatitle": "Power Bi Course | AI. Risezonic.",
+        "metadec": "Transform your data skills with our Power BI Workshop. Gain hands-on experience and learn to create impactful visualizations. Enroll now!",
         "image": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/learnwithrisezonic/project-manager-communicate-collaborate-with-team-using-project-management-software-display-monitor-tracking-progress-project-task-making-schedule-plan-meeting-table-prudent.webp",
         "overview": "Gain practical skills in business analytics and data visualization with Microsoft Power BI. This workshop is designed for professionals looking to transform raw data into powerful insights and reports.",
         "details": [

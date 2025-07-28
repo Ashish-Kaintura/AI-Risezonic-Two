@@ -2,6 +2,9 @@
   {
     "id": "generative-ai",
     "title": "Advanced Generative AI & LLM Development",
+    "metatitle": "AI Programming Courses | AI. Risezonic.",
+    "metaKeyword": "Generative AI Course",
+    "metadec": "Explore the AI Risezonic and learn the AI Programming Courses that is led by industry experts in generative AI, machine learning, and data science courses.",
     "image": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/learnwithrisezonic/Advanced%20Generative%20AI.webp",
     "overview": "Master Transformers, build LLM apps, train mini models, and deploy with FastAPI, LangChain, and Docker.",
     "details": [
@@ -33,6 +36,9 @@
   {
     "id": "data-analytics",
     "title": "Data Analytics & Visualization Mastery with Power BI & Python",
+    "metatitle": "AI Data Analytics course | AI. Risezonic.",
+    "metaKeyword": " AI data analytics course",
+    "metadec": "Explore AI Rizeonic's top-rated AI data analytics course and gain in-demand skills in data processing, machine learning, and AI-driven decision-making.",
     "image": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/learnwithrisezonic/data-analytics.webp",
     "overview": "Build advanced dashboards, clean and model data, and integrate predictive analytics with Power BI and Python.",
     "details": [
@@ -58,6 +64,9 @@
   {
     "id": "iot-robotics",
     "title": "IoT Systems & Robotics Engineering Program",
+    "metatitle": "Robotics and Programming with IoT | AI. Risezonic.",
+    "metaKeyword": "Robotics and Programming",
+    "metadec": "Get into the world of smart machines with AI Risezonic Robotics and Programming. Get hands-on with robotics, AI, and the Internet of Things via project-based instruction!",
     "image": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/learnwithrisezonic/Robotics-Engineer.webp",
     "overview": "Learn IoT hardware, cloud platforms, and robotics with a starter kit and real-world automation projects.",
     "details": [
@@ -84,6 +93,9 @@
   {
     "id": "fdp-ai-ml",
     "title": "Faculty Development Program (FDP): AI-ML for Next-Gen Classrooms",
+    "metatitle": "AI Machine Learning  Course | AI. Risezonic.",
+    "metaKeyword": "AI machine learning course ",
+    "metadec": "Explore AI machine learning course  with AI Risezonic experts. Grow your ML skills and learn how to build systems that solve problems, recognize patterns, and make algorithms.",
     "image": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/learnwithrisezonic/AI-ML%20for%20Next-Gen%20Classrooms.webp",
     "overview": "Train educators to integrate AI in teaching, research, and institutional growth strategies.",
     "details": [

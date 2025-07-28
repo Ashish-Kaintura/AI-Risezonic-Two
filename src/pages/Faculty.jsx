@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import FacultyData from "../data/faculty.json";
 import { FaArrowRight } from "react-icons/fa";
-
+import { Helmet } from "react-helmet";
 const allTags = [...new Set(FacultyData.flatMap((p) => p.tags))];
 
 const Faculty = () => {
@@ -41,6 +41,18 @@ const Faculty = () => {
 
   return (
     <section className="min-h-screen bg-white pt-20 pb-32 px-4 text-gray-800 mt-32">
+      <Helmet>
+        <meta name="keywords" content="faculty development programme" />
+        <title>Faculty Development Programme | AI. Risezonic.</title>
+        <meta
+          name="description"
+          content="Providing teaching and research skills in the Faculty Development Programmes (FDP) at AI Risezonic."
+        />
+        <link
+          rel="canonical"
+          href="https://ai.risezonic.com/faculty-development"
+        />
+      </Helmet>
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-20">

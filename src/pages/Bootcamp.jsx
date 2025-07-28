@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import BootcampData from "../data/bootcamp.json";
 import { FaArrowRight } from "react-icons/fa";
-
+import { Helmet } from "react-helmet";
 const allTags = [...new Set(BootcampData.flatMap((p) => p.tags))];
 
 const Bootcamp = () => {
@@ -41,6 +41,15 @@ const Bootcamp = () => {
 
   return (
     <section className="min-h-screen bg-white pt-20 pb-32 px-4 text-gray-800 mt-32">
+      <Helmet>
+        <meta name="keywords" content="AI bootcamp" />
+        <title>AI Bootcamps | AI. Risezonic.</title>
+        <meta
+          name="description"
+          content=" AI Bootcamps Courses at AI Risezonic Bootcamps—Learn GenAI, machine learning, and more in India’s top hands-on AI training program."
+        />
+        <link rel="canonical" href="https://ai.risezonic.com/bootcamps" />
+      </Helmet>
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-20">
