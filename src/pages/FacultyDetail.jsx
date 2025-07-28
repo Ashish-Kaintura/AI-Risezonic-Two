@@ -18,7 +18,7 @@ const ProgramDetail = () => {
     window.scrollTo(0, 0);
   });
   return (
-    <section className="py-24 px-4 bg-gradient-to-b from-blue-50 to-white text-gray-800 min-h-screen mt-32">
+    <section className="py-24 px-4 bg-gradient-to-b from-blue-50 to-white text-gray-800 min-h-screen sm:mt-32">
       <Helmet>
         <meta name="keywords" content={program.metaKeyword} />
         <title>{program.metatitle}</title>
@@ -114,7 +114,7 @@ const ProgramDetail = () => {
           {/* Video Content */}
           <div
             className="overflow-hidden rounded-2xl shadow-xl border border-gray-300 bg-black max-h-[400px]"
-            data-aos="fade-left"
+            data-aos="zoom-in"
           >
             <img src={program.image} alt="cover img" />
             {/* <video

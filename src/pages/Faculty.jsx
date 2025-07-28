@@ -40,7 +40,7 @@ const Faculty = () => {
   });
 
   return (
-    <section className="min-h-screen bg-white pt-20 pb-32 px-4 text-gray-800 mt-32">
+    <section className="min-h-screen bg-white pt-20 pb-32 px-4 text-gray-800 sm:mt-32">
       <Helmet>
         <meta name="keywords" content="faculty development programme" />
         <title>Faculty Development Programme | AI. Risezonic.</title>

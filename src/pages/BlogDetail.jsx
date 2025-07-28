@@ -81,7 +81,7 @@ const BlogDetail = () => {
             src={blog.coverImage}
             alt={blog.title}
             loading="lazy"
-            className="rounded-xl w-full h-64 object-cover mb-6"
+            className="rounded-xl w-full h-96 object-cover mb-6"
           />
         )}
 

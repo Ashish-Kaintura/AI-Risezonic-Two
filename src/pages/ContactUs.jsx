@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 
 const bgimag =
-  "https://www.okoone.com/wp-content/uploads/2024/11/Marketing-Growth-207.jpg";
+  "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/contactbg.webp";
 
 const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
@@ -85,7 +85,7 @@ export default function ContactUs() {
 
   return (
     <div
-      className="bg-gradient-to-br from-white via-blue-50 to-white py-10 mt-32"
+      className="bg-gradient-to-br from-white via-blue-50 to-white py-10 sm:mt-32 mt-16"
       style={{
         minHeight: "100vh",
       }}
@@ -119,7 +119,7 @@ export default function ContactUs() {
             minHeight: 500,
           }}
         >
-          <div className="flex-1 bg-gradient-to-br from-white/60 to-white/60 p-10 flex flex-col justify-center">
+          <div className="flex-1 bg-gradient-to-br from-white/40 to-white/50 p-10 flex flex-col justify-center">
             <div className="mb-8">
               <h2 className="text-3xl font-bold text-gray-800 mb-2">
                 Our Offices
@@ -178,7 +178,7 @@ export default function ContactUs() {
               </p>
             </div>
           </div>
-          <div className="flex-1 bg-white/90 p-10 flex items-center justify-center">
+          <div className="flex-1 bg-white/80 p-10 flex items-center justify-center">
             <form
               onSubmit={handleSubmit}
               className="w-full max-w-md space-y-6"

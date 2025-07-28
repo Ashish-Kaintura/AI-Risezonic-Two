@@ -24,7 +24,7 @@ import { useFormModal } from "../context/FormModalContext";
 const Navbar = () => {
   const { openForm } = useFormPopup();
   const [isOpen, setIsOpen] = useState(false);
-   const { openModal } = useFormModal();
+  const { openModal } = useFormModal();
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [subDropdownOpen, setSubDropdownOpen] = useState({
     programs: false,
@@ -38,6 +38,13 @@ const Navbar = () => {
     location.pathname === path
       ? "text-blue-600 font-semibold"
       : "text-gray-700 hover:text-blue-600";
+
+  const [isMainOpen, setMainOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState("");
+
+  const toggleDropdown = (section) => {
+    setActiveDropdown((prev) => (prev === section ? "" : section));
+  };
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 ">
@@ -134,11 +141,6 @@ const Navbar = () => {
               </Link>
             </li>
 
-            {/* <li>
-              <Link to="/blogs" className={linkClass("/blogs")}>
-                Blog
-              </Link>
-            </li> */}
             <li>
               <button
                 onClick={openModal}
@@ -154,7 +156,6 @@ const Navbar = () => {
                 onBlur={() => setDropdownOpen(false)}
               >
                 Learn with AI Risezonic
-                <FiChevronDown className="text-sm mt-1" />
               </button>
 
               {/* Main Dropdown */}
@@ -341,69 +342,122 @@ const Navbar = () => {
             </li>
 
             <li>
-              <button
-                className="flex items-center w-full text-left text-gray-700 hover:text-blue-600 focus:outline-none "
-                onClick={() => setDropdownOpen((open) => !open)}
-              >
-                <Link to="/ai-solution-and-product">
-                  {/* <FiChevronDown className="mr-1" /> */}
-                  AI Solutions & Products
-                </Link>
-              </button>
-              {/* {dropdownOpen && (
-              <div className="pl-4 mt-1 space-y-1">
-                <Link
-                  to="/ai-apps"
-                  className="flex items-center px-2 py-1 text-gray-700 hover:bg-gray-100"
-                >
-                  <FaLightbulb className="mr-2 text-blue-500" />
-                  AI Apps We Build
-                </Link>
-                <Link
-                  to="/ai-education"
-                  className="flex items-center px-2 py-1 text-gray-700 hover:bg-gray-100"
-                >
-                  <FaChalkboardTeacher className="mr-2 text-blue-500" />
-                  AI in Education
-                </Link>
-                <Link
-                  to="/robotics-ai"
-                  className="flex items-center px-2 py-1 text-gray-700 hover:bg-gray-100"
-                >
-                  <FaRobot className="mr-2 text-blue-500" />
-                  Robotics + AI
-                </Link>
-                <Link
-                  to="/consulting"
-                  className="flex items-center px-2 py-1 text-gray-700 hover:bg-gray-100"
-                >
-                  <FaLightbulb className="mr-2 text-blue-500" />
-                  Consulting for Institutions
-                </Link>
-                <Link
-                  to="/ai-apps"
-                  className="flex items-center px-2 py-1 text-gray-700 hover:bg-gray-100"
-                >
-                  <FaLightbulb className="mr-2 text-blue-500" />
-                  AI Apps We Build
-                </Link>
-              </div>
-            )} */}
-            </li>
-
-            <li>
               <Link
-                to="/pinpoint"
-                className={`block ${linkClass("/pinpoint")}`}
+                to="/ai-solution-and-product"
+                className={`block ${linkClass("/ai-solution-and-product")}`}
               >
-                PinPointForm
+                AI Solution & Products
               </Link>
             </li>
+
             <li>
               <Link to="/contact" className={`block ${linkClass("/contact")}`}>
                 Contact Us
               </Link>
             </li>
+            <div
+              className="flex justify-between items-center text-gray-700 cursor-pointer"
+              onClick={() => setMainOpen(!isMainOpen)}
+            >
+              Learn with AI RiseZonic
+              {isMainOpen ? <FiChevronRight /> : <FiChevronDown />}
+            </div>
+
+            {isMainOpen && (
+              <div className="pl-4 space-y-2 pt-2 font-sans">
+                {/* Programs & Courses */}
+                <div>
+                  <div
+                    className="flex justify-between items-center text-sm font-medium text-gray-700 cursor-pointer"
+                    onClick={() => toggleDropdown("programs")}
+                  >
+                    Programs & Courses
+                    {activeDropdown === "programs" ? (
+                      <FiChevronRight />
+                    ) : (
+                      <FiChevronDown />
+                    )}
+                  </div>
+                  {activeDropdown === "programs" && (
+                    <ul className="pl-4 pt-1 text-sm text-gray-600 space-y-1">
+                      <Link to="/programs/generative-ai">
+                        <li>Advanced Generative AI & LLM Development</li>{" "}
+                      </Link>
+                      <Link to="/programs/data-analytics">
+                        <li>Data Analytics & Visualization Mastery</li>{" "}
+                      </Link>
+                      <Link to="/programs/fdp-ai-ml">
+                        <li>Faculty Development Program (FDP)</li>{" "}
+                      </Link>
+                      <Link to="/programs/iot-robotics">
+                        <li>IoT Systems & Robotics Engineering Program</li>
+                      </Link>
+                    </ul>
+                  )}
+                </div>
+
+                {/* Bootcamps */}
+                <div>
+                  <div
+                    className="flex justify-between items-center text-sm font-medium text-gray-700 cursor-pointer"
+                    onClick={() => toggleDropdown("bootcamps")}
+                  >
+                    Bootcamps
+                    {activeDropdown === "bootcamps" ? (
+                      <FiChevronRight />
+                    ) : (
+                      <FiChevronDown />
+                    )}
+                  </div>
+                  {activeDropdown === "bootcamps" && (
+                    <ul className="pl-4 pt-1 text-sm text-gray-600 space-y-1">
+                      <Link to="/bootcamps/generative-ai-bootcamp">
+                        {" "}
+                        <li>Generative AI Bootcamp</li>{" "}
+                      </Link>
+                      <Link to="/bootcamps/iot-robotics-camp">
+                        {" "}
+                        <li>IoT & Robotics Camp</li>{" "}
+                      </Link>
+                      <Link to="/bootcamps/power-bi-workshop">
+                        {" "}
+                        <li>Power BI Mastery Workshop</li>{" "}
+                      </Link>
+                    </ul>
+                  )}
+                </div>
+
+                {/* Faculty Development */}
+                <div>
+                  <div
+                    className="flex justify-between items-center text-sm font-medium text-gray-700 cursor-pointer"
+                    onClick={() => toggleDropdown("faculty")}
+                  >
+                    Faculty Development
+                    {activeDropdown === "faculty" ? (
+                      <FiChevronRight />
+                    ) : (
+                      <FiChevronDown />
+                    )}
+                  </div>
+                  {activeDropdown === "faculty" && (
+                    <ul className="pl-4 pt-1 text-sm text-gray-600 space-y-1">
+                      <Link to="/faculty-development/ai-ml-educators">
+                        <li>AI-ML for Educators</li>
+                      </Link>
+                      <Link to="/faculty-development/genai-classrooms">
+                        <li>GenAI in Classrooms</li>
+                      </Link>
+                    </ul>
+                  )}
+                </div>
+
+                {/* Host a Workshop (no dropdown) */}
+                <div className="text-sm font-medium text-gray-700 cursor-pointer">
+                  <Link to="/workshop"> Host a Workshop </Link>
+                </div>
+              </div>
+            )}
             <li>
               <Link to="/blogs" className={`block ${linkClass("/blogs")}`}>
                 Blog

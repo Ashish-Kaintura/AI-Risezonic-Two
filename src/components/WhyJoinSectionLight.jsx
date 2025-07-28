@@ -109,7 +109,7 @@ const WhyJoinSectionLight = () => {
           </div>
 
           <div
-            data-aos="fade-left"
+            data-aos="zoom-in"
             data-aos-delay="200"
             className="bg-gray-50 rounded-2xl p-6 border border-pink-200 shadow-md"
           >
