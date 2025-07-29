@@ -17,7 +17,7 @@ const teamMembers = [
   {
     name: "Bhavesh Chaturvedi",
     image: "https://i.postimg.cc/sX1Qd1D6/Bhavesh.jpg",
-    role: "Director of AI Strategy & Consulting",
+    role: "Founder Of Risezonic Group",
     bio: `Bhavesh Chaturvedi
 Founder & Chairman – Risezonic Group
 
