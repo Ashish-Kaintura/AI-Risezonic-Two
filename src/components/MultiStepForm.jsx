@@ -71,8 +71,7 @@ const MultiStepForm = () => {
     }
   };
 
-  const validateEmail = (email) =>
-    /^\S+@\S+\.\S+$/.test(email.toLowerCase());
+  const validateEmail = (email) => /^\S+@\S+\.\S+$/.test(email.toLowerCase());
 
   const validateStep = () => {
     const newErrors = {};
@@ -107,7 +106,13 @@ const MultiStepForm = () => {
 
   return (
     <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center">
-      <div className="bg-white max-w-2xl w-full rounded-lg shadow-xl p-6 relative overflow-y-auto max-h-[90vh]">
+      <div
+        className="bg-white max-w-2xl w-full rounded-lg shadow-xl p-6 relative overflow-y-auto max-h-[90vh] bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage:
+            'url("https://i.postimg.cc/G240JhgX/Pop-up-background.jpg")',
+        }}
+      >
         <button
           className="absolute top-2 right-4 text-gray-500 hover:text-red-600 text-xl"
           onClick={closeModal}
@@ -115,7 +120,9 @@ const MultiStepForm = () => {
           ×
         </button>
         <form onSubmit={handleSubmit} className="space-y-6">
-          <h2 className="text-xl font-bold text-center uppercase text-blue-600">Rise with AI</h2>
+          <h2 className="text-xl font-bold text-center uppercase text-blue-600">
+            Rise with AI
+          </h2>
 
           {step === 1 && (
             <>
@@ -139,9 +146,7 @@ const MultiStepForm = () => {
                   onChange={handleChange}
                   className="w-full border px-3 py-2 rounded"
                 />
-                {errors.email && (
-                  <p className="text-red-500">{errors.email}</p>
-                )}
+                {errors.email && <p className="text-red-500">{errors.email}</p>}
               </div>
 
               <div>
@@ -268,7 +273,8 @@ const MultiStepForm = () => {
                   onChange={handleChange}
                 />
                 <span className="ml-2">
-                  I’m open to a free AI Readiness Call with AI Risezonic Experts.
+                  I’m open to a free AI Readiness Call with AI Risezonic
+                  Experts.
                 </span>
               </label>
             </>

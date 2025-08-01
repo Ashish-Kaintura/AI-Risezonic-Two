@@ -102,7 +102,7 @@ const WhyJoinSection = () => {
           data-aos-delay="500"
           className="mt-4 text-center max-w-7xl mx-auto text-gray-400 text-md"
         >
-          <h1 className="py-8 text-2xl uppercase font-semibold">Our Promise</h1>
+          <h3 className="py-8 text-2xl uppercase font-semibold">Our Promise</h3>
           <p className="italic">
             “Our programs aren’t just certifications—they are gateways to
             opportunity.”
