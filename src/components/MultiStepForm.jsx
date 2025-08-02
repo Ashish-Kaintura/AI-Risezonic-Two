@@ -110,7 +110,7 @@ const MultiStepForm = () => {
         className="bg-white max-w-2xl w-full rounded-lg shadow-xl p-6 relative overflow-y-auto max-h-[90vh] bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            'url("https://i.postimg.cc/G240JhgX/Pop-up-background.jpg")',
+            'url("https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/Pop%20up%20background.jpg")',
         }}
       >
         <button
