@@ -9,12 +9,6 @@ import { useEffect } from "react";
 
 const teamMembers = [
   {
-    name: "Rajshree Singh",
-    image: "https://i.postimg.cc/m2cDShmV/Rajshree.jpg",
-    role: "Director of Business Development & Marketing",
-    bio: `Rajshree Singh is an MBA in Sales & Marketing with a powerhouse of credentials in Six Sigma, ISO, CPRE, and PMP. She has earned certifications from Google, Meta, HubSpot, and Microsoft in digital marketing, analytics, content, SEO, and advertising. Having served leadership roles at HCL, American Express, and Google, she now leads AI Risezonic, bringing deep marketing expertise to AI-powered growth strategies and business scaling with real ROI.`,
-  },
-  {
     name: "Bhavesh Chaturvedi",
     image: "https://i.postimg.cc/sX1Qd1D6/Bhavesh.jpg",
     role: "Founder Of Risezonic Group",
@@ -41,6 +35,12 @@ To create a platform where technology, strategy, and service come together to so
     image: "https://i.postimg.cc/1tJtvFx7/preti.jpg",
     role: "Director of Creative & UX",
     bio: `Preeti Kaushik is a Senior IT Professional with a B.Tech in Computer Science and 10+ years of experience in the tech industry. She specializes in Java, AI, UI/UX Design, and Technical Documentation. As an AI trainer and mentor at Reviving India, she’s guided students and professionals in real-world projects across education, e-commerce, and healthcare sectors—bridging academia and industry with excellence in design and training.`,
+  },
+  {
+    name: "Rajshree Singh",
+    image: "https://i.postimg.cc/m2cDShmV/Rajshree.jpg",
+    role: "Director of Business Development & Marketing",
+    bio: `Rajshree Singh is an MBA in Sales & Marketing with a powerhouse of credentials in Six Sigma, ISO, CPRE, and PMP. She has earned certifications from Google, Meta, HubSpot, and Microsoft in digital marketing, analytics, content, SEO, and advertising. Having served leadership roles at HCL, American Express, and Google, she now leads AI Risezonic, bringing deep marketing expertise to AI-powered growth strategies and business scaling with real ROI.`,
   },
 ];
 

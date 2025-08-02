@@ -131,7 +131,11 @@
 
 import React from "react";
 import { Helmet } from "react-helmet";
+import { useEffect } from "react";
 const WorkshopPage = () => {
+   useEffect(() => {
+      window.scrollTo(0, 0);
+    },[]);
   return (
     <div className="bg-white text-gray-800 mt-32">
       <Helmet>

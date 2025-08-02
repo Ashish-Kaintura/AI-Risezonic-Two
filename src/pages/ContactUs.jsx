@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
-
+import emailjs from "@emailjs/browser";
 const bgimag =
   "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/contactbg.webp";
 
@@ -16,7 +16,6 @@ export default function ContactUs() {
   const [errors, setErrors] = useState({});
   const [touched, setTouched] = useState({});
   const [submitted, setSubmitted] = useState(false);
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -61,25 +60,49 @@ export default function ContactUs() {
     validate({ [name]: form[name] });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
     setTouched({
       name: true,
       email: true,
       subject: true,
       message: true,
     });
+
     if (validate()) {
-      setSubmitted(true);
-      setTimeout(() => setSubmitted(false), 2500);
-      setForm({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
-      setErrors({});
-      setTouched({});
+      try {
+        setSubmitted(true); // loading state
+
+        const templateParams = {
+          from_name: form.name,
+          from_email: form.email,
+          subject: form.subject,
+          message: form.message,
+        };
+
+        await emailjs.send(
+          "service_q87u34q", // ✅ replace with your service ID
+          "template_336c3r1", // ✅ replace with your template ID
+          templateParams,
+          "7Tknce7nZofhJiNVv" // ✅ replace with your public key
+        );
+
+        // Reset form
+        setForm({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+        setErrors({});
+        setTouched({});
+        setTimeout(() => setSubmitted(false), 2500);
+      } catch (error) {
+        console.error("EmailJS Error:", error);
+        alert("Something went wrong. Please try again later.");
+        setSubmitted(false);
+      }
     }
   };
 
