@@ -1,6 +1,12 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+    # 🔁 Redirect specific broken pages to home
+  Redirect 301 /our-porjects /
+  Redirect 301 /resources /
+  Redirect 301 /painpoint /
+  
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d

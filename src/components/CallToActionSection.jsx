@@ -27,7 +27,9 @@ const CallToActionSection = () => {
           <span className="font-semibold text-blue-700">student</span>,{" "}
           <span className="font-semibold text-blue-700">professor</span>,{" "}
           <span className="font-semibold text-blue-700">HOD</span>, or{" "}
-          <span className="font-semibold text-blue-700">founder</span> — AI.Risezonic gives you the tools, training, and mindset to go from learner to innovator.
+          <span className="font-semibold text-blue-700">founder</span> —
+          AI.Risezonic gives you the tools, training, and mindset to go from
+          learner to innovator.
         </p>
 
         {/* Divider */}
@@ -35,7 +37,8 @@ const CallToActionSection = () => {
 
         {/* Bold Impact */}
         <p className="text-xl text-blue-800 font-medium mb-4">
-          No jargon. No delays. Just <span className="font-bold text-pink-500">impact</span>.
+          No jargon. No delays. Just{" "}
+          <span className="font-bold text-pink-500">impact</span>.
         </p>
 
         {/* CTA Buttons */}

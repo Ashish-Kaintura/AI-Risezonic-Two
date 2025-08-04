@@ -62,18 +62,19 @@ const WhyJoinSectionLight = () => {
             className="mt-4 text-lg text-gray-700 max-w-3xl mx-auto"
           >
             At <span className="text-pink-600 font-bold">AI Risezonic</span>, we
-            don’t believe in boring lectures. We believe in hands-on learning,
-            real-world projects, and future-ready skills.
+            don't believe in lecture-style boredom. We want you to learn in a
+            hands-on way, work with real-world projects, and be future-ready
+            with your skills.
           </p>
           <p
             data-aos="fade-up"
             data-aos-delay="200"
             className="mt-2 text-gray-500"
           >
-            “Whether you're a student, a working professional, or an educator,
-            our AI-driven workshops and bootcamps are designed to help you{" "}
+            “Whatever you are, a student, a professional, or an educator, our
+            AI-based workshops and bootcamps are structured to help you{" "}
             <span className="text-gray-800 font-bold">
-              Learn. Build. Transform.
+              learn, build, and transform.
             </span>
             ”
           </p>
@@ -91,19 +92,19 @@ const WhyJoinSectionLight = () => {
             <ul className="space-y-3 text-gray-700 text-sm list-inside">
               <li className="flex items-start gap-2">
                 <FaBolt className="text-yellow-500 mt-1" /> Build AI chatbots
-                that solve real problems.
+                that tackle real-world issues.
               </li>
               <li className="flex items-start gap-2">
                 <FaBolt className="text-yellow-500 mt-1" /> Design IoT devices
                 that automate homes and industries.
               </li>
               <li className="flex items-start gap-2">
-                <FaBolt className="text-yellow-500 mt-1" /> Craft data
-                dashboards that drive business decisions.
+                <FaBolt className="text-yellow-500 mt-1" /> Create data
+                dashboards that shape business decisions.
               </li>
               <li className="flex items-start gap-2">
                 <FaBolt className="text-yellow-500 mt-1" /> Empower educators
-                with tools that transform classrooms.
+                with tools to revolutionize classrooms.
               </li>
             </ul>
           </div>
@@ -126,12 +127,12 @@ const WhyJoinSectionLight = () => {
                 Bootcamps & Hackathons.
               </li>
               <li className="flex items-start gap-2">
-                <FaRocket className="text-blue-500 mt-1" /> Cutting-Edge
+                <FaRocket className="text-blue-500 mt-1" /> Groundbreaking
                 Workshops on Campus.
               </li>
               <li className="flex items-start gap-2">
-                <FaRobot className="text-pink-500 mt-1" /> Tools and skills to
-                lead the AI revolution.
+                <FaRobot className="text-pink-500 mt-1" /> Everything you need
+                to leverage the AI Revolution.
               </li>
             </ul>
           </div>

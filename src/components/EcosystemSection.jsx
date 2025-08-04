@@ -18,7 +18,7 @@ const EcosystemSection = () => {
       icon: <FaGraduationCap />,
       highlight: "Learn LLMs, LangChain, Prompt Design & More",
       content:
-        "Master the fundamentals and advanced tools of Generative AI — applied to your own domain, not just coding. Learn how AI thinks.",
+        "Master the fundamentals and advanced tools of generative AI—applied to your own domain, not just coding. Learn how AI thinks.",
       image:
         "https://i.postimg.cc/tCnTNLY6/Image-3.png",
       bg: "from-blue-500 to-pink-500",

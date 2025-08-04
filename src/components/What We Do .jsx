@@ -51,8 +51,8 @@ const WhatWeDo = () => {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          We offer practical, hands-on Generative AI training across a wide
-          range of disciplines — because AI isn’t just for coders, it’s for
+          We offer practical, hands-on generative AI training across a wide
+          range of disciplines—because AI isn’t just for coders; it’s for
           creators, engineers, analysts, and everyone in between.
         </p>
 
@@ -63,6 +63,7 @@ const WhatWeDo = () => {
             <h3 className="text-2xl font-semibold text-white flex items-center gap-2">
               <FaGraduationCap className="text-pink-300" />
               Generative AI Training for All Domains
+
             </h3>
             <ul className="space-y-4 text-white text-[1rem] leading-relaxed ">
               <li className="flex items-start gap-3 bg-white/10 p-2 px-4 rounded-lg border-white/10 backdrop-blur-lg border-2 border-white">

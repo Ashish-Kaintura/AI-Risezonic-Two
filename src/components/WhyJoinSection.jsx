@@ -1,5 +1,11 @@
 import React from "react";
-import { FaRobot, FaBolt, FaChalkboardTeacher, FaUsers, FaRocket } from "react-icons/fa";
+import {
+  FaRobot,
+  FaBolt,
+  FaChalkboardTeacher,
+  FaUsers,
+  FaRocket,
+} from "react-icons/fa";
 
 const WhyJoinSection = () => {
   return (
@@ -104,14 +110,15 @@ const WhyJoinSection = () => {
         >
           <h3 className="py-8 text-2xl uppercase font-semibold">Our Promise</h3>
           <p className="italic">
-            “Our programs aren’t just certifications—they are gateways to
-            opportunity.”
+            “We don’t offer only programs; we provide opportunities.”
           </p>
           <p className="mt-4">
-            Whether you dream of working in top tech companies, launching your
-            own startup, or inspiring the next generation as a certified AI
-            educator, <span className="text-white font-bold">AI Risezonic</span> gives you the knowledge, confidence,
-            and connections to make it happen.
+            If you want to work for some of the best companies in the tech
+            space, start your own business, or become a certified AI educator to
+            help inspire the next generation,{" "}
+            <span className="text-white font-bold">AI Risezonic</span> can
+            provide you with the knowledge, confidence, and connections to
+            achieve your ambitions.
           </p>
         </div>
       </div>

@@ -33,17 +33,18 @@ const WelcomeSection = () => {
             too.
           </p>
           <p className="text-lg text-white mb-4">
-            <span className="font-semibold text-blue-400">AI.Risezonic</span> is
-            a next-generation AI innovation company that empowers students,
-            educators, institutions, and startups to understand, build, and
-            deploy Generative AI tools — across all domains.
+            <span className="font-semibold text-blue-400">AI.Risezonic</span>is
+            the best AI learning course & innovation platform company that
+            empowers students, educators, institutions, and startups to
+            understand, build, and deploy generative AI tools—across all
+            domains.
           </p>
           <p className="text-lg text-white">
             <span className="font-bold text-pink-400">
               We don't just teach you AI.
             </span>{" "}
-            We show you how to use it in Computer Science, Mechanical,
-            Electrical, and Electronics.
+            We show you how to use it in computer science, mechanical,
+            electrical, and electronics.
           </p>
         </div>
 

@@ -14,25 +14,25 @@ import {
 // import video5 from "../video/Generate & Automate Marketing Copy & Campaign Assets with AI.mp4";
 // import video6 from "../video/Build No-Code Websites, Apps, Tools & Games Using AI.mp4";
 const aiSolutions = [
-  {
+{
     icon: <FaRobot className="text-white text-2xl" />,
-    title: "Creation of Custom Chat Gpt with Ai",
+    title: "Creation of Custom ChatGPT with Ai",
     points: [
-      "Craft tailored prompt flows that mirror your business logic or support",
-      "Achieve instant, consistent responses 24/7.",
-      "Reduce manual effort in handling FAQs.",
+      "Create custom prompt flows that follow your business's logic or knowledge.",
+      "Get instant and consistent replies anytime.",
+      "Reduce manual effort to manage FAQs.",
     ],
     video:
-      "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/custom%20chat%20gpt%20animation.mp4", // ✅ use the imported variable here
+      "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/custom%20chat%20gpt%20animation.mp4",
     img: "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/coverimg/transform1.png",
   },
   {
     icon: <FaCogs className="text-white text-2xl" />,
     title: "Automate Business Workflows to Boost Productivity",
     points: [
-      "Connect apps & trigger tasks with no-code AI workflows.",
-      "Streamline outreach, CRM updates, and follow-ups.",
-      "Scale processes with less effort and more consistency.",
+      "Link apps & trigger tasks without coding AI workflows.",
+      "Simplified outreach, reporting, or CRM updates and follow-ups.",
+      "Scale workflows with even less work and consistent results.",
     ],
     video:
       "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/Automate%20Business%20Workflows%20to%20Boost%20Productivity%20(1).mp4",
@@ -42,9 +42,9 @@ const aiSolutions = [
     icon: <FaComments className="text-white text-2xl" />,
     title: "Automate Conversations with AI Chatbots & Voice Assistants",
     points: [
-      "Automate customer support and internal queries.",
-      "Ensure faster, 24/7 responses with consistent messaging.",
-      "Reduce manual effort & improve resolution time.",
+      "Automate customer support and internal requests.",
+      "Provide quicker, consistent, 24/7 responses.",
+      "Less manual effort and faster time to resolution.",
     ],
     video:
       "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/Comp%201%20(1).mp4",
@@ -54,9 +54,9 @@ const aiSolutions = [
     icon: <FaFileAlt className="text-white text-2xl" />,
     title: "Accelerate Business Research & Document Creation",
     points: [
-      "Cut research and summarization time.",
-      "Use AI to spot trends & extract insights.",
-      "Improve content accuracy and decisions.",
+      "Decrease research and summarization time.",
+      "Leverage AI to identify trends and pull insights.",
+      "Create better content accuracy and decisions.",
     ],
     video:
       "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/Accelerate%20Business%20Research%20%26%20Document%20Creation.mp4",
@@ -66,9 +66,9 @@ const aiSolutions = [
     icon: <FaMagic className="text-white text-2xl" />,
     title: "Generate & Automate Marketing Copy & Campaign Assets with AI",
     points: [
-      "Develop high-converting copy, emails, and ads in minutes.",
-      "Test and iterate messaging faster across platforms.",
-      "Drive better engagement while lowering creative bottlenecks.",
+      "Create high-converting copy and ads and emails in minutes.",
+      "Test and iterate messaging quicker on more platforms.",
+      "Increase engagement and decrease creative bottlenecks.",
     ],
     video:
       "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/Generate%20%26%20Automate%20Marketing%20Copy%20%26%20Campaign%20Assets%20with%20AI.mp4",
@@ -78,9 +78,9 @@ const aiSolutions = [
     icon: <FaTools className="text-white text-2xl" />,
     title: "Build No-Code Websites, Tools & Games Using AI",
     points: [
-      "Launch digital products without developers.",
-      "Prototype fast, iterate faster.",
-      "Empower teams to ship independently.",
+      "Launch digital products without the developers.",
+      "Prototype quickly, iterate quickly.",
+      "Put the power in the hands of teams to ship.",
     ],
     video:
       "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/video/Build%20No-Code%20Websites%2C%20Apps%2C%20Tools%20%26%20Games%20Using%20AI.mp4",
