@@ -14,18 +14,18 @@ const tabContent = [
     icon: <FaGraduationCap className="text-pink-300 text-2xl" />,
     title: "Generative AI Training",
     content: [
-      "Hands-on workshops, bootcamps, and mentoring for students and professionals",
+      "Training, workshops, and coaching for students and practitioners",
       "LangChain, Prompt Engineering, OpenAI, Claude, Groq, Gemini, Llama3",
-      "Faculty development programs and AI curriculum advisory",
+      "Faculty development programs and advising on AI curricula",
     ],
   },
   {
     icon: <FaComments className="text-pink-300 text-2xl" />,
     title: "Conversational AI Solutions",
     content: [
-      "Custom chatbots with memory, role, multilingual support",
-      "RAG-based document assistants (PDF, DOCX, CSV)",
-      "Embedding pipelines and fast retrieval systems",
+      "Custom chatbots (with memory, role, and multilingual capabilities)",
+      "RAG-based document assistant (PDF, DOCX, CSV)",
+      "Embedding pipelines and quick retrieval systems",
     ],
   },
   {
@@ -33,7 +33,7 @@ const tabContent = [
     title: "AI + Robotics + IoT",
     content: [
       "Voice-controlled robots powered by LLMs",
-      "AI-enabled devices with NLP and vision models",
+      "AI devices with NLP and vision models",
       "Robotics competitions and classroom projects",
     ],
   },
@@ -41,9 +41,9 @@ const tabContent = [
     icon: <FaFlask className="text-pink-300 text-2xl" />,
     title: "AI Innovation Lab",
     content: [
-      "Hackathons, incubation, and project mentorship",
-      "Student-led AI products with real-world deployment",
-      "R&D in local language AI and education use cases",
+      "Hackathons, incubation, and mentorship of projects",
+      "Student-led AI products—in-world deployment",
+      "R&D into local language AI and educational use cases",
     ],
   },
 ];

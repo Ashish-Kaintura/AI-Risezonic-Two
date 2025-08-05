@@ -79,7 +79,7 @@ const AiSolutions = () => {
             data-aos-delay="400"
           >
             Explore the AI tools we build to revolutionize LEARNING, AUTOMATION,
-            AND INOVATION.
+            AND INNOVATION.
           </p>
         </div>
       </section>
@@ -124,9 +124,9 @@ const AiSolutions = () => {
                 title: "AI Document Assistant",
                 desc: "Upload PDFs and get precise answers using RAG-powered search.",
                 highlights: [
-                  "Support in Hindi + English",
-                  "Instant answers with citations",
-                  "Ideal for Admins, HR, Students",
+                  "Support in Hindi and English",
+                  "Instant answers, with citations.",
+                  "Perfect for Admins, HR, and Students.",
                 ],
                 color: "from-pink-100 to-pink-50",
               },
@@ -136,13 +136,13 @@ const AiSolutions = () => {
                 highlights: [
                   "WhatsApp + Website Integration",
                   "Trained on your FAQs & Policies",
-                  "90% query resolution rate",
+                  "90% query resolution.",
                 ],
                 color: "from-yellow-100 to-yellow-50",
               },
               {
                 title: "AI Tutor with Personalized Learning",
-                desc: "A tutor that understands your syllabus, learning pace, and language.",
+                desc: "A tutor designed to your syllabus, learning speed, and language.",
                 highlights: [
                   "Explain complex topics in simple terms",
                   "Generate quizzes, viva questions",

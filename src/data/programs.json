@@ -6,20 +6,20 @@
     "metaKeyword": "Generative AI Course",
     "metadec": "Explore the AI Risezonic and learn the AI Programming Courses that is led by industry experts in generative AI, machine learning, and data science courses.",
     "image": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/learnwithrisezonic/Advanced%20Generative%20AI.webp",
-    "overview": "Master Transformers, build LLM apps, train mini models, and deploy with FastAPI, LangChain, and Docker.",
+    "overview": "Top AI programming courses teach you to master Transformers, build LLM apps, train mini models, and deploy using FastAPI, LangChain, and Docker.",
     "details": [
-      "Master Transformer Architectures (BERT, GPT, LLaMA)",
-      "Build Custom LLM Applications (Chatbots, RAG systems, Agents)",
-      "Deploy AI models into production using Docker, FastAPI & LangChain",
-      "Train a mini LLM on domain-specific data",
-      "Integrate with cloud platforms (AWS, Azure, GCP)"
+      "Architectures for Master Transformers (BERT, GPT, LLaMA)",
+      "Create bespoke LLM applications, such as chatbots, RAG systems, and agents.",
+      "Use Docker, FastAPI, and LangChain to implement AI models in production.",
+      "Use domain-specific data to train a mini LLM.",
+      "Connect to cloud platforms (AWS, Azure, GCP))"
     ],
     "modules": [
-      "Foundations of GenAI & NLP",
-      "Prompt Engineering Mastery",
-      "Customizing Open-Source LLMs (LLaMA2, Falcon)",
-      "Building AI Tools (Text Summarizers, Q&A Systems)",
-      "Productionizing AI Applications"
+      "NLP and GenAI Foundations",
+      "Quick Engineering  Proficiency",
+      "Personalising Open-Source LLMs (Falcon, LLaMA2)",
+      "Developing AI Tools (Q&A Systems, Text Summarizers)",
+      "Putting AI Applications into Production"
     ],
     "tags": [
       "AI",

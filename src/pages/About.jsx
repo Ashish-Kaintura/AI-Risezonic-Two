@@ -132,18 +132,20 @@ const About = () => {
               Who We Are
             </h2>
             <p className="text-gray-700 leading-relaxed text-lg">
-              AI.Risezonic is a next-generation AI innovation company focused on
-              democratizing access to Generative AI. We blend cutting-edge
-              technology, real-world training, and practical product development
-              to help students, institutions, and startups become AI-ready for
-              the digital-first world.
+              AI.Risezonic is a development of artificial intelligence
+              innovation company delivering new-generation technology for
+              democratizing access to generative AI. We leverage next-gen
+              technology, real-world training, and product development to assist
+              students, institutions, and startups to ready themselves for the
+              digital-first world with AI.
             </p>
             <br />
             <p className="text-gray-700 leading-relaxed text-lg">
-              At the intersection of education, AI development, and robotics, we
-              deliver programs and products that are not only technologically
-              advanced but also deeply human in purpose — designed to empower
-              and uplift communities, classrooms, and creators.
+              AI.Rizesonic exists with the convergence of education, AI
+              development, and robotics to develop programs and products that
+              are both cutting-edge technology and fundamentally
+              human-purpose—to empower and inspire communities, classrooms, and
+              creators.
             </p>
           </div>
           {/* <img
@@ -171,10 +173,10 @@ const About = () => {
             <FaEye className="text-blue-500" /> Our Vision
           </h2>
           <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto mb-8 leading-relaxed">
-            To be India’s most impactful ecosystem for AI learning,
-            experimentation, and innovation — empowering{" "}
-            <strong className="text-blue-600">10,00,000+</strong> learners each
-            year to build the AI-powered future.
+            To be India’s leading ecosystem for AI learning, experimentation,
+            and innovation—enabling over
+            <strong className="text-blue-600">10,00,000+</strong> llearners per
+            year to create the AI-enabled future.
           </p>
 
           <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6 mt-10 max-w-5xl mx-auto">
@@ -233,17 +235,17 @@ const About = () => {
             <FaBullseye className="text-pink-600" /> Our Mission
           </h2>
           <p className="text-lg md:text-xl text-white mb-8 leading-relaxed">
-            To bridge the gap between aspiration and AI capability through
+            To connect the gap between aspiration and AI capability through
             personalized education, scalable tools, and a community of practice
-            around Generative AI.
+            around generative AI.
           </p>
           <p className="text-lg md:text-xl text-white mb-10 leading-relaxed">
             We exist to make Generative AI{" "}
             <strong className="text-pink-600">
-              understandable, accessible, and usable
+              easy to understand access, and use
             </strong>
-            for every curious learner, educator, and innovator — regardless of
-            background, language, or prior exposure.
+            for every curious learner, educator, and innovator—no matter what
+            background, language, or prior exposure to AI.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-6 text-left ">
@@ -425,7 +427,7 @@ const About = () => {
             <FaUsers className="text-blue-600" /> Our Community
           </h2>
           <p className="text-gray-700 text-lg leading-relaxed max-w-3xl mx-auto mb-10">
-            AI.Risezonic is more than a company — it's a growing movement of
+            AI.Risezonic is more than a company—it's a growing movement of
             learners, educators, builders, and visionaries.
           </p>
 
@@ -535,11 +537,11 @@ const About = () => {
           </h2>
           <p className="text-gray-700 text-lg mb-4">
             You’re not late to AI. You’re right on time. All you need is the
-            right push, platform, and people — and that’s what AI.Risezonic is
+            right push, platform, and people—and that’s what AI.Risezonic is
             here to be.
           </p>
           <p className="text-gray-700 font-semibold text-lg">
-            Your launchpad into the world of Generative AI.
+            Your launchpad into the world of generative AI.
           </p>
         </div>
       </section>
