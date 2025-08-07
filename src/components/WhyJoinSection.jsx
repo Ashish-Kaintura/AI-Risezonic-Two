@@ -116,7 +116,7 @@ const WhyJoinSection = () => {
             If you want to work for some of the best companies in the tech
             space, start your own business, or become a certified AI educator to
             help inspire the next generation,{" "}
-            <span className="text-white font-bold">AI Risezonic</span> can
+            <span className="text-white font-bold">AI.Risezonic</span> can
             provide you with the knowledge, confidence, and connections to
             achieve your ambitions.
           </p>

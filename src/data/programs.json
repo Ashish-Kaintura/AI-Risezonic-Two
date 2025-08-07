@@ -35,20 +35,20 @@
   },
   {
     "id": "data-analytics",
-    "title": "Data Analytics & Visualization Mastery with Power BI & Python",
+    "title": "AI Data Analytics & Visualization Mastery with Power BI & Python",
     "metatitle": "AI Data Analytics course | AI. Risezonic.",
     "metaKeyword": " AI data analytics course",
     "metadec": "Explore AI Rizeonic's top-rated AI data analytics course and gain in-demand skills in data processing, machine learning, and AI-driven decision-making.",
     "image": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/learnwithrisezonic/data-analytics.webp",
-    "overview": "Build advanced dashboards, clean and model data, and integrate predictive analytics with Power BI and Python.",
+    "overview": "The top AI data analytics course shows you how to build dashboards, clean and organize data, and use predictive analytics with Power BI and Python.",
     "details": [
-      "Power BI Advanced Dashboards & Data Modelling",
-      "Python for Data Analysis (Pandas, NumPy, Matplotlib)",
-      "Data Cleaning, Wrangling & Feature Engineering",
-      "Predictive Analytics & ML Integration",
-      "Storytelling with Data for business impact"
+      "Power BI advanced dashboards and data modeling",
+      "Python for data analysis (Pandas, NumPy, Matplotlib)",
+      "Data cleaning, wrangling and feature engineering.",
+      "Predictive analytics and ML integration.",
+      "Storytelling with data for business impact."
     ],
-    "capstone": "Build a live sales dashboard for a retail company with predictive sales forecasting.",
+    "capstone": "Build a live sales dashboard for a retail company. Include predictive sales forecasting.",
     "tags": [
       "Data",
       "BI",
@@ -63,27 +63,27 @@
   },
   {
     "id": "iot-robotics",
-    "title": "IoT Systems & Robotics Engineering Program",
+    "title": "IoT Systems & Robotics and Programming Engineering ",
     "metatitle": "Robotics and Programming with IoT | AI. Risezonic.",
     "metaKeyword": "Robotics and Programming",
     "metadec": "Get into the world of smart machines with AI Risezonic Robotics and Programming. Get hands-on with robotics, AI, and the Internet of Things via project-based instruction!",
     "image": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/learnwithrisezonic/Robotics-Engineer.webp",
-    "overview": "Learn IoT hardware, cloud platforms, and robotics with a starter kit and real-world automation projects.",
+    "overview": "Learn IoT hardware, cloud platforms, and robotics with a starter kit and real-world automation projects. Implement college-wide AI strategies that align with NAAC and NIRF.",
     "details": [
       "Hardware Programming (Arduino, Raspberry Pi)",
-      "IoT Networking & Protocols (MQTT, CoAP)",
+      "IoT Networking & Protocols (MQTT And CoAP)",
       "Cloud IoT Platforms (AWS IoT, Azure IoT Hub)",
       "Robotics: Autonomous Movement, Voice Commands, Sensors",
-      "Mobile Apps for IoT Device Control (React Native basics)"
+      "Mobile Apps to Control IoT Devices  (basics in React Native)"
     ],
-    "capstone": "Design and deploy a Smart Home Automation System or Voice-Activated Robot.",
+    "capstone": "Design and deploy a smart home automation system or voice-activated robot.",
     "tags": [
       "IoT",
       "Robotics",
       "Engineering"
     ],
     "certificate": "IoT & Robotics Systems Engineer",
-    "extras": "🎁 Includes full IoT Starter Kit worth ₹5,000",
+    "extras": " Includes full IoT Starter Kit worth ₹5,000",
     "career": [
       "IoT Engineer",
       "Robotics Developer",
@@ -92,17 +92,17 @@
   },
   {
     "id": "fdp-ai-ml",
-    "title": "Faculty Development Program (FDP): AI-ML for Next-Gen Classrooms",
+    "title": "Faculty Development Program (FDP): AI-Machine Learning course for Next-Gen Classrooms",
     "metatitle": "AI Machine Learning  Course | AI. Risezonic.",
     "metaKeyword": "AI machine learning course ",
     "metadec": "Explore AI machine learning course  with AI Risezonic experts. Grow your ML skills and learn how to build systems that solve problems, recognize patterns, and make algorithms.",
     "image": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/learnwithrisezonic/AI-ML%20for%20Next-Gen%20Classrooms.webp",
-    "overview": "Train educators to integrate AI in teaching, research, and institutional growth strategies.",
+    "overview": "The AI Machine Learning course from AI Risezonic helps educators use AI in teaching, research, and school growth plans.",
     "details": [
-      "Design AI-integrated lesson plans",
-      "Learn Smart Assessment Tools powered by AI",
-      "Research Paper Writing with AI Assistants",
-      "Implement College-wide AI Strategies (NAAC/NIRF aligned)"
+      "Design lesson plans that include AI",
+      "Learn about Smart Assessment Tools that use AI",
+      "Write research papers with the help of AI assistants",
+      "Implement AI strategies across the college that align with NAAC and NIRF"
     ],
     "tags": [
       "FDP",

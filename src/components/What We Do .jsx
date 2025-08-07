@@ -104,11 +104,11 @@ const WhatWeDo = () => {
             data-aos-delay="400"
           >
             <h4 className="text-xl font-semibold text-pink-300 mb-4">
-              Our Approach?
+              Our Approach
             </h4>
             <p className="text-lg text-gray-100 mb-3">
               <strong className="text-white text-xl">
-                Code + Context + Creativity.
+                Code + Context + Creativity
               </strong>
             </p>
             <p className="text-gray-200 leading-relaxed">

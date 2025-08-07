@@ -133,9 +133,9 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { useEffect } from "react";
 const WorkshopPage = () => {
-   useEffect(() => {
-      window.scrollTo(0, 0);
-    },[]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="bg-white text-gray-800 mt-32">
       <Helmet>
@@ -159,7 +159,7 @@ const WorkshopPage = () => {
       >
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Host a Workshop
+            Host an AI Workshop
           </h1>
           <p className="text-lg md:text-xl max-w-3xl mx-auto">
             For Colleges, Schools & Corporate Teams – Bring future-ready
@@ -187,8 +187,8 @@ const WorkshopPage = () => {
               For Colleges & Universities
             </h2>
             <p className="mb-4 text-lg">
-              Empower your students with skill-based, industry-aligned workshops
-              that complement academic learning.
+              Empower your students with skill-based, industry-aligned AI
+              workshops that complement academic learning.
             </p>
             <ul className="list-disc list-inside space-y-1 text-sm">
               <li>Generative AI in Education</li>

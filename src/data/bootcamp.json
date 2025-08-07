@@ -41,13 +41,13 @@
         "metaKeyword": " Robotics summer camp ",
         "metatitle": " Robotics summer camp | AI. Risezonic.",
         "metadec": "AI Risezonic Provide an educational robotics summer camp with IoT projects, coding, robot-building, and innovation for young learners. Enroll now!",
-        "overview": "Explore the future of connected devices and intelligent machines. This camp introduces students to IoT systems, robotics programming, sensor integration, and automation using real hardware.",
+        "overview": "Dive into the exciting future of connected devices and smart automation systems! In this camp you'll get exposure to IoT systems, robotics programming, sensor integration, and working with real hardware and automation.",
         "details": [
-            "Learn how IoT devices communicate using sensors and microcontrollers",
-            "Build and control robots using Arduino and Raspberry Pi",
-            "Integrate AI and machine learning into robotics applications",
-            "Monitor data in real-time through dashboards and cloud services",
-            "Work on practical projects involving automation and robotics"
+            "Learn how real IoT devices communicate using sensors and microcontrollers",
+            "Build and control robots with Arduino and Raspberry Pi.",
+            "Integrate AI and machine learning into robots and robotics applications.",
+            "Visualize, monitor, and analyze data in real time with dashboards and cloud services.",
+            "Create practical projects for automation and robotics."
         ],
         "modules": [
             "Foundations of IoT and Microcontrollers",
@@ -71,22 +71,22 @@
     },
     {
         "id": "power-bi-workshop",
-        "title": "Power BI Mastery Workshop",
+        "title": "Power BI Course Mastery Workshop",
         "metaKeyword": "Power BI Course",
         "metatitle": "Power Bi Course | AI. Risezonic.",
         "metadec": "Transform your data skills with our Power BI Workshop. Gain hands-on experience and learn to create impactful visualizations. Enroll now!",
         "image": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/learnwithrisezonic/project-manager-communicate-collaborate-with-team-using-project-management-software-display-monitor-tracking-progress-project-task-making-schedule-plan-meeting-table-prudent.webp",
-        "overview": "Gain practical skills in business analytics and data visualization with Microsoft Power BI. This workshop is designed for professionals looking to transform raw data into powerful insights and reports.",
+        "overview": "Gain practical skills in business analytics and data visualization with the Microsoft Power BI course. This workshop is designed for professionals looking to transform raw data into powerful insights and reports.",
         "details": [
-            "Connect, clean, and transform data using Power Query",
-            "Create professional dashboards and visuals with ease",
-            "Master DAX for advanced data modeling and KPIs",
-            "Deploy and share interactive reports through Power BI Service",
-            "Apply Power BI to real-world business scenarios"
+            "Connect, clean, and transform data with Power Query",
+            "Create professional dashboards and visuals efficiently",
+            "Excel at Data Analysis Expressions (DAX) for advanced data modeling and KPIs",
+            "Deploy and share interactive reports using Power BI Service",
+            "Use Power BI for real-world application business scenarios"
         ],
         "modules": [
-            "Getting Started with Power BI",
-            "Data Transformation with Power Query",
+            "Introduction to Power BI",
+            "Data Transformation using Power Query",
             "Data Modeling and DAX Functions",
             "Designing Interactive Dashboards",
             "Publishing and Collaboration Tools"

@@ -1,24 +1,24 @@
 [
     {
         "id": "ai-ml-educators",
-        "title": "AI-ML for Educators",
+        "title": "AI and Machine Learning for Educators",
         "metaKeyword": "Machine Learning Classes",
         "metatitle": "AI Machine Learning classes &  Development  ",
         "metadec": "Empower your teaching with expert-led machine learning classes designed for educators. Learn AI & ML tools and real-world applications.",
         "image": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/learnwithrisezonic/AI-ML%20for%20Educators.webp",
-        "overview": "Empower teachers and academic leaders to understand, apply, and teach artificial intelligence and machine learning concepts with confidence. This course blends theory with practical tools tailored for education.",
+        "overview": "Empower teachers and academic leaders to know, apply, and teach artificial intelligence and machine learning classes with confidence. This course combines theory with instrumental tools developed for education",
         "details": [
-            "Learn AI & ML fundamentals with a focus on pedagogy",
-            "Explore ethical and responsible AI in education",
-            "Use AI tools for grading, feedback, and content generation",
-            "Design interactive ML demonstrations for classroom use",
-            "Create AI-infused lesson plans and learning activities"
+            "Learn AI & machine learning fundamentals with a focus on instructional strategy.",
+            "Explore ethical and responsible AI in education.",
+            "Use AI tools for grading, feedback, and content generation.",
+            "Design engaging ML demonstrations for classroom use",
+            "Develop AI-enhanced lesson plans and learning activities"
         ],
         "modules": [
             "AI & ML Concepts Simplified for Educators",
             "AI Ethics & Bias in the Classroom",
-            "Using AI Tools to Enhance Teaching",
-            "Designing AI Projects for Students",
+            "AI tools to engage with pedagogy",
+            "AI Projects for Students",
             "Building an AI-Ready Curriculum"
         ],
         "tags": [
@@ -36,12 +36,12 @@
     },
     {
         "id": "genai-classrooms",
-        "title": "GenAI in Classrooms",
+        "title": "GenAI Courses in Classrooms",
         "metaKeyword": "Gen AI Courses",
         "metatitle": "Gen AI Courses and Development  ",
         "metadec": "Explore Gen AI courses with AI Risezonic. Learn how to integrate generative AI tools into your teaching to boost engagement and enhance learning experiences.",
         "image": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/learnwithrisezonic/GenAI%20in%20Classrooms.webp",
-        "overview": "Discover how generative AI tools like ChatGPT, Claude, and others can be safely and effectively integrated into classrooms. This program is designed for educators seeking to modernize learning experiences using GenAI.",
+        "overview": "Top Gen AI courses that help educators discover how to safely and effectively integrate tools like ChatGPT, Claude, and more into the classroom—modernizing learning experiences with the power of generative AI.",
         "details": [
             "Understand how generative AI works and its implications in education",
             "Use AI to personalize learning paths and generate teaching materials",

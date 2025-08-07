@@ -57,7 +57,7 @@ const Bootcamp = () => {
             AI Bootcamp
           </h1>
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto text-lg">
-            Learn. Build. Lead the AI Revolution — Explore bootcamps, courses,
+            Learn. Build. Lead the AI Revolution—Explore AI bootcamps, courses,
             and workshops designed for the future.
           </p>
         </div>
