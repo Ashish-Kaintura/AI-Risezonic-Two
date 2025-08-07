@@ -133,9 +133,9 @@ const Footer = () => {
           <p className="text-sm text-gray-200">
             © {new Date().getFullYear()} Risezonic Group. All rights reserved.
           </p>
-          <p className="text-sm text-gray-200">
+          {/* <p className="text-sm text-gray-200">
             Powered by Risezonic & Reviving India
-          </p>
+          </p> */}
         </div>
       </div>
     </footer>
