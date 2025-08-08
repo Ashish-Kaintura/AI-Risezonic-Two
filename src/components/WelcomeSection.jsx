@@ -33,7 +33,7 @@ const WelcomeSection = () => {
             too.
           </p>
           <p className="text-lg text-white mb-4">
-            <span className="font-semibold text-blue-400">AI.Risezonic</span>is
+            <span className="font-semibold text-blue-400">AI.Risezonic</span> is
             the best AI learning course in Delhi & innovation platform company that
             empowers students, educators, institutions, and startups to
             understand, build, and deploy generative AI tools—across all

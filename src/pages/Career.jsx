@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
@@ -28,32 +28,50 @@ const labelStyle = {
 };
 
 const Career = () => {
+  const [resumePreview, setResumePreview] = useState(null);
+
   const handleFocus = (e) => {
     Object.assign(e.target.style, inputFocusStyle);
   };
+
   const handleBlur = (e) => {
     Object.assign(e.target.style, inputStyle);
+  };
+
+  const handleResumeChange = (e) => {
+    const file = e.target.files[0];
+    if (
+      file &&
+      (file.type === "application/pdf" ||
+        file.name.endsWith(".doc") ||
+        file.name.endsWith(".docx"))
+    ) {
+      setResumePreview(URL.createObjectURL(file));
+    } else {
+      setResumePreview(null);
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
+    const email = form.email.value;
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!emailPattern.test(form.email.value)) {
+    if (!emailPattern.test(email)) {
       alert("Please enter a valid email.");
       return;
     }
 
     alert("Form submitted successfully!");
     form.reset();
+    setResumePreview(null);
   };
 
   return (
     <main
-    className="max-w-6xl mx-auto "
+      className="max-w-6xl mx-auto"
       style={{
-        margin: "0 auto",
         padding: "2.5rem 1rem",
         background: "linear-gradient(120deg,#f1f5f9 60%,#e0e7ff 100%)",
         borderRadius: 18,
@@ -61,10 +79,6 @@ const Career = () => {
       }}
     >
       <Helmet>
-        <meta
-          name="keywords"
-          content="AI careers, jobs, AI Risezonic, education, technology"
-        />
         <title>Careers at AI Risezonic | AI Jobs & Career Growth.</title>
         <meta
           name="description"
@@ -72,6 +86,7 @@ const Career = () => {
         />
         <link rel="canonical" href="https://ai.risezonic.com/career" />
       </Helmet>
+
       <h1
         style={{
           fontSize: "2.2rem",
@@ -79,7 +94,6 @@ const Career = () => {
           textAlign: "center",
           color: "#2563eb",
           fontWeight: 700,
-          letterSpacing: "0.02em",
         }}
       >
         Careers at AI Risezonic
@@ -96,7 +110,6 @@ const Career = () => {
         below!
       </p>
 
-      {/* --- Application Form --- */}
       <section>
         <h2
           style={{
@@ -111,6 +124,7 @@ const Career = () => {
         </h2>
 
         <form
+          onSubmit={handleSubmit}
           style={{
             background: "#fff",
             padding: "2rem 1.5rem",
@@ -119,7 +133,6 @@ const Career = () => {
             display: "grid",
             gap: "1.2rem",
           }}
-          onSubmit={handleSubmit}
         >
           <div
             style={{
@@ -158,7 +171,7 @@ const Career = () => {
                 required
                 type="tel"
                 name="phone"
-                placeholder="e.g. +91 9876543210"
+                placeholder="+91 9876543210"
                 style={inputStyle}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
@@ -170,8 +183,23 @@ const Career = () => {
                 required
                 type="file"
                 name="resume"
+                onChange={handleResumeChange}
+                accept=".pdf,.doc,.docx"
                 style={{ ...inputStyle, padding: "0.4rem" }}
               />
+              {resumePreview && (
+                <iframe
+                  src={resumePreview}
+                  title="Resume Preview"
+                  style={{
+                    width: "100%",
+                    height: 180,
+                    marginTop: 10,
+                    borderRadius: 8,
+                    border: "1px solid #e2e8f0",
+                  }}
+                />
+              )}
             </div>
           </div>
 
@@ -240,12 +268,7 @@ const Career = () => {
               name="summary"
               placeholder="Tell us about yourself..."
               rows="4"
-              style={{
-                ...inputStyle,
-                resize: "vertical",
-                width: "100%",
-                fontFamily: "inherit",
-              }}
+              style={{ ...inputStyle, resize: "vertical" }}
               onFocus={handleFocus}
               onBlur={handleBlur}
             ></textarea>
@@ -264,13 +287,13 @@ const Career = () => {
               borderRadius: 10,
               cursor: "pointer",
               boxShadow: "0 2px 8px rgba(37,99,235,0.09)",
-              transition: "background 0.2s",
             }}
           >
             Submit Application
           </button>
         </form>
       </section>
+
       <section style={{ marginTop: "3rem", textAlign: "center" }}>
         <h2 style={{ color: "#334155", fontSize: "1.2rem", fontWeight: 600 }}>
           Don't see a role for you?
@@ -278,7 +301,6 @@ const Career = () => {
         <p style={{ color: "#64748b", fontSize: "1.05rem" }}>
           We're always looking for talented people. Email us at{" "}
           <Link
-            target="blank"
             to="mailto:info@risezonic.com"
             style={{
               color: "#2563eb",

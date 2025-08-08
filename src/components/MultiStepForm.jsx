@@ -1,5 +1,5 @@
 // src/components/MultiStepForm.jsx
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import { useFormModal } from "../context/FormModalContext";
 
 const initialFormData = {
@@ -43,13 +43,14 @@ const MultiStepForm = () => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState(initialFormData);
   const [errors, setErrors] = useState({});
+  const [documentPreview, setDocumentPreview] = useState(null);
 
-  // Reset form on modal close
   useEffect(() => {
     if (!isModalOpen) {
       setFormData(initialFormData);
       setStep(1);
       setErrors({});
+      setDocumentPreview(null);
     }
   }, [isModalOpen]);
 
@@ -57,21 +58,37 @@ const MultiStepForm = () => {
     const { name, value, type, checked, files } = e.target;
     if (type === "checkbox") {
       if (name === "agreeToCall") {
-        setFormData({ ...formData, agreeToCall: checked });
+        setFormData((prev) => ({ ...prev, agreeToCall: checked }));
       } else {
-        const updated = formData[name].includes(value)
-          ? formData[name].filter((v) => v !== value)
-          : [...formData[name], value];
-        setFormData({ ...formData, [name]: updated });
+        setFormData((prev) => ({
+          ...prev,
+          [name]: prev[name].includes(value)
+            ? prev[name].filter((v) => v !== value)
+            : [...prev[name], value],
+        }));
       }
     } else if (type === "file") {
-      setFormData({ ...formData, documents: files[0] });
+      const file = files[0];
+      setFormData((prev) => ({ ...prev, documents: file }));
+      if (file) {
+        if (file.type.startsWith("image/")) {
+          const reader = new FileReader();
+          reader.onload = (ev) => setDocumentPreview(ev.target.result);
+          reader.readAsDataURL(file);
+        } else if (file.type === "application/pdf") {
+          setDocumentPreview(URL.createObjectURL(file));
+        } else {
+          setDocumentPreview(null);
+        }
+      } else {
+        setDocumentPreview(null);
+      }
     } else {
-      setFormData({ ...formData, [name]: value });
+      setFormData((prev) => ({ ...prev, [name]: value }));
     }
   };
 
-  const validateEmail = (email) => /^\S+@\S+\.\S+$/.test(email.toLowerCase());
+  const validateEmail = (email) => /^\S+@\S+\.\S+$/.test(email);
 
   const validateStep = () => {
     const newErrors = {};
@@ -96,8 +113,7 @@ const MultiStepForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!validateStep()) return;
-
-    console.log("Form Submitted:", formData);
+    // Submit logic here (API call etc.)
     closeModal();
     alert("Thank you! Your response has been recorded.");
   };
@@ -136,7 +152,6 @@ const MultiStepForm = () => {
                 />
                 {errors.name && <p className="text-red-500">{errors.name}</p>}
               </div>
-
               <div>
                 <label>Email</label>
                 <input
@@ -148,7 +163,6 @@ const MultiStepForm = () => {
                 />
                 {errors.email && <p className="text-red-500">{errors.email}</p>}
               </div>
-
               <div>
                 <label>Industry Type</label>
                 <select
@@ -169,7 +183,6 @@ const MultiStepForm = () => {
                   <p className="text-red-500">{errors.industry}</p>
                 )}
               </div>
-
               <div>
                 <label>Approx. Team Size</label>
                 <select
@@ -246,7 +259,7 @@ const MultiStepForm = () => {
           )}
 
           {step === 4 && (
-            <>
+            <Fragment>
               <label>What would you like to achieve with AI?</label>
               <input
                 name="aiGoals"
@@ -257,30 +270,57 @@ const MultiStepForm = () => {
               {errors.aiGoals && (
                 <p className="text-red-500">{errors.aiGoals}</p>
               )}
-
               <label className="block mt-4">Upload Documents (optional)</label>
-              <input type="file" name="documents" onChange={handleChange} />
-            </>
+              <input
+                type="file"
+                name="documents"
+                accept=".pdf,.doc,.docx"
+                onChange={handleChange}
+              />
+              {documentPreview && (
+                <div style={{ marginTop: "0.7rem" }}>
+                  {documentPreview.startsWith("data:image") ? (
+                    <img
+                      src={documentPreview}
+                      alt="Resume Preview"
+                      style={{
+                        maxWidth: "100%",
+                        maxHeight: 180,
+                        borderRadius: 8,
+                      }}
+                    />
+                  ) : (
+                    <iframe
+                      src={documentPreview}
+                      title="Resume PDF Preview"
+                      style={{
+                        width: "100%",
+                        height: 180,
+                        borderRadius: 8,
+                        border: "1px solid #e2e8f0",
+                      }}
+                    />
+                  )}
+                </div>
+              )}
+            </Fragment>
           )}
 
           {step === 5 && (
-            <>
-              <label className="block">
-                <input
-                  type="checkbox"
-                  name="agreeToCall"
-                  checked={formData.agreeToCall}
-                  onChange={handleChange}
-                />
-                <span className="ml-2">
-                  I’m open to a free AI Readiness Call with AI Risezonic
-                  Experts.
-                </span>
-              </label>
-            </>
+            <label className="block">
+              <input
+                type="checkbox"
+                name="agreeToCall"
+                checked={formData.agreeToCall}
+                onChange={handleChange}
+                required
+              />
+              <span className="ml-2">
+                I’m open to a free AI Readiness Call with AI Risezonic Experts.
+              </span>
+            </label>
           )}
 
-          {/* Navigation Buttons */}
           <div className="flex justify-between mt-6">
             {step > 1 && (
               <button
@@ -316,265 +356,3 @@ const MultiStepForm = () => {
 };
 
 export default MultiStepForm;
-// import React, { useState } from "react";
-// import { useFormModal } from "../context/FormModalContext";
-
-// const MultiStepForm = () => {
-//   const { isModalOpen, closeModal } = useFormModal();
-
-//   const [step, setStep] = useState(1);
-//   const [formData, setFormData] = useState({
-//     name: "",
-//     email: "",
-//     industry: "",
-//     teamSize: "",
-//     painPoints: [],
-//     painPointOther: "",
-//     aiFeatures: [],
-//     aiFeatureOther: "",
-//     goal: "",
-//     documents: null,
-//     agreeToCall: false,
-//   });
-
-//   const painPointOptions = [
-//     "Manual processes causing delays",
-//     "Difficulty in handling large data volumes",
-//     "Lack of predictive analytics / forecasting",
-//     "Customer support response time too slow",
-//     "Poor decision-making due to outdated reporting",
-//     "Difficulty integrating multiple systems",
-//     "Limited personalization for users/students/customers",
-//     "Rising operational costs",
-//     "Lack of real-time insights",
-//   ];
-
-//   const aiFeatureOptions = [
-//     "AI Chatbots (Customer/Student Support)",
-//     "Predictive Analytics (Sales/Student Dropout Forecasting)",
-//     "Automated Reporting/Dashboards",
-//     "Image/Video Analysis (CCTV, Robotics, Quality Control)",
-//     "Generative AI Content Creation (for marketing, education, HR)",
-//     "IoT Integration (Smart Devices, Sensors)",
-//     "Process Automation (HR, Finance, Operations)",
-//   ];
-
-//   const handleChange = (e) => {
-//     const { name, value, type, checked, files } = e.target;
-//     if (type === "checkbox") {
-//       setFormData((prev) => ({
-//         ...prev,
-//         [name]: checked,
-//       }));
-//     } else if (type === "file") {
-//       setFormData((prev) => ({
-//         ...prev,
-//         documents: files[0],
-//       }));
-//     } else {
-//       setFormData((prev) => ({
-//         ...prev,
-//         [name]: value,
-//       }));
-//     }
-//   };
-
-//   const handleMultiSelect = (e, field) => {
-//     const value = e.target.value;
-//     setFormData((prev) => {
-//       const current = new Set(prev[field]);
-//       current.has(value) ? current.delete(value) : current.add(value);
-//       return {
-//         ...prev,
-//         [field]: [...current],
-//       };
-//     });
-//   };
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     console.log("Form Submitted:", formData);
-//     closeModal();
-//   };
-
-//   const renderStep = () => {
-//     switch (step) {
-//       case 1:
-//         return (
-//           <div className="space-y-4">
-//             <input
-//               type="text"
-//               name="name"
-//               placeholder="Your Name"
-//               value={formData.name}
-//               onChange={handleChange}
-//               className="w-full p-2 border rounded"
-//               required
-//             />
-//             <input
-//               type="email"
-//               name="email"
-//               placeholder="Your Email"
-//               value={formData.email}
-//               onChange={handleChange}
-//               className="w-full p-2 border rounded"
-//               required
-//             />
-//             <select
-//               name="industry"
-//               value={formData.industry}
-//               onChange={handleChange}
-//               className="w-full p-2 border rounded"
-//             >
-//               <option value="">Select Industry</option>
-//               <option value="Education">Education</option>
-//               <option value="Retail">Retail</option>
-//               <option value="Healthcare">Healthcare</option>
-//               <option value="Manufacturing">Manufacturing</option>
-//               <option value="Banking">Banking</option>
-//               <option value="Others">Others</option>
-//             </select>
-//             <select
-//               name="teamSize"
-//               value={formData.teamSize}
-//               onChange={handleChange}
-//               className="w-full p-2 border rounded"
-//             >
-//               <option value="">Approx. Team Size</option>
-//               <option value="1–50">1–50</option>
-//               <option value="51–200">51–200</option>
-//               <option value="201–500">201–500</option>
-//               <option value="500+">500+</option>
-//             </select>
-//           </div>
-//         );
-//       case 2:
-//         return (
-//           <div className="space-y-2">
-//             {painPointOptions.map((point, idx) => (
-//               <label key={idx} className="block">
-//                 <input
-//                   type="checkbox"
-//                   value={point}
-//                   checked={formData.painPoints.includes(point)}
-//                   onChange={(e) => handleMultiSelect(e, "painPoints")}
-//                   className="mr-2"
-//                 />
-//                 {point}
-//               </label>
-//             ))}
-//             <textarea
-//               name="painPointOther"
-//               value={formData.painPointOther}
-//               onChange={handleChange}
-//               placeholder="Other pain points..."
-//               className="w-full p-2 border rounded"
-//             />
-//           </div>
-//         );
-//       case 3:
-//         return (
-//           <div className="space-y-2">
-//             {aiFeatureOptions.map((feature, idx) => (
-//               <label key={idx} className="block">
-//                 <input
-//                   type="checkbox"
-//                   value={feature}
-//                   checked={formData.aiFeatures.includes(feature)}
-//                   onChange={(e) => handleMultiSelect(e, "aiFeatures")}
-//                   className="mr-2"
-//                 />
-//                 {feature}
-//               </label>
-//             ))}
-//             <textarea
-//               name="aiFeatureOther"
-//               value={formData.aiFeatureOther}
-//               onChange={handleChange}
-//               placeholder="Other AI Features..."
-//               className="w-full p-2 border rounded"
-//             />
-//           </div>
-//         );
-//       case 4:
-//         return (
-//           <div className="space-y-4">
-//             <textarea
-//               name="goal"
-//               value={formData.goal}
-//               onChange={handleChange}
-//               placeholder="What would you like to achieve with AI?"
-//               className="w-full p-2 border rounded"
-//             />
-//             <input
-//               type="file"
-//               name="documents"
-//               onChange={handleChange}
-//               className="w-full"
-//             />
-//           </div>
-//         );
-//       case 5:
-//         return (
-//           <div className="space-y-4">
-//             <label className="flex items-center">
-//               <input
-//                 type="checkbox"
-//                 name="agreeToCall"
-//                 checked={formData.agreeToCall}
-//                 onChange={handleChange}
-//                 className="mr-2"
-//               />
-//               I’m open to a free AI Readiness Call with RiseZonic Experts.
-//             </label>
-//             <button
-//               onClick={handleSubmit}
-//               className="w-full bg-blue-600 text-white py-2 rounded"
-//             >
-//               Submit & Get AI Solution Preview
-//             </button>
-//           </div>
-//         );
-//       default:
-//         return null;
-//     }
-//   };
-
-//   if (!isModalOpen) return null;
-
-//   return (
-//     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-//       <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-xl">
-//         <div className="flex justify-between items-center mb-4">
-//           <h2 className="text-lg font-semibold">AI Solution Form</h2>
-//           <button onClick={closeModal} className="text-gray-500 hover:text-red-500">✕</button>
-//         </div>
-//         <form onSubmit={handleSubmit}>
-//           {renderStep()}
-//           <div className="mt-6 flex justify-between">
-//             {step > 1 && (
-//               <button
-//                 type="button"
-//                 onClick={() => setStep((prev) => prev - 1)}
-//                 className="text-gray-700"
-//               >
-//                 ⬅ Back
-//               </button>
-//             )}
-//             {step < 5 && (
-//               <button
-//                 type="button"
-//                 onClick={() => setStep((prev) => prev + 1)}
-//                 className="bg-blue-600 text-white px-4 py-2 rounded"
-//               >
-//                 Next ➡
-//               </button>
-//             )}
-//           </div>
-//         </form>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default MultiStepForm;

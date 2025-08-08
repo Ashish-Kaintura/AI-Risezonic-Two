@@ -31,7 +31,7 @@ const EcosystemSection = () => {
       content:
         "Hands-on creation of real tools — for campus, startups, and communities. Learn by building working apps that matter.",
       image:
-        "https://i.postimg.cc/0ygNWcwB/Image-2.png",
+        "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/build.png",
       bg: "from-green-500 to-teal-500",
       iconColor: "text-green-300",
     },
