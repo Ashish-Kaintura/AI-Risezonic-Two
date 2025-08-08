@@ -175,7 +175,7 @@ const About = () => {
           <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto mb-8 leading-relaxed">
             To be India’s leading ecosystem for AI learning, experimentation,
             and innovation—enabling over
-            <strong className="text-blue-600">10,00,000+</strong> llearners per
+            <strong className="text-blue-600">10,00,000+</strong> AI learner per
             year to create the AI-enabled future.
           </p>
 
@@ -241,10 +241,11 @@ const About = () => {
           </p>
           <p className="text-lg md:text-xl text-white mb-10 leading-relaxed">
             We exist to make Generative AI{" "}
-            <strong className="text-pink-600">
-              easy to understand access, and use
+            <strong className="text-pink-600 px-1">
+              easy to understand access, and use 
             </strong>
-            for every curious learner, educator, and innovator—no matter what
+
+             for every curious learner, educator, and innovator—no matter what
             background, language, or prior exposure to AI.
           </p>
 

@@ -118,7 +118,7 @@ const Footer = () => {
                 <FaLinkedinIn />
               </Link>
               <Link
-                to="https://in.linkedin.com/company/risezonic"
+                to="https://www.youtube.com/@risezonic "
                 target="_blank"
                 className="p-2 rounded-full bg-red-700 hover:bg-red-500 transition"
               >

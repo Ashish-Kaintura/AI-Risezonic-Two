@@ -10,7 +10,7 @@
         "details": [
             "Understand the core concepts of Generative AI and large language models (LLMs)",
             "Learn prompt engineering techniques to maximize AI outputs",
-            "Build real-time AI chatbots and assistants using OpenAI and HuggingFace",
+            "Build real-time AI chatbots and assistants using OpenAI and Hugging Face",
             "Fine-tune open-source models for specific business or academic use-cases",
             "Deploy AI tools using LangChain, FastAPI, and Gradio"
         ],

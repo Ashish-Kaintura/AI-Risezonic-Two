@@ -1,6 +1,7 @@
 // File: src/pages/LegalPolicy.jsx
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 const LegalPolicy = () => {
     useEffect(() => {
       window.scrollTo(0, 0);
@@ -85,7 +86,7 @@ const LegalPolicy = () => {
         </ul>
         <p>
           We do not collect sensitive data unless you provide it voluntarily.
-          For more, see our <strong>Privacy Policy</strong> (coming soon).
+          For more, see our <Link to="/privacypolicy" ><strong>Privacy Policy</strong></Link> 
         </p>
       </section>
 
@@ -178,7 +179,7 @@ const LegalPolicy = () => {
         <h2 className="text-2xl font-semibold mb-2">Governing Law</h2>
         <p>
           This legal policy is governed by Indian law. All disputes are subject
-          to the exclusive jurisdiction of the courts in Gurugram, Haryana.
+          to the exclusive jurisdiction of the courts in Gurugram, New Delhi, Delhi.
         </p>
       </section>
 
@@ -189,10 +190,10 @@ const LegalPolicy = () => {
           <br />
           <strong>Email:</strong>{" "}
           <a
-            href="mailto:legal@risezonic.com"
+            href="mailto:legalcare.lawchamber@gmail.com"
             className="text-blue-600 underline"
           >
-            legal@risezonic.com
+            legalcare.lawchamber@gmail.com
           </a>
           <br />
           <strong>Website:</strong>{" "}

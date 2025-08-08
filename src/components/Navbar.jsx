@@ -88,7 +88,7 @@ const Navbar = () => {
             <FaPinterest size={14} />
           </a>
           <a
-            href="https://youtube.com"
+            href="https://www.youtube.com/@risezonic "
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-red-400 transition-colors bg-red-600/80 rounded-full w-8 h-8 flex items-center justify-center p-1"
