@@ -27,19 +27,19 @@ To create a platform where technology, strategy, and service come together to so
     name: "Praveen Kumar",
     image:
       "https://i.postimg.cc/gJyw7m2t/Whats-App-Image2025-07-19at17-31-28-Photoroom.png",
-    role: "Director of Technology & Operational Excellence",
+    role: "Technology & Operational Excellence",
     bio: `Praveen Kumar is a seasoned tech expert with over a decade of experience in AI, IoT, Machine Learning, and Data Science. He has worked at top MNCs like TCS, Fidelity, and Nagarro. Known for delivering global workshops and FDPs, his strength lies in bridging theory with real-world application. Passionate about innovation and education, he leads technical operations and empowers learners globally through hands-on learning.`,
   },
   {
     name: "Preeti Kaushik",
     image: "https://i.postimg.cc/1tJtvFx7/preti.jpg",
-    role: "Director of Creative & UX",
+    role: "Creative & UX",
     bio: `Preeti Kaushik is a Senior IT Professional with a B.Tech in Computer Science and 10+ years of experience in the tech industry. She specializes in Java, AI, UI/UX Design, and Technical Documentation. As an AI trainer and mentor at Reviving India, she’s guided students and professionals in real-world projects across education, e-commerce, and healthcare sectors—bridging academia and industry with excellence in design and training.`,
   },
   {
     name: "Rajshree Singh",
     image: "https://i.postimg.cc/m2cDShmV/Rajshree.jpg",
-    role: "Director of Business Development & Marketing",
+    role: "Business Development & Marketing",
     bio: `Rajshree Singh is an MBA in Sales & Marketing with a powerhouse of credentials in Six Sigma, ISO, CPRE, and PMP. She has earned certifications from Google, Meta, HubSpot, and Microsoft in digital marketing, analytics, content, SEO, and advertising. Having served leadership roles at HCL, American Express, and Google, she now leads AI Risezonic, bringing deep marketing expertise to AI-powered growth strategies and business scaling with real ROI.`,
   },
 ];
