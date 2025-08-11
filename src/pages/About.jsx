@@ -175,7 +175,7 @@ const About = () => {
           <p className="text-lg md:text-xl text-gray-700 max-w-4xl mx-auto mb-8 leading-relaxed">
             To be India’s leading ecosystem for AI learning, experimentation,
             and innovation—enabling over
-            <strong className="text-blue-600">10,00,000+</strong> AI learner per
+            <strong className="text-blue-600 pl-2">10,00,000+</strong> AI learner per
             year to create the AI-enabled future.
           </p>
 

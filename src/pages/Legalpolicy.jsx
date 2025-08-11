@@ -179,7 +179,7 @@ const LegalPolicy = () => {
         <h2 className="text-2xl font-semibold mb-2">Governing Law</h2>
         <p>
           This legal policy is governed by Indian law. All disputes are subject
-          to the exclusive jurisdiction of the courts in Gurugram, New Delhi, Delhi.
+          to the exclusive jurisdiction of the courts in New Delhi, Delhi.
         </p>
       </section>
 
