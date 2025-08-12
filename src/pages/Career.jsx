@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-
+import { useEffect } from "react";
 const inputStyle = {
   padding: "0.85rem",
   fontSize: "1.05rem",
@@ -68,6 +68,9 @@ const Career = () => {
     setResumePreview(null);
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <main
       className="max-w-6xl mx-auto"
