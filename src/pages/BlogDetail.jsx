@@ -34,7 +34,7 @@ const BlogDetail = () => {
   if (!blog) return <p className="p-6 text-red-600">Blog not found.</p>;
 
   return (
-    <div className="max-w-5xl mx-auto p-6 text-gray-800 pt-48">
+    <div className="max-w-6xl mx-auto p-6 text-gray-800 pt-48">
       <Helmet>
         <meta name="keywords" content={blog.metaKeyword} />
         <title>{blog.metatitle}</title>
@@ -89,38 +89,70 @@ const BlogDetail = () => {
       </div>
 
       {/* Sections */}
-      {blog.sections?.map((section, i) => (
+      {blog.content?.map((section, i) => (
         <div
           key={i}
           className="mb-8 bg-white p-6 rounded-xl border border-gray-100 shadow-sm"
         >
           <h2 className="text-2xl font-semibold text-indigo-600 mb-3">
-            {section.heading}
+            {section.section}
           </h2>
-          <ul className="list-disc pl-6 text-gray-700 space-y-2">
-            {section.points.map((point, j) => (
-              <li key={j}>{point}</li>
-            ))}
-          </ul>
+
+          {/* Main text */}
+          {section.text && (
+            <p className="text-gray-700 leading-relaxed mb-4">{section.text}</p>
+          )}
+
+          {/* Points list */}
+          {section.points && (
+            <ul className="list-disc pl-6 text-gray-700 space-y-2">
+              {section.points.map((point, j) => (
+                <li key={j}>{point}</li>
+              ))}
+            </ul>
+          )}
+
+          {/* Steps list */}
+          {section.steps && (
+            <ol className="list-decimal pl-6 text-gray-700 space-y-4">
+              {section.steps.map((stepItem, j) => (
+                <li key={j}>
+                  <p className="font-semibold">{stepItem.step}</p>
+                  <p className="text-gray-600">{stepItem.description}</p>
+                </li>
+              ))}
+            </ol>
+          )}
+
+          {/* Methods list */}
+          {section.methods && (
+            <ul className="list-disc pl-6 text-gray-700 space-y-2">
+              {section.methods.map((method, j) => (
+                <li key={j}>{method}</li>
+              ))}
+            </ul>
+          )}
+
+          {/* Benefits list */}
+          {section.benefits && (
+            <ul className="list-disc pl-6 text-gray-700 space-y-2">
+              {section.benefits.map((benefit, j) => (
+                <li key={j}>{benefit}</li>
+              ))}
+            </ul>
+          )}
+
+          {/* Additional text */}
+          {section.additional_text && (
+            <p className="text-gray-600 mt-4">{section.additional_text}</p>
+          )}
+
+          {/* Closing text */}
+          {section.closing_text && (
+            <p className="text-gray-600 mt-4">{section.closing_text}</p>
+          )}
         </div>
       ))}
-
-      {/* Conclusion */}
-      <div className="mt-10 pt-6 border-t">
-        <h2 className="text-xl font-semibold mb-2 text-gray-800">Conclusion</h2>
-        <p className="text-gray-700 leading-relaxed">{blog.conclusion}</p>
-      </div>
-
-      {/* CTA */}
-      <div className="mt-8 bg-indigo-50 border border-indigo-200 rounded-xl p-6 text-center">
-        <h3 className="text-lg font-medium text-indigo-800">{blog.cta}</h3>
-        <Link
-          to="/contact"
-          className="inline-block mt-4 bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition"
-        >
-          Contact Us
-        </Link>
-      </div>
 
       {/* Related Posts */}
       <div className="mt-16 border-t pt-10">

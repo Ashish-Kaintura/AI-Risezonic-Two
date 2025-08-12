@@ -47,7 +47,7 @@ const BlogCard = ({ blog }) => {
               <h3 className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 transition">
                 {blog.title}
               </h3>
-              <p className="text-sm text-gray-500">{blog.intro}</p>
+              <p className="text-sm text-gray-500 line-clamp-4">{blog.intro}</p>
               <p className="mt-2 text-xs text-gray-400">
                 {blog.date} · {blog.readTime}
               </p>
