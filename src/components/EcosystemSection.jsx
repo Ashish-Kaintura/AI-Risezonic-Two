@@ -1,17 +1,14 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import {
-  FaGraduationCap,
-  FaTools,
-  FaRocket,
-} from "react-icons/fa";
+import { FaGraduationCap, FaTools, FaRocket } from "react-icons/fa";
 
 const EcosystemSection = () => {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
-// https://postimg.cc/gallery/NGfsxX7
+  // https://postimg.cc/gallery/NGfsxX7
+  // https://postimg.cc/gallery/8fQcLW7
   const steps = [
     {
       title: "Train",
@@ -19,8 +16,7 @@ const EcosystemSection = () => {
       highlight: "Learn LLMs, LangChain, Prompt Design & More",
       content:
         "Master the fundamentals and advanced tools of generative AI—applied to your own domain, not just coding. Learn how AI thinks.",
-      image:
-        "https://i.postimg.cc/tCnTNLY6/Image-3.png",
+      image: "https://i.postimg.cc/tCnTNLY6/Image-3.png",
       bg: "from-blue-500 to-pink-500",
       iconColor: "text-pink-300",
     },
@@ -30,8 +26,7 @@ const EcosystemSection = () => {
       highlight: "Build GPTs, RAG bots, AI dashboards & robots",
       content:
         "Hands-on creation of real tools — for campus, startups, and communities. Learn by building working apps that matter.",
-      image:
-        "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/build.png",
+      image: "https://i.postimg.cc/bYLN2SnH/build.png",
       bg: "from-green-500 to-teal-500",
       iconColor: "text-green-300",
     },
@@ -41,8 +36,7 @@ const EcosystemSection = () => {
       highlight: "Go public with apps, expos, & impact reports",
       content:
         "Showcase your innovation. Build a strong portfolio. Deliver institution-level value with launch-ready AI tools.",
-      image:
-        "https://i.postimg.cc/CMJGj4Cp/Image-1-3.png",
+      image: "https://i.postimg.cc/TYw2j2q8/lounch.png",
       bg: "from-yellow-500 to-orange-500",
       iconColor: "text-yellow-300",
     },
@@ -50,44 +44,44 @@ const EcosystemSection = () => {
 
   return (
     <section className="bg-zinc-900 py-24 px-6 md:px-12 relative">
-         <div className="absolute inset-0 z-0 pointer-events-none">
-          <div
-            className="triangle"
-            style={{ top: "20%", left: "10%", animationDelay: "0s" }}
-          ></div>
-          <div
-            className="triangle"
-            style={{ top: "50%", left: "30%", animationDelay: "1s" }}
-          ></div>
-          <div
-            className="triangle"
-            style={{ top: "70%", left: "60%", animationDelay: "2s" }}
-          ></div>
-          <div
-            className="triangle"
-            style={{ top: "30%", left: "80%", animationDelay: "3s" }}
-          ></div>
-          <div
-            className="triangle"
-            style={{ top: "40%", left: "10%", animationDelay: "4s" }}
-          ></div>
-          <div
-            className="triangle"
-            style={{ top: "60%", left: "30%", animationDelay: "5s" }}
-          ></div>
-          <div
-            className="triangle"
-            style={{ top: "55%", left: "60%", animationDelay: "6s" }}
-          ></div>
-          <div
-            className="triangle"
-            style={{ top: "25%", left: "80%", animationDelay: "7s" }}
-          ></div>
-          <div
-            className="triangle"
-            style={{ top: "10%", left: "50%", animationDelay: "8s" }}
-          ></div>
-        </div>
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div
+          className="triangle"
+          style={{ top: "20%", left: "10%", animationDelay: "0s" }}
+        ></div>
+        <div
+          className="triangle"
+          style={{ top: "50%", left: "30%", animationDelay: "1s" }}
+        ></div>
+        <div
+          className="triangle"
+          style={{ top: "70%", left: "60%", animationDelay: "2s" }}
+        ></div>
+        <div
+          className="triangle"
+          style={{ top: "30%", left: "80%", animationDelay: "3s" }}
+        ></div>
+        <div
+          className="triangle"
+          style={{ top: "40%", left: "10%", animationDelay: "4s" }}
+        ></div>
+        <div
+          className="triangle"
+          style={{ top: "60%", left: "30%", animationDelay: "5s" }}
+        ></div>
+        <div
+          className="triangle"
+          style={{ top: "55%", left: "60%", animationDelay: "6s" }}
+        ></div>
+        <div
+          className="triangle"
+          style={{ top: "25%", left: "80%", animationDelay: "7s" }}
+        ></div>
+        <div
+          className="triangle"
+          style={{ top: "10%", left: "50%", animationDelay: "8s" }}
+        ></div>
+      </div>
       <h2
         className="text-4xl md:text-5xl font-extrabold text-center text-white mb-20"
         data-aos="fade-up"
