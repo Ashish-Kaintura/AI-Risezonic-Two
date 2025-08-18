@@ -3,7 +3,7 @@
         "id": "responsible-ai-framework",
         "title": "Building AI Responsibly: A Framework for Learning, Improving AI Skills, and Empowering Developers",
         "metaKeyword": "",
-        "metatitle": "Responsible AI Framework | AI Risezonic.",
+        "metatitle": "Responsible AI Framework | AI.Risezonic.",
         "metadec": "Learn how Open AI learning is fueling responsible AI frameworks for ethical, inclusive, and secure technology for all.",
         "slug": "responsible-ai-framework",
         "date": "2025-07-03",
@@ -17,7 +17,7 @@
             "Trust",
             "AI Learning"
         ],
-        "intro": "Artificial intelligence is revolutionizing industries and changing the way we use technology in this digital age. The importance of artificial intelligence in education is expanding to build smarter systems, and with that, also the demand for responsibility. It is essential to responsibly build AI so that the technologies are ethical, inclusive, and safe for all. At AI.At Risezonic, we are dedicated to helping learners and developers acquire the knowledge and mentality necessary to create powerful AI, but more importantly, principled AI as well.",
+        "intro": "Artificial intelligence is revolutionizing industries and changing the way we use technology in this digital age. The importance of artificial intelligence in education is expanding to build smarter systems, and with that, also the demand for responsibility. It is essential to responsibly build AI so that the technologies are ethical, inclusive, and safe for all. At AI.Risezonic, we are dedicated to helping learners and developers acquire the knowledge and mentality necessary to create powerful AI, but more importantly, principled AI as well.",
         "content": [
             {
                 "section": "Why Responsible AI Development Matters",
@@ -56,7 +56,7 @@
                 "section": "Improving AI Skills",
                 "text": "Improving your AI skills requires a continuous learning mindset combined with practical experience. Here are some effective ways to level up:",
                 "methods": [
-                    "Take Advanced AI Courses: These can range from deep learning to NLP, computer vision, and reinforcement learning. Excellent options are platforms such as Coursera, edX, and Risezonic AI.Risezonic offers excellent options.",
+                    "Take Advanced AI Courses: These can range from deep learning to NLP, computer vision, and reinforcement learning. Excellent options are platforms such as Coursera, edX, and AI.Risezonic offers excellent options.",
                     "Work on Real-World Problems: Learn to Use AI for Real-World Problems: Implement (e.g., in healthcare, finance, or education) a type of solution using real datasets.",
                     "Learn to Use Responsible AI Tools: Master AI tools that help with bias detection, explainability, and model monitoring.",
                     "Follow AI Research: Stay current by reading papers from conferences like NeurIPS, ICML, and CVPR.",
@@ -75,23 +75,23 @@
             },
             {
                 "section": "Conclusion",
-                "text": "Building AI responsibly isn’t just a best practice—it’s a necessity. From understanding the importance of artificial intelligence to implementing an effective AI framework, developers have the power to shape a future where technology serves everyone fairly and transparently. Explore more resources and start your responsible AI journey with us at 👉 Risezonic AI"
+                "text": "Building AI responsibly isn’t just a best practice—it’s a necessity. From understanding the importance of artificial intelligence to implementing an effective AI framework, developers have the power to shape a future where technology serves everyone fairly and transparently. Explore more resources and start your responsible AI journey with us at 👉 AI.Risezonic "
             }
         ]
     },
     {
         "id": "custom-gpts-for-education",
-        "title": "nicEmpowering Education Through AI Software Development: The Rise of Custom GPTs",
+        "title": "Empowering Education Through AI Software Development: The Rise of Custom GPTs",
         "metaKeyword": "",
-        "metatitle": "",
-        "metadec": "",
+        "metatitle": "Custom GPTs Learning with AI.Risezonic.",
+        "metadec": "Use ChatGPT prompts to improve learning results. This blog offers insight into how people can revolutionize personal education and tutoring with custom GPTs.",
         "slug": "custom-gpts-for-education",
         "date": "2025-08-14",
         "author": "Ashish",
         "readTime": "6 min read",
         "coverImage": "https://raw.githubusercontent.com/Ashish-Kaintura/AI-Risezonic-Two/main/src/image/blog/AiBlog2.jpg",
         "tags": [
-            " Artificial Intelligence",
+            "Artificial Intelligence",
             "AI in Education",
             "Custom GPTs",
             "Generative AI"

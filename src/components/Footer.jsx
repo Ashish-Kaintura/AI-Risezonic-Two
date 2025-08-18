@@ -70,7 +70,6 @@ const Footer = () => {
                 <FaMapMarkerAlt className="mt-1 text-white/80" />
                 <span>
                   RZ11/D, Upper Ground Floor, Opp. Palam Metro Station Gate 3,
-                  <br />
                   Palam Dwarka Road, Delhi, 110045
                 </span>
               </div>
@@ -90,35 +89,35 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Connect with Us</h4>
             <div className="flex flex-wrap gap-4">
               <Link
-                to="https://www.facebook.com/risezonicofficial/"
+                to="https://www.facebook.com/ai.risezonic/"
                 target="_blank"
                 className="p-2 rounded-full bg-blue-700 hover:bg-bluea-600 transition"
               >
                 <FaFacebookF />
               </Link>
               <Link
-                to="https://in.pinterest.com/risezonicllp/"
+                to="https://www.pinterest.com/airisezonic/"
                 target="_blank"
                 className="p-2 rounded-full bg-pink-600 hover:bg-pink-600 transition"
               >
                 <FaPinterest />
               </Link>
               <Link
-                to="https://www.instagram.com/risezonicofficial/"
+                to="https://www.instagram.com/ai.risezonic/"
                 target="_blank"
                 className="p-2 rounded-full bg-pink-700 hover:bg-pink-600 transition"
               >
                 <FaInstagram />
               </Link>
               <Link
-                to="https://in.linkedin.com/company/risezonic"
+                to="https://www.linkedin.com/company/ai-risezonic"
                 target="_blank"
                 className="p-2 rounded-full bg-blue-600 hover:bg-blue-700 transition"
               >
                 <FaLinkedinIn />
               </Link>
               <Link
-                to="https://www.youtube.com/@risezonic "
+                to="https://www.youtube.com/@ai.risezonic"
                 target="_blank"
                 className="p-2 rounded-full bg-red-700 hover:bg-red-500 transition"
               >
