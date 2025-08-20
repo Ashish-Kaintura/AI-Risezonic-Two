@@ -13,7 +13,7 @@ const PrivacyPolicy = () => {
           name="description"
           content="Explore AI Risezonic’s privacy policy to learn how we ensure data privacy, platform security, and responsible AI practices for all users."
         />
-        <link rel="canonical" href="https://ai.risezonic.com/contact" />c
+        <link rel="canonical" href="https://ai.risezonic.com/contact" />
       </Helmet>
       <h1 className="text-4xl font-bold mb-6 sm:pt-32 pt-16">Privacy Policy</h1>
       <p className="mb-4">
