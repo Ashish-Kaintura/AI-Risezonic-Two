@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 import {
@@ -33,7 +33,9 @@ const Navbar = () => {
     Host: false,
   });
   const location = useLocation();
-
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
   const linkClass = (path) =>
     location.pathname === path
       ? "text-blue-600 font-semibold"

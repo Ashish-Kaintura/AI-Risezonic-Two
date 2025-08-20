@@ -40,6 +40,7 @@ const Footer = () => {
                 { name: "Career", path: "/career" },
                 { name: "Privacy Policy", path: "/privacyPolicy" },
                 { name: "Legal Policy", path: "/legal-policy" },
+                { name: "FAQ", path: "/faq" },
               ].map((link) => (
                 <li key={link.name}>
                   <Link
