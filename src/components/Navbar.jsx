@@ -58,7 +58,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-3">
           <span className="font-medium tracking-wide">Follow us:</span>
           <a
-            href="https://www.facebook.com/risezonicofficial/"
+            href="https://www.facebook.com/ai.risezonic/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-300  transition-colors bg-blue-600/80 rounded-full w-8 h-8 flex items-center justify-center p-1"
@@ -66,7 +66,7 @@ const Navbar = () => {
             <FaFacebookF size={14} />
           </a>
           <a
-            href="https://in.linkedin.com/company/risezonic"
+            href="https://www.linkedin.com/company/ai-risezonic"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-300 transition-colors bg-blue-800/80 rounded-full w-8 h-8 flex items-center justify-center p-1"
@@ -74,7 +74,7 @@ const Navbar = () => {
             <FaLinkedinIn size={14} />
           </a>
           <a
-            href="https://www.instagram.com/accounts/login/?next=%2Frisezonicofficial%2F&source=omni_redirect"
+            href="https://www.instagram.com/ai.risezonic/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-pink-300 transition-colors bg-pink-700/80 rounded-full w-8 h-8 flex items-center justify-center p-1"
@@ -82,7 +82,7 @@ const Navbar = () => {
             <FaInstagram size={14} />
           </a>
           <a
-            href="https://in.pinterest.com/risezonicllp/"
+            href="https://www.pinterest.com/airisezonic/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-400 transition-colors bg-pink-700/80 rounded-full w-8 h-8 flex items-center justify-center p-1"
@@ -90,7 +90,7 @@ const Navbar = () => {
             <FaPinterest size={14} />
           </a>
           <a
-            href="https://www.youtube.com/@risezonic "
+            href="https://www.youtube.com/@ai.risezonic"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-red-400 transition-colors bg-red-600/80 rounded-full w-8 h-8 flex items-center justify-center p-1"
