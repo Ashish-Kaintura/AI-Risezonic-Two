@@ -44,7 +44,7 @@ const BlogCard = ({ blog }) => {
               />
             )}
             <div className="p-4 bg-white">
-              <h3 className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 transition">
+              <h3 className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 transition line-clamp-2">
                 {blog.title}
               </h3>
               <p className="text-sm text-gray-500 line-clamp-4">{blog.intro}</p>
