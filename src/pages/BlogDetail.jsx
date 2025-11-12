@@ -34,7 +34,7 @@ const BlogDetail = () => {
   if (!blog) return <p className="p-6 text-red-600">Blog not found.</p>;
 
   return (
-    <div className="max-w-6xl mx-auto p-6 text-gray-800 pt-48">
+    <div className="max-w-4xl mx-auto p-6 text-gray-800 pt-48">
       <Helmet>
         <meta name="keywords" content={blog.metaKeyword} />
         <title>{blog.metatitle}</title>
@@ -81,7 +81,7 @@ const BlogDetail = () => {
             src={blog.coverImage}
             alt={blog.title}
             loading="lazy"
-            className="rounded-xl w-full h-[450px] object-cover mb-6"
+            className="rounded-xl w-full h-[550px] object-cover mb-6"
           />
         )}
 

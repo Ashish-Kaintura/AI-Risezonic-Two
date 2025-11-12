@@ -41,14 +41,11 @@ const Home = () => {
         <title>Risezonic AI | AI Learning course & Innovation Platform.</title>
         <meta
           name="description"
-          content="AI Risezonic is transforming  education through AI learning course. Explore and understand the importance of artificial intelligence in  future careers."
-        />
+          content="AI Risezonic is transforming education through AI learning course. Explore and understand the importance of artificial intelligence in future careers."/>
         <link rel="canonical" href="https://ai.risezonic.com/" />
-        <meta name="keywords" content="AI Learning course" />
       </Helmet>
       {/* Hero Section */}
       <Hero />
-
       <WelcomeSection />
       <WhatWeDo />
       <WhyJoinSectionLight />
